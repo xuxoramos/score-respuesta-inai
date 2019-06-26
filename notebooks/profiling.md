@@ -82,28 +82,17 @@ Limpiamos todos los datos
 
 ```python
 # Fechas 
-sol["fecha_solicitud"] = pd.to_datetime(sol["fecha_solicitud"])
-sol["fecha_limite"] = pd.to_datetime(sol["fecha_limite"])
-sol["fecha_respuesta"] = pd.to_datetime(sol["fecha_respuesta"])
+for c in ['fecha_solicitud', 'fecha_limite', 'fecha_respuesta']:
+    sol[c] = pd.to_datetime(sol[c])
 
 # Categorías 
-sol["dependencia"] = sol["dependencia"].astype("category")
-sol["estatus"] = sol["estatus"].astype("category")
-sol["medio_entrada"] = sol["medio_entrada"].astype("category")
-sol["tipo_solicitud"] = sol["tipo_solicitud"].astype("category")
-sol["medio_entrega"] = sol["medio_entrega"].astype("category")
-sol["pais"] = sol["pais"].astype("category")
-sol["estado"] = sol["estado"].astype("category")
-sol["municipio"] = sol["municipio"].astype("category")
-sol["sector"] = sol["sector"].astype("category")
-
+for c in ['dependencia', 'estatus', 'medio_entrada', 'tipo_solicitud', 
+          'medio_entrega', 'pais', 'estado', 'municipio', 'sector']:
+    sol[c] = sol[c].astype("category")
+    
 sol.dtypes
 ```
 
 ```python
 sol.describe(include="all")
-```
-
-```python
-
 ```
