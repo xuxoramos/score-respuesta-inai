@@ -78,7 +78,13 @@ sol['dependencia'] = sol['dependencia'].astype(str)
 sol['estatus'] = sol['estatus'].astype('category')
 ```
 
-Limpiamos todos los datos 
+```python
+sol.respuesta.nunique()
+```
+
+```python
+sol.loc[sol.codigo_postal=='680O0', 'codigo_postal'] = '68000'
+```
 
 ```python
 # Fechas 
@@ -87,12 +93,27 @@ for c in ['fecha_solicitud', 'fecha_limite', 'fecha_respuesta']:
 
 # Categorías 
 for c in ['dependencia', 'estatus', 'medio_entrada', 'tipo_solicitud', 
-          'medio_entrega', 'pais', 'estado', 'municipio', 'sector']:
+          'medio_entrega', 'pais', 'estado', 'municipio', 'sector',
+          'respuesta']:
     sol[c] = sol[c].astype("category")
+    
+# Textos
+for c in ['descripcion', 'otros', 'archivo_adjunto', 'texto_respuesta',
+         'archivo_respuesta']:
+    sol[c] = sol[c].astype(str)
+    
+# double
+sol['codigo_postal'] = sol.codigo_postal.replace(to_replace=r'[Oo]', 
+                          value='0', 
+                          regex=True).astype(float)
     
 sol.dtypes
 ```
 
 ```python
 sol.describe(include="all")
+```
+
+```python
+sol.reset_index(drop=True).to_feather('../data/inai.feather')
 ```
