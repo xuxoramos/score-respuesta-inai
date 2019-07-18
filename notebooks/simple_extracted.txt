@@ -1,0 +1,2381 @@
+
+I. PODER LEGISLATIVO FEDERAL
+ 
+01100
+Auditoría Superior de la Federación
+01200
+Cámara de Diputados
+01300
+Senado de la República
+ 
+SUBTOTAL: 3
+ 
+II. PODER EJECUTIVO FEDERAL
+ 
+A) Administración Pública Centralizada
+ 
+02100
+Oficina de la Presidencia de la República
+00008
+Secretaría de Agricultura y Desarrollo Rural
+08100
+Agencia de Servicios a la Comercialización y Desarrollo de Mercados Agropecuarios
+08609
+Colegio Superior Agropecuario del Estado de Guerrero
+08197
+Comisión Nacional de Acuacultura y Pesca
+08199
+Servicio de Información Agroalimentaria y Pesquera
+08610
+Servicio Nacional de Inspección y Certificación de Semillas
+08210
+Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria
+00009
+Secretaría de Comunicaciones y Transportes
+09010
+Agencia Reguladora del Transporte Ferroviario (*)
+09001
+Instituto Mexicano del Transporte (*)
+09111
+Servicios a la Navegación en el Espacio Aéreo Mexicano
+11141
+Secretaría de Cultura
+11151
+Instituto Nacional de Antropología e Historia
+11161
+Instituto Nacional de Bellas Artes y Literatura
+11142
+Instituto Nacional del Derecho de Autor (*)
+11143
+Radio Educación (*)
+11199
+Instituto Nacional de Estudios Históricos de las Revoluciones de México
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+00015
+Secretaría de Desarrollo Agrario, Territorial y Urbano
+15111
+Registro Agrario Nacional
+00020
+Secretaría de Bienestar
+20001
+Coordinación Nacional de PROSPERA Programa de Inclusión Social
+20999
+Instituto Nacional de Desarrollo Social
+20100
+Instituto Nacional de la Economía Social
+00010
+Secretaría de Economía
+10141
+Comisión Nacional de Mejora Regulatoria
+10211
+Instituto Nacional del Emprendedor
+00011
+Secretaría de Educación Pública
+25101
+Autoridad Educativa Federal en la Ciudad de México
+11001
+Comisión de Apelación y Arbitraje del Deporte (*)
+11002
+Coordinación General @prende.mx (*)
+11003
+Coordinación Nacional del Servicio Profesional Docente (*)
+11171
+Instituto Politécnico Nacional
+11004
+Tecnológico Nacional de México (*)
+11005
+Universidad Abierta y a Distancia de México (*)
+29010
+Universidad Pedagógica Nacional
+11006
+XE-IPN Canal 11 (*)
+00018
+Secretaría de Energía
+18100
+Comisión Nacional de Seguridad Nuclear y Salvaguardias
+18191
+Comisión Nacional para el Uso Eficiente de la Energía
+00004
+Secretaría de Gobernación
+04001
+Centro de Producción de Programas Informativos y Especiales (*)
+04016
+Comisión Nacional de Búsqueda de Personas (*)
+04002
+Comisión Nacional para Prevenir y Erradicar la Violencia Contra las Mujeres (*)
+04220
+Coordinación General de la Comisión Mexicana de Ayuda a Refugiados
+04004
+Coordinación para la Atención Integral de la Migración en la Frontera Sur (*)
+04111
+Instituto Nacional de Migración
+04005
+Instituto Nacional para el Federalismo y el Desarrollo Municipal (*)
+04006
+Secretaría Ejecutiva del Sistema Nacional para la Protección Integral de Niñas, Niños y Adolescentes (*)
+04160
+Secretaría General del Consejo Nacional de Población
+04007
+Secretaría Técnica de la Comisión Calificadora de Publicaciones y Revistas Ilustradas (*)
+00006
+Secretaría de Hacienda y Crédito Público
+06050
+Autoridad Federal para el Desarrollo de las Zonas Económicas Especiales (*)
+06100
+Comisión Nacional Bancaria y de Valores
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+06111
+Comisión Nacional de Seguros y Fianzas
+06121
+Comisión Nacional del Sistema de Ahorro para el Retiro
+27001
+Instituto de Administración y Avalúos de Bienes Nacionales (*)
+06101
+Servicio de Administración Tributaria
+00007
+Secretaría de la Defensa Nacional
+00027
+Secretaría de la Función Pública
+00013
+Secretaría de Marina
+00016
+Secretaría de Medio Ambiente y Recursos Naturales
+16211
+Agencia Nacional de Seguridad Industrial y de Protección al Medio Ambiente del Sector Hidrocarburos
+16151
+Comisión Nacional de Áreas Naturales Protegidas
+16101
+Comisión Nacional del Agua
+16131
+Procuraduría Federal de Protección al Ambiente
+00005
+Secretaría de Relaciones Exteriores
+05100
+Agencia Mexicana de Cooperación Internacional para el Desarrollo (*)
+05001
+Instituto de los Mexicanos en el Exterior (*)
+05002
+Instituto Matías Romero (*)
+05003
+Sección Mexicana de la Comisión Internacional de Límites y Aguas entre México y Estados Unidos (*)
+05004
+Secciones Mexicanas de las Comisiones Internacionales de Límites y Aguas entre México y Guatemala, y entre México y Belice (*)
+00012
+Secretaría de Salud
+12001
+Administración del Patrimonio de la Beneficencia Pública (*)
+12002
+Centro Nacional de Equidad de Género y Salud Reproductiva (*)
+12003
+Centro Nacional de Excelencia Tecnológica en Salud (*)
+12004
+Centro Nacional de la Transfusión Sanguínea (*)
+12005
+Centro Nacional de Programas Preventivos y Control de Enfermedades (*)
+12006
+Centro Nacional de Trasplantes (*)
+12007
+Comisión Nacional contra las Adicciones (*)
+12008
+Centro Nacional para la Prevención y el Control del VIH/SIDA (*)
+12009
+Centro Nacional para la Salud de la Infancia y la Adolescencia (*)
+12151
+Comisión Federal para la Protección contra Riesgos Sanitarios
+42207
+Comisión Nacional de Arbitraje Médico
+12010
+Comisión Nacional de Bioética (*)
+12102
+Comisión Nacional de Protección Social en Salud
+12011
+Servicios de Atención Psiquiátrica (*)
+00028
+Secretaría de Seguridad y Protección Ciudadana
+04100
+Centro Nacional de Inteligencia
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+04130
+Centro Nacional de Prevención de Desastres
+04003
+Coordinación Nacional Antisecuestro (*)
+22103
+Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública
+36001
+Servicio de Protección Federal
+04131
+Policía Federal
+36700
+Prevención y Readaptación Social
+00021
+Secretaría de Turismo
+21001
+Corporación de Servicios al Turista Ángeles Verdes (*)
+21002
+Instituto de Competitividad Turística (*)
+00014
+Secretaría del Trabajo y Previsión Social
+14100
+Junta Federal de Conciliación y Arbitraje
+14111
+Procuraduría Federal de la Defensa del Trabajo
+02200
+Consejería Jurídica del Ejecutivo Federal
+18001
+Comisión Nacional de Hidrocarburos
+18111
+Comisión Reguladora de Energía
+ 
+SUBTOTAL: 104
+ 
+B) Administración Pública Paraestatal del Poder Ejecutivo Federal
+ 
+a) Organismos descentralizados:
+ 
+ 
+Ramo: Gobernación
+04950
+Archivo General de la Nación
+04410
+Consejo Nacional para Prevenir la Discriminación
+04101
+Talleres Gráficos de México
+ 
+Ramo: Defensa Nacional
+07150
+Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas
+ 
+Ramo: Hacienda y Crédito Público
+06363
+Casa de Moneda
+06370
+Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros
+06565
+Financiera Nacional de Desarrollo Agropecuario, Rural, Forestal y Pesquero
+06110
+Instituto para el Desarrollo Técnico de las Haciendas Públicas
+06747
+Instituto para la Protección al Ahorro Bancario
+06750
+Lotería Nacional para la Asistencia Pública
+06810
+Pronósticos para la Asistencia Pública
+06812
+Servicio de Administración y Enajenación de Bienes
+ 
+Ramo: Desarrollo Social
+20237
+Consejo Nacional de Evaluación de la Política de Desarrollo Social
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+00634
+Consejo Nacional para el Desarrollo y la Inclusión de las Personas con
+Discapacidad
+11318
+Instituto Mexicano de la Juventud
+20410
+Instituto Nacional de las Personas Adultas Mayores
+ 
+Ramo: Medio Ambiente y Recursos Naturales
+16161
+Comisión Nacional Forestal
+16111
+Instituto Mexicano de Tecnología del Agua
+16121
+Instituto Nacional de Ecología y Cambio Climático
+ 
+Ramo: Energía
+11205
+Centro Nacional de Control de Energía
+18112
+Centro Nacional de Control del Gas Natural
+18470
+Instituto Nacional de Electricidad y Energías Limpias
+18474
+Instituto Mexicano del Petróleo
+18476
+Instituto Nacional de Investigaciones Nucleares
+ 
+Ramo: Economía
+10095
+Centro Nacional de Metrología
+10265
+Instituto Mexicano de la Propiedad Industrial
+10315
+Procuraduría Federal del Consumidor
+10100
+Servicio Geológico Mexicano
+ 
+Ramo: Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación
+08140
+Colegio de Postgraduados
+20090
+Comisión Nacional de las Zonas Áridas
+08001
+Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar (*)
+08170
+Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias
+08198
+Instituto Nacional de Pesca
+08460
+Productora Nacional de Biológicos Veterinarios
+ 
+Ramo: Comunicaciones y Transportes
+09085
+Aeropuertos y Servicios Auxiliares
+09087
+Agencia Espacial Mexicana
+09120
+Caminos y Puentes Federales de Ingresos y Servicios Conexos
+09011
+Organismo Promotor de Inversiones en Telecomunicaciones
+09338
+Servicio Postal Mexicano
+09437
+Telecomunicaciones de México
+ 
+Ramo: Educación Pública
+11065
+Centro de Enseñanza Técnica Industrial
+11085
+Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional
+11115
+Colegio de Bachilleres
+11125
+Colegio Nacional de Educación Profesional Técnica
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+11135
+Comisión de Operación y Fomento de Actividades Académicas del Instituto
+Politécnico Nacional
+11131
+Comisión Nacional de Cultura Física y Deporte
+11137
+Comisión Nacional de Libros de Texto Gratuitos
+11150
+Consejo Nacional de Fomento Educativo
+11249
+Fondo de Cultura Económica
+11312
+Instituto Mexicano de Cinematografía
+11321
+Instituto Mexicano de la Radio
+11140
+Instituto Nacional de la Infraestructura Física Educativa
+11311
+Instituto Nacional de Lenguas Indígenas
+11310
+Instituto Nacional para la Educación de los Adultos
+11390
+Patronato de Obras e Instalaciones del Instituto Politécnico Nacional
+ 
+Ramo: Salud
+12090
+Centro Regional de Alta Especialidad de Chiapas
+12195
+Hospital General "Dr. Manuel Gea González"
+12197
+Hospital General de México "Dr. Eduardo Liceaga"
+12200
+Hospital Infantil de México Federico Gómez
+12190
+Hospital Juárez de México
+12213
+Hospital Regional de Alta Especialidad de Ciudad Victoria "Bicentenario 2010"
+12214
+Hospital Regional de Alta Especialidad de Ixtapaluca
+12212
+Hospital Regional de Alta Especialidad de la Península de Yucatán
+12211
+Hospital Regional de Alta Especialidad de Oaxaca
+12210
+Hospital Regional de Alta Especialidad del Bajío
+12215
+Instituto Nacional de Cancerología
+12220
+Instituto Nacional de Cardiología Ignacio Chávez
+12226
+Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán
+12223
+Instituto Nacional de Enfermedades Respiratorias Ismael Cosío Villegas
+12012
+Instituto Nacional de Geriatría (*)
+12370
+Instituto Nacional de Medicina Genómica
+12230
+Instituto Nacional de Neurología y Neurocirugía Manuel Velasco Suárez
+12245
+Instituto Nacional de Pediatría
+12250
+Instituto Nacional de Perinatología Isidro Espinosa de los Reyes
+12295
+Instituto Nacional de Psiquiatría Ramón de la Fuente Muñiz
+12329
+Instituto Nacional de Rehabilitación Luis Guillermo Ibarra Ibarra
+12270
+Instituto Nacional de Salud Pública
+12360
+Sistema Nacional para el Desarrollo Integral de la Familia
+ 
+Ramo: Trabajo y Previsión Social
+14075
+Comisión Nacional de los Salarios Mínimos
+14120
+Instituto del Fondo Nacional para el Consumo de los Trabajadores
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+ 
+Ramo: Desarrollo Agrario, Territorial y Urbano
+20120
+Comisión Nacional de Vivienda
+15075
+Instituto Nacional del Suelo Sustentable
+15105
+Procuraduría Agraria
+ 
+Ramo: Consejo Nacional de Ciencia y Tecnología
+11121
+Centro de Ingeniería y Desarrollo Industrial
+11101
+Centro de Investigación Científica y de Educación Superior de Ensenada, Baja California
+11111
+Centro de Investigación en Química Aplicada
+11100
+Centro de Investigaciones y Estudios Superiores en Antropología Social
+11109
+El Colegio de la Frontera Sur
+11280
+Instituto de Investigaciones "Dr. José María Luis Mora"
+11290
+Instituto Nacional de Astrofísica, Óptica y Electrónica
+ 
+Organismos Descentralizados No Sectorizados
+00633
+Comisión Ejecutiva de Atención a Víctimas
+11112
+Consejo Nacional de Ciencia y Tecnología
+00637
+Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado
+00641
+Instituto Mexicano del Seguro Social
+17110
+Instituto Nacional de Ciencias Penales
+06104
+Instituto Nacional de las Mujeres
+00625
+Instituto Nacional de los Pueblos Indígenas
+06630
+Notimex, Agencia de Noticias del Estado Mexicano
+00632
+Procuraduría de la Defensa del Contribuyente
+47001
+Secretaría Ejecutiva del Sistema Nacional Anticorrupción
+04430
+Sistema Público de Radiodifusión del Estado Mexicano
+ 
+SUBTOTAL: 101
+ 
+b) Empresas de Participación Estatal, Instituciones Nacionales de Crédito, Organizaciones Auxiliares Nacionales de Crédito e Instituciones Nacionales de Seguros y de Fianzas:
+ 
+09176
+Administración Portuaria Integral de Altamira, S.A. de C.V.
+09183
+Administración Portuaria Integral de Coatzacoalcos, S.A. de C.V.
+09180
+Administración Portuaria Integral de Dos Bocas, S.A. de C.V.
+09169
+Administración Portuaria Integral de Ensenada, S.A. de C.V.
+09177
+Administración Portuaria Integral de Guaymas, S.A. de C.V.
+09178
+Administración Portuaria Integral de Lázaro Cárdenas, S.A. de C.V.
+09179
+Administración Portuaria Integral de Manzanillo, S.A. de C.V.
+09171
+Administración Portuaria Integral de Mazatlán, S.A. de C.V.
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+09172
+Administración Portuaria Integral de Progreso, S.A. de C.V.
+09186
+Administración Portuaria Integral de Puerto Madero, S.A. de C.V.
+09173
+Administración Portuaria Integral de Puerto Vallarta, S.A. de C.V.
+09184
+Administración Portuaria Integral de Salina Cruz, S.A. de C.V.
+09181
+Administración Portuaria Integral de Tampico, S.A. de C.V.
+09174
+Administración Portuaria Integral de Topolobampo, S.A. de C.V.
+09175
+Administración Portuaria Integral de Tuxpan, S.A. de C.V.
+09182
+Administración Portuaria Integral de Veracruz, S.A. de C.V.
+09451
+Aeropuerto Internacional de la Ciudad de México, S.A. de C.V.
+11063
+Centro de Capacitación Cinematográfica, A.C.
+11108
+Centro de Investigación Científica de Yucatán, A.C.
+11083
+Centro de Investigación en Alimentación y Desarrollo, A.C.
+11080
+Centro de Investigación en Ciencias de Información Geoespacial
+11102
+Centro de Investigación en Matemáticas, A.C.
+11088
+Centro de Investigación en Materiales Avanzados, S.C.
+11103
+Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco, A.C.
+11106
+Centro de Investigación y Desarrollo Tecnológico en Electroquímica, S.C.
+11090
+Centro de Investigación y Docencia Económicas, A.C.
+11107
+Centro de Investigaciones Biológicas del Noroeste, S.C.
+11110
+Centro de Investigaciones en Óptica, A.C.
+12100
+Centros de Integración Juvenil, A.C.
+11105
+CIATEC, A.C. "Centro de Innovación Aplicada en Tecnologías Competitivas"
+11104
+CIATEQ, A.C. Centro de Tecnología Avanzada
+18200
+Compañía Mexicana de Exploraciones, S.A. de C.V.
+11148
+Compañía Operadora del Centro Cultural y Turístico de Tijuana, S.A. de C.V.
+21355
+Consejo de Promoción Turística de México, S.A. de C.V.
+11163
+Corporación Mexicana de Investigación en Materiales, S.A. de C.V.
+20150
+Diconsa, S.A. de C.V.
+11186
+Educal, S.A. de C.V.
+11075
+El Colegio de la Frontera Norte, A.C.
+11120
+El Colegio de México, A.C.
+11187
+El Colegio de Michoacán, A.C.
+53123
+El Colegio de San Luis, A.C.
+11195
+Estudios Churubusco Azteca, S.A.
+10101
+Exportadora de Sal, S.A. de C.V.
+09189
+Ferrocarril del Istmo de Tehuantepec, S.A. de C.V.
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+21068
+FONATUR Constructora, S.A. de C.V.
+21364
+FONATUR Infraestructura, S.A. de C.V.
+21372
+FONATUR Tren Maya, S.A. de C.V.
+09450
+Grupo Aeroportuario de la Ciudad de México, S.A. de C.V.
+11190
+Impresora y Encuadernadora Progreso, S.A. de C.V.
+11279
+Instituto de Ecología, A.C.
+08162
+Instituto Nacional para el Desarrollo de Capacidades del Sector Rural, A.C.
+53110
+Instituto Potosino de Investigación Científica y Tecnológica, A.C.
+12277
+Laboratorios de Biológicos y Reactivos de México, S.A. de C.V.
+20143
+Liconsa, S.A. de C.V.
+09448
+Servicios Aeroportuarios de la Ciudad de México, S.A. de C.V.
+11425
+Televisión Metropolitana, S.A. de C.V.
+21161
+FONATUR Prestadora de Servicios, S.A. de C.V. (*)
+06084
+Agroasemex, S.A.
+06800
+Banco del Ahorro Nacional y Servicios Financieros, S.N.C.
+06305
+Banco Nacional de Comercio Exterior, S.N.C.
+06320
+Banco Nacional de Obras y Servicios Públicos, S.N.C.
+06325
+Banco Nacional del Ejército, Fuerza Aérea y Armada, S.N.C.
+06780
+Nacional Financiera, S.N.C.
+06820
+Sociedad Hipotecaria Federal, S.N.C.
+06920
+Seguros de Crédito a la Vivienda SHF, S.A. de C.V. (*)
+ 
+SUBTOTAL: 65
+ 
+c) Empresas de Participación Estatal Mayoritaria y Organismos Descentralizados en Proceso de Liquidación y/o Desincorporación (*):
+ 
+ 
+Servicio de Administración y Enajenación de Bienes
+06814
+Extinta Luz y Fuerza del Centro
+06815
+Ferrocarriles Nacionales de México
+ 
+Pemex Transformación Industrial
+18680
+Terrenos para Industrias, S.A.
+ 
+SUBTOTAL: 3
+ 
+III. EMPRESAS PRODUCTIVAS DEL ESTADO:
+ 
+18164
+Comisión Federal de Electricidad
+18572
+Petróleos Mexicanos
+ 
+SUBTOTAL: 2
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+IIII. EMPRESAS PRODUCTIVAS SUBSIDIARIAS DE PETRÓLEOS MEXICANOS:
+ 
+18573
+Pemex Etileno
+18575
+Pemex Exploración y Producción
+18571
+Pemex Fertilizantes
+18570
+Pemex Logística
+18569
+Pemex Perforación y Servicios
+18679
+Pemex Transformación Industrial
+ 
+SUBTOTAL: 6
+ 
+V. TRIBUNALES ADMINISTRATIVOS
+ 
+04200
+Tribunal Federal de Conciliación y Arbitraje
+32100
+Tribunal Federal de Justicia Administrativa
+31100
+Tribunal Superior Agrario
+ 
+SUBTOTAL: 3
+ 
+VI. PODER JUDICIAL DE LA FEDERACIÓN
+ 
+03200
+Consejo de la Judicatura Federal
+03300
+Suprema Corte de Justicia de la Nación
+03100
+Tribunal Electoral del Poder Judicial de la Federación
+ 
+SUBTOTAL: 3
+ 
+VII. ORGANISMOS AUTÓNOMOS
+ 
+61100
+Banco de México
+10111
+Comisión Federal de Competencia Económica
+35100
+Comisión Nacional de los Derechos Humanos
+09121
+Instituto Federal de Telecomunicaciones
+40100
+Instituto Nacional de Estadística y Geografía
+06738
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+22100
+Instituto Nacional Electoral
+11323
+Instituto Nacional para la Evaluación de la Educación
+00017
+Fiscalía General de la República
+ 
+SUBTOTAL: 9
+ 
+VIII. ORGANISMO INTEGRADO POR REPRESENTANTES DEL GOBIERNO FEDERAL, DE LOS TRABAJADORES Y DE LOS PATRONES
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+00635
+Instituto del Fondo Nacional de la Vivienda para los Trabajadores
+ 
+SUBTOTAL: 1
+ 
+IX. INSTITUCIONES DE EDUCACIÓN SUPERIOR AUTÓNOMAS
+ 
+64100
+Universidad Autónoma Agraria Antonio Narro
+29004
+Universidad Autónoma Chapingo
+64300
+Universidad Autónoma Metropolitana
+64400
+Universidad Nacional Autónoma de México
+ 
+SUBTOTAL: 4
+ 
+X. PARTIDOS POLÍTICOS
+ 
+22330
+Partido Acción Nacional
+22370
+Partido Revolucionario Institucional
+22340
+Partido de la Revolución Democrática
+22380
+Partido Verde Ecologista de México
+22350
+Partido del Trabajo
+22310
+Movimiento Ciudadano
+22300
+Morena
+ 
+SUBTOTAL: 7
+ 
+XI. FIDEICOMISOS Y FONDOS PÚBLICOS
+ 
+A) Fideicomisos y Fondos Públicos considerados entidades paraestatales:
+ 
+10102
+Fideicomiso de Fomento Minero
+09225
+Fideicomiso de Formación y Capacitación para el Personal de la Marina Mercante Nacional
+11225
+Fideicomiso de los Sistemas Normalizado de Competencia Laboral y de
+Certificación de Competencia Laboral
+08331
+Fideicomiso de Riesgo Compartido
+15100
+Fideicomiso Fondo Nacional de Fomento Ejidal
+20285
+Fideicomiso Fondo Nacional de Habitaciones Populares
+04310
+Fideicomiso para la Cineteca Nacional
+06571
+Fondo de Capitalización e Inversión del Sector Rural
+08002
+Fondo de Empresas Expropiadas del Sector Azucarero (*)
+06600
+Fondo de Garantía y Fomento para la Agricultura, Ganadería y Avicultura
+06601
+Fondo de Garantía y Fomento para las Actividades Pesqueras (*)
+06610
+Fondo de Operación y Financiamiento Bancario a la Vivienda (*)
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+06602
+Fondo Especial de Asistencia Técnica y Garantía para Créditos Agropecuarios (*)
+06603
+Fondo Especial para Financiamientos Agropecuarios (*)
+21160
+Fondo Nacional de Fomento al Turismo
+20312
+Fondo Nacional para el Fomento de las Artesanías
+11275
+Fondo para el Desarrollo de Recursos Humanos (*)
+11262
+INFOTEC Centro de Investigación e Innovación en Tecnologías de la Información y Comunicación
+10110
+ProMéxico
+ 
+SUBTOTAL: 19
+ 
+B) Fideicomisos y fondos públicos en proceso de extinción (*)
+ 
+ 
+Banco Nacional de Obras y Servicios Públicos, S.N.C.
+06002
+Fid. 66.- Gobierno Federal para créditos especiales
+06003
+Fid. 285.-Promotora de desarrollo urbano.- Fraccionamiento Bosques del Valle Coacalco
+06001
+Fid. 351.- Unidad Morazán
+06004
+M. 133.- Fraccionamiento Agua Hedionda
+ 
+Consejo Nacional de Ciencia y Tecnología
+11515
+Fondo de investigación y desarrollo para la modernización tecnológica
+ 
+Instituto Nacional de Antropología e Historia
+11012
+Fideicomiso irrevocable de administración "Centro Cultural Santo Domingo", Oaxaca
+ 
+Instituto Nacional del Emprendedor
+10002
+Fideicomiso de Fomento Industrial LANFI
+ 
+Secretaría de Comunicaciones y Transportes
+09003
+Fid. 122.- Benjamín Hill Trabajadores F.F.C.C. Sonora-Baja California
+09004
+Fideicomiso de inversión y administración del tramo carretero Nizuc-Tulum No. 160265-7
+09007
+Fideicomiso programa habitacional de FERRONALES en la República Mexicana
+ 
+Secretaría de Cultura
+11014
+Fideicomiso para la cultura de la comisión México-Estados Unidos para el intercambio educativo y cultural F/22514 (FONCA)
+11016
+Fideicomiso para la adaptación de los museos Diego Rivera y Frida Kahlo
+11018
+Fideicomiso para la conservación de la Casa del Risco y Pinacoteca Isidro Fabela
+ 
+Secretaría de Desarrollo Agrario, Territorial y Urbano
+15001
+Fideicomiso de administración y garantía complementaria Fondo 95
+15002
+Fideicomiso de apoyo a los propietarios rurales en Chiapas (FIAPAR)
+ 
+Secretaría de Educación Pública
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+11008
+Convenio de cooperación para la operación del Programa de Educación a
+Distancia
+11009
+Convenio de cooperación para la operación del Programa de Educación a Distancia II
+11024
+Programa Nacional de Superación de Personal Académico (SUPERA)
+ 
+Secretaría de Hacienda y Crédito Público
+06012
+Fideicomiso para coadyuvar al desarrollo de las entidades federativas y municipios (FIDEM)
+06044
+Mand. 1312.- Juicio promovido por ICA vs INECEL de la República de Ecuador
+06045
+Mandato extinta Comisión Monetaria
+06046
+Mandato fiduciario de inversión y admón. apoyo financiero a favor del Fideicomiso Sindicatura de Promotora del Valle de Morelia (PROVAM)
+06048
+Mandato SHCP Mex. Tex Development Corp.
+ 
+Secretaría de Turismo
+21005
+Fondo Mixto Ciudades Coloniales
+21006
+Fondo Mixto de Acapulco
+21007
+Fondo Mixto de Cozumel, Quintana Roo
+21008
+Fondo Mixto de Mazatlán
+21009
+Fondo Mixto del Estado de Morelos
+21010
+Fondo Mixto Mundo Maya
+ 
+Sistema Nacional para el Desarrollo Integral de la Familia
+12013
+Fideicomiso DIF-Bosques de las Lomas
+ 
+SUBTOTAL: 30
+ 
+C) Fondos y fideicomisos (*)
+ 
+ 
+Aeropuertos y Servicios Auxiliares
+09086
+Mandato para el pago de compromisos del Pabellón Aeroespacial CFE-SCT-ASA
+ 
+Agencia Mexicana de Cooperación Internacional para el Desarrollo
+05101
+Fondo mixto de cooperación técnica y científica México-España
+05102
+Fondo nacional de cooperación internacional para el desarrollo
+ 
+Banco de México
+61200
+Fondo Mexicano del Petróleo para la Estabilización y el Desarrollo
+ 
+Banco del Ahorro Nacional y Servicios Financieros, S.N.C.
+06802
+Fideicomiso de administración para el otorgamiento y primas de antigüedad
+06803
+Fideicomiso irrevocable de administración No. 10055 (L@Red de la Gente)
+06801
+Fideicomiso irrevocable de inversión y administración para el pago de pensiones y jubilaciones, F/10045
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+06805
+Fondo de protección de sociedades financieras populares y de protección a sus
+ahorradores (F/10216)
+06804
+Fondo de supervisión auxiliar de sociedades cooperativas de ahorro y Préstamo y de Protección a sus Ahorradores. F/10217
+ 
+Banco Nacional de Comercio Exterior, S.N.C.
+06314
+Fideicomiso de apoyo a las exportaciones FIDAPEX
+06309
+Fideicomiso para el impulso al financiamiento de las empresas
+06306
+Fideicomiso Patronato del Centro de Diseño México
+06313
+Fideicomiso PEA y préstamos jubilados
+06308
+Fondo de pensiones BANCOMEXT
+06312
+Fondo de pensiones de contribución definida de BANCOMEXT
+06307
+Fondo editorial de la Plástica Mexicana
+06315
+Fideicomiso para el Pago de Gastos de Servicios de Asistencia y Defensa Legal BANCOMEXT
+ 
+Banco Nacional de Obras y Servicios Públicos, S.N.C.
+06322
+Fid. 2065.- Plan de pensiones de los jubilados de BANOBRAS
+06323
+Fid. 2160 Fondo de pensiones de contribución definida
+06321
+Fideicomiso 1936 Fondo Nacional de Infraestructura
+06324
+Fideicomiso Fondo de Apoyo a Municipios
+01301
+Para apoyar la construcción y equipamiento del nuevo recinto legislativo de la Cámara de Senadores
+ 
+Banco Nacional del Ejército, Fuerza Aérea y Armada, S.N.C.
+06326
+Fideicomiso irrevocable de administración e inversión del fondo de pensiones o jubilaciones o primas de antigüedad de los trabajadores del Banco Nacional del
+Ejército, Fuerza Aérea y Armada, S.N.C.
+ 
+Caminos y Puentes Federales de Ingresos y Servicios Conexos
+09123
+F/11025590 (Antes 4483-0) "Durango-Yerbanis"
+09124
+F/21935-2 "Kantunil-Cancún"
+09131
+F/689 San Martín Texmelucan-Tlaxcala-El Molinito
+09132
+Fideicomiso 11029386 (antes SM940243) Gómez Palacio-Cuencamé-Yerbanis
+09126
+Fideicomiso 148687 "Fondo para préstamos a corto plazo para apoyar a los trabajadores de CAPUFE en casos de contingencia"
+09125
+Fideicomiso 2165-8 "Fondo para liquidación de trabajadores de la red FONADIN" (Antes FARAC)
+09127
+F/1516 ATM (Antes 639-00-5) Tijuana-Tecate
+09129
+Fideicomiso No. F/745293 (antes 2103) Cuauhtémoc-Osiris
+09128
+Fideicomiso irrevocable de administración y fuente de pago número CIB/2064
+09122
+F/31293-4 Libramiento Oriente de San Luis Potosí
+09130
+Fideicomiso para la construcción, explotación y conservación del tramo carretero Atlacomulco-Maravatio
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+ 
+Centro de Ingeniería y Desarrollo Industrial
+11122
+Fideicomiso Centro de Ingeniería y Desarrollo Industrial No. 135826-8
+ 
+Centro de Investigación Científica de Yucatán, A.C.
+11118
+Fondo de investigación científica y desarrollo tecnológico del Centro de Investigación Científica de Yucatán, A.C.
+ 
+Centro de Investigación Científica y de Educación Superior de Ensenada, Baja California
+11201
+Fideicomiso de proyectos de investigación del Centro de Investigación Científica y de Educación Superior de Ensenada, B.C.
+ 
+Centro de Investigación en Alimentación y Desarrollo, A.C.
+11184
+Fideicomiso Centro de Investigación en Alimentación y Desarrollo, A.C. (CIAD)
+11183
+Fideicomiso para el Fondo de los Trabajadores del CIAD
+ 
+Centro de Investigación en Ciencias de Información Geoespacial
+11081
+Fondo de investigación científica y desarrollo tecnológico del Centro de Investigación en Geografía y Geomática, Ing. Jorge L. Tamayo, A.C.
+ 
+Centro de Investigación en Matemáticas, A.C.
+11301
+Fideicomiso Centro de Investigación en Matemáticas No. 040024-1
+11302
+Fideicomiso de obligaciones laborales del CIMAT
+ 
+Centro de Investigación en Materiales Avanzados, S.C.
+11089
+Fideicomiso Centro de Investigación en Materiales Avanzados, S.C. (CIMAV)
+ 
+Centro de Investigación en Química Aplicada
+11203
+Fideicomiso inversión y administración
+11202
+Fideicomiso para pago de primas de antigüedad y jubilación CIQA
+ 
+Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco, A.C.
+11303
+Fideicomiso de investigación científica y de desarrollo tecnológico
+ 
+Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional
+11086
+Fideicomiso de apoyo a las actividades del CINVESTAV
+ 
+Centro de Investigación y Desarrollo Tecnológico en Electroquímica, S.C.
+11206
+Fideicomiso de investigación científica y desarrollo tecnológico del Centro Publico
+de Investigación y Desarrollo Tecnológico en Electroquímica, S.C., en materia de electroquímica, agua, procesos, materiales ambiente y ciencias afines
+ 
+Centro de Investigación y Docencia Económicas, A.C.
+11091
+Fideicomiso 1725-1-Para integrar diversos fondos (Patrimonial)
+11092
+Fideicomiso 1738-3-Ciencia y Tecnología
+ 
+Centro de Investigaciones Biológicas del Noroeste, S.C.
+11207
+Fideicomiso Centro de Investigaciones Biológicas del Noroeste, S.C.
+ 
+Centro de Investigaciones en Óptica, A.C.
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+11180
+Fideicomiso Centro de Investigaciones en Óptica, A.C. No. 040026-8
+11181
+Fideicomiso para el pago de las obligaciones laborales de los trabajadores del Centro de Investigaciones en Óptica, A.C.
+ 
+Centro de Investigaciones y Estudios Superiores en Antropología Social
+11204
+Fondo de investigación científica y desarrollo tecnológico
+ 
+CIATEC, A.C. "Centro de Innovación Aplicada en Tecnologías Competitivas"
+11306
+Fideicomiso CIATEC
+11305
+Fideicomiso para pasivos laborales y primas de antigüedad para el personal del CIATEC
+ 
+CIATEQ, A.C. Centro de Tecnología Avanzada
+11404
+Fideicomiso N° 030051-4
+11405
+Fondo de retiro voluntario y liquidaciones del personal de CIATEQ, A.C.
+ 
+Colegio de Postgraduados
+08141
+Fideicomiso de apoyo a la investigación científica y desarrollo tecnológico del Colegio de Postgraduados
+ 
+Comisión Ejecutiva de Atención a Víctimas
+00638
+Fondo de ayuda, asistencia y reparación integral
+ 
+Comisión Federal de Competencia Económica
+10112
+Fondo para solventar las contingencias derivadas de juicios laborales de la Comisión Federal de Competencia Económica
+ 
+Comisión Federal de Electricidad
+18167
+Fideicomiso de administración de gastos previos
+18168
+Fideicomiso de administración y traslativo de dominio (Obras de Infraestructura para el Sistema Eléctrico Federal)
+18169
+Fideicomiso para el ahorro de energía eléctrica
+18170
+Fideicomiso para la constitución de un fondo revolvente de financiamiento para el programa de aislamiento térmico de la vivienda en el Valle de Mexicali, B.C. (FIPATERM Mexicali)
+ 
+Comisión Nacional Bancaria y de Valores
+06201
+Fideicomiso fondo de apoyo a los trabajadores de confianza de la Comisión Nacional Bancaria y de Valores
+06202
+Fideicomiso para el pago de gratificación por antigüedad a los trabajadores de base de la CNBV que se retiren después de 15 años de servicios ininterrumpidos.
+06203
+Fondo para la asistencia y defensa legal de los miembros de la Junta de Gobierno de la Comisión Nacional Bancaria y de Valores que no sean servidores públicos de ésta, así como de los Interventores y personal auxiliar al cual los propios
+Interventores les otorguen poderes porque sea necesario para el desempeño de sus funciones.
+ 
+Comisión Nacional de Áreas Naturales Protegidas
+16152
+Fideicomiso de administración, inversión y pago número 013 ANP Valle de Bravo
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+ 
+Comisión Nacional de Cultura Física y Deporte
+11231
+Fideicomiso de administración e inversión para el desarrollo y fomento del deporte en el Estado de Puebla
+11232
+Fideicomiso de inversión y administración (FINDEPO)
+11233
+Fideicomiso de inversión y administración denominado "World Cup in Shotgun Acapulco 2010"
+11234
+Fideicomiso para becas y apoyos deportivos "Chelito Zamora"
+11235
+Fideicomiso para el desarrollo de infraestructura y equipamiento deportivo para los Juegos Panamericanos, Guadalajara 2011
+11236
+Fideicomiso para la infraestructura deportiva
+11237
+Fideicomiso para la infraestructura deportiva (FINDEPO) [201011L6I01528]
+11238
+Fideicomiso para la infraestructura deportiva (FINDEPO) [201011L6I01539]
+11239
+Fideicomiso público de administración e inversión para el desarrollo de la infraestructura y equipamiento deportivo en el Estado de Veracruz de Ignacio de
+la Llave para los Juegos Deportivos Centroamericanos y del Caribe Veracruz 2014
+11240
+Fondo para el deporte de alto rendimiento
+ 
+Comisión Nacional de Hidrocarburos
+18002
+Fideicomiso de la Comisión Nacional de Hidrocarburos
+ 
+Comisión Nacional de Protección Social en Salud
+12103
+Fideicomiso del Sistema de Protección Social en Salud
+ 
+Comisión Nacional de Seguros y Fianzas
+06112
+Fideicomiso para la asistencia legal de los miembros de la Junta de Gobierno y servidores públicos de la Comisión Nacional de Seguros y Fianzas, así como de los interventores administrativos o gerentes y funcionarios auxiliares de las
+intervenciones
+ 
+Comisión Nacional del Agua
+16102
+Fideicomiso irrevocable de administración y fuente de pago, No. 1928.- para apoyar el proyecto de saneamiento del Valle de México
+16103
+Mandato del Túnel Emisor Oriente (TEO)
+ 
+Comisión Nacional del Sistema de Ahorro para el Retiro
+06122
+Fideicomiso para la asistencia legal de los miembros de la Junta de Gobierno, del Comité Consultivo y de Vigilancia y servidores públicos de la Comisión
+Nacional del Sistema de Ahorro para el Retiro, así como de los interventores administrativos o gerentes y funcionarios auxiliares de las intervenciones
+ 
+Comisión Reguladora de Energía
+18113
+Fideicomiso de la Comisión Reguladora de Energía
+ 
+Consejo de la Judicatura Federal
+03207
+Fideicomiso para el desarrollo de infraestructura que implementa la reforma constitucional en materia penal
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+03208
+Fideicomiso para el mantenimiento de casas habitación de Magistrados y Jueces
+03209
+Fideicomiso pensiones complementarias de Magistrados y Jueces jubilados
+03206
+Fondo de apoyo a la administración de justicia
+03210
+Fondo para la administración de los recursos provenientes de sentencias que deriven de las Acciones Colectivas Difusas, a que se refiere el artículo 624 del
+Código Federal de Procedimientos Civiles
+03102
+Fideicomiso de apoyos médicos complementarios y de apoyo económico extraordinario para los servidores públicos del Poder Judicial de la Federación,
+con excepción de los de la Suprema Corte de Justicia de la Nación
+ 
+Consejo Nacional de Ciencia y Tecnología
+11512
+Fondo de cooperación internacional en ciencia y tecnología
+11513
+Fondo de desarrollo científico y tecnológico para el fomento de la producción y financiamiento de vivienda y el crecimiento del sector habitacional
+11514
+Fondo de innovación tecnológica Secretaría de Economía – CONACYT
+11516
+Fondo institucional de fomento regional para el desarrollo científico, tecnológico, y de innovación
+11517
+Fondo institucional del CONACYT (FOINS)
+11518
+Fondo mixto CONACYT - Gobierno del Distrito Federal
+11519
+Fondo mixto CONACYT - Gobierno del Estado de Chihuahua
+11520
+Fondo mixto CONACYT - Gobierno del Estado de México
+11521
+Fondo mixto CONACYT - Gobierno del Estado de Oaxaca
+11522
+Fondo mixto CONACYT - Gobierno del Estado de Veracruz de Ignacio de la Llave
+11523
+Fondo mixto CONACYT - Gobierno Municipal de la Paz, Baja California Sur
+11524
+Fondo mixto CONACYT - Gobierno Municipal de Puebla, Puebla
+11525
+Fondo mixto CONACYT-Gobierno del Estado Aguascalientes
+11526
+Fondo mixto CONACYT-Gobierno del Estado de Campeche
+11527
+Fondo mixto CONACYT-Gobierno del Estado de Chiapas
+11528
+Fondo mixto CONACYT-Gobierno del Estado de Coahuila de Zaragoza
+11529
+Fondo mixto CONACYT-Gobierno del Estado de Colima
+11530
+Fondo mixto CONACYT-Gobierno del Estado de Durango
+11531
+Fondo mixto CONACYT-Gobierno del Estado de Guerrero
+11532
+Fondo mixto CONACYT-Gobierno del Estado de Hidalgo
+11533
+Fondo mixto CONACYT-Gobierno del Estado de Michoacán
+11534
+Fondo mixto CONACYT-Gobierno del Estado de Quintana Roo
+11535
+Fondo mixto CONACYT-Gobierno del Estado de Sinaloa
+11536
+Fondo mixto CONACYT-Gobierno del Estado de Sonora
+11537
+Fondo mixto CONACYT-Gobierno del Estado de Tabasco
+11538
+Fondo mixto CONACYT-Gobierno del Estado de Tamaulipas
+11539
+Fondo mixto CONACYT-Gobierno del Estado de Yucatán
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+11540
+Fondo mixto CONACYT-Gobierno Municipal de Ciudad Juárez Chihuahua
+11541
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado Baja California
+11542
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Baja California Sur
+11543
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT-
+Gobierno del Estado de Guanajuato
+11544
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT-
+Gobierno del Estado de Jalisco
+11545
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Morelos
+11546
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Nayarit
+11547
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Nuevo León
+11548
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT-
+Gobierno del Estado de Puebla
+11549
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT-
+Gobierno del Estado de Querétaro
+11550
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de San Luis Potosí
+11551
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Tlaxcala
+11552
+Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Zacatecas
+11553
+Fondo para el fomento y apoyo a la investigación científica y tecnológica en bioseguridad y biotecnología
+11554
+Fondo sectorial CONACYT – INEGI
+11555
+Fondo sectorial CONACYT - Secretaría de Energía - Hidrocarburos
+11556
+Fondo sectorial CONACYT - Secretaría de Energía - Sustentabilidad energética
+11557
+Fondo sectorial CONACYT - SEGOB - CNS para la seguridad pública
+11558
+Fondo sectorial de innovación Secretaría de Economía - CONACYT
+11559
+Fondo sectorial de investigación ambiental
+11560
+Fondo sectorial de investigación en materias agrícola, pecuaria, acuacultura, agrobiotecnología y recursos fitogenéticos
+11561
+Fondo sectorial de investigación en salud y seguridad social
+11562
+Fondo sectorial de investigación INIFED - CONACYT
+11563
+Fondo sectorial de investigación para el desarrollo aeroportuario y la navegación aérea
+11564
+Fondo sectorial de investigación para el desarrollo social
+11565
+Fondo sectorial de investigación para la educación
+11575
+Fondo Sectorial de Investigación para la Evaluación de la Educación CONACYT-
+INEE
+11566
+Fondo sectorial de investigación Secretaría de Relaciones Exteriores
+11576
+Fondo Sectorial de Investigación sobre Pobreza, Monitoreo y Evaluación CONACYT-CONEVAL
+11567
+Fondo sectorial de investigación y desarrollo en ciencias navales
+11568
+Fondo sectorial de investigación y desarrollo INMUJERES-CONACYT
+11569
+Fondo sectorial de investigación y desarrollo sobre el agua
+11570
+Fondo sectorial de investigación, desarrollo tecnológico e innovación del Ejército y Fuerza Aérea Mexicanos, CONACYT – SEDENA
+11571
+Fondo sectorial de investigación, desarrollo tecnológico e innovación en
+actividades espaciales, CONACYT – AEM
+11572
+Fondo sectorial para investigación y desarrollo tecnológico en energía
+11573
+Fondo sectorial para la investigación, el desarrollo y la innovación tecnológica en turismo
+11574
+Fondo sectorial para la investigación, el desarrollo y la innovación tecnológica forestal
+ 
+Corporación Mexicana de Investigación en Materiales, S.A. de C.V.
+11164
+Fondo de investigación científica y desarrollo tecnológico de COMIMSA
+ 
+Educal, S.A. de C.V.
+11286
+Fondo para los trabajadores por prima de antigüedad de EDUCAL
+ 
+El Colegio de la Frontera Norte, A.C.
+11076
+Fideicomiso de investigación el Colegio de la Frontera Norte
+ 
+El Colegio de la Frontera Sur
+11209
+Fondo de investigación científica y desarrollo tecnológico de El Colegio de la Frontera Sur Fid. 784
+ 
+El Colegio de Michoacán, A.C.
+11188
+Fideicomiso de ciencia y tecnología del Colegio de Michoacán, A. C.
+ 
+El Colegio de San Luis, A.C.
+53223
+Fideicomiso fondo de ahorro del personal de mandos medios y superiores del Colegio de San Luis A.C. N° 030057-3
+53224
+Fondo de investigación científica y desarrollo tecnológico de El Colegio de San
+Luis, A.C.
+ 
+Exportadora de Sal, S.A. de C.V.
+10201
+Fideicomiso fondo de ahorro obreros de ESSA
+10202
+Fideicomiso plan de pensiones y jubilaciones ESSA
+ 
+Ferrocarriles Nacionales de México
+06816
+Fideicomiso 5012-6 FERRONALESJUB (para el pago de pensiones jubilatorias a los trabajadores de Ferrocarriles Nacionales de México)
+ 
+Fideicomiso de Fomento Minero
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+10103
+Plan de pensiones de contribución definida para el personal de mando del
+FIFOMI
+10104
+Plan de pensiones personal operativo
+10105
+Prima de antigüedad
+ 
+Fideicomiso Fondo Nacional de Fomento Ejidal
+15101
+Fideicomiso traslativo de dominio Puerto los Cabos
+ 
+Financiera Nacional de Desarrollo Agropecuario, Rural, Forestal y Pesquero
+06566
+Fondo de la Financiera Rural
+ 
+FONATUR Mantenimiento Turístico, S.A. de C.V.
+21165
+Fideicomiso para trabajadores de Nacional Hotelera Baja California, S. A.
+ 
+Fondo de Capitalización e Inversión del Sector Rural
+06572
+Fondo de inversión de capital en Agronegocios (FICA Sureste 2)
+06573
+Fondo de inversión de capital en Agronegocios (FICA)
+06574
+Fondo de inversión de capital en Agronegocios 2 (FICA 2)
+06575
+Fondo de inversión de capital en Agronegocios 3 (FICA 3)
+06576
+Fondo de inversión de capital en Agronegocios Activa (FICA Activa)
+06577
+Fondo de inversión de capital en Agronegocios Agropyme
+06578
+Fondo de Inversión de Capital en Agronegocios Infraestructura
+ 
+Fondo de Cultura Económica
+11250
+Fideicomiso de administración e Inversión para el manejo del fondo de ahorro de los trabajadores del Fondo de Cultura Económica
+11252
+Fideicomiso para el otorgamiento y pago de primas de antigüedad de su personal
+y los beneficiarios que estos designen en su caso
+11253
+Fideicomiso SEP/DGETI/FCE
+ 
+Fondo de Garantía y Fomento para la Agricultura, Ganadería y Avicultura
+06604
+Fideicomiso de pensiones, del Fondo de Garantía y Fomento para la Agricultura, Ganadería y Avicultura
+ 
+Fondo Nacional de Fomento al Turismo
+21162
+Fideicomiso Barrancas del Cobre
+21163
+Fideicomiso de reserva para el pago de pensiones o jubilaciones y primas de antigüedad
+21164
+Fideicomiso para los trabajadores del Hotel Exconvento Santa Catarina
+ 
+Grupo Aeroportuario de la Ciudad de México, S.A. de C.V.
+09460
+Fideicomiso para el desarrollo del nuevo Aeropuerto Internacional de la Ciudad del México
+ 
+INFOTEC Centro de Investigación e Innovación en Tecnologías de la Información y Comunicación
+11263
+Fondo de investigación científica y desarrollo tecnológico del Fondo de Información y Documentación para la Industria INFOTEC
+ 
+Instituto de Ecología, A.C.
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+11379
+Fondo de investigación científica y desarrollo tecnológico
+ 
+Instituto de Investigaciones "Dr. José María Luis Mora"
+11281
+Fondos de investigación científica y desarrollo tecnológico 1759-6
+ 
+Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas
+07151
+Contrato de mandato para el pago de haberes de retiro, pensiones y compensaciones
+07152
+Fideicomiso de administración y operación del ISSFAM
+ 
+Instituto del Fondo Nacional para el Consumo de los Trabajadores
+14221
+Fideicomiso de administración e inversión para pensiones de los trabajadores
+14222
+Fideicomiso de inversión y administración de primas de antigüedad de los trabajadores
+ 
+Instituto Federal de Telecomunicaciones
+09221
+Fondo de infraestructura y equipamiento del Instituto Federal de Telecomunicaciones
+ 
+Instituto Mexicano de Cinematografía
+11313
+Fideicomiso fondo de inversión y estímulos al cine (FIDECINE)
+11314
+Fideicomiso fondo para la producción cinematográfica de calidad (FOPROCINE)
+ 
+Instituto Mexicano de Tecnología del Agua
+16112
+Fondo de investigación científica y desarrollo tecnológico del Instituto Mexicano de Tecnología del Agua
+ 
+Instituto Mexicano del Petróleo
+18674
+Fideicomiso para apoyo a la investigación científica y desarrollo tecnológico
+18675
+Fideicomiso para pensionados del IMP
+18676
+Fideicomiso plan de pensiones para el personal activo del IMP
+18677
+Fondo de ahorro
+ 
+Instituto Mexicano del Seguro Social
+00642
+Fideicomiso de administración de teatros y salas de espectáculos IMSS
+00643
+Fideicomiso de beneficios sociales (FIBESO)
+00644
+Fideicomiso de investigación en salud
+00645
+Fideicomiso irrevocable de administración e inversión Niña del Milenio
+00646
+Fideicomiso para el desarrollo del deporte No. 4611-1
+00647
+Fondo de fomento a la educación (FOFOE)
+00648
+Fondo para ayudas extraordinarias con motivo del incendio de la Guardería ABC
+ 
+Instituto Nacional de Antropología e Historia
+11152
+Fideicomiso archivos Plutarco Elías Calles y Fernando Torreblanca
+11153
+Fideicomiso irrevocable de administración 'Museo Regional de Guadalupe', Zacatecas
+11154
+Fideicomiso para el fomento y la conservación del Patrimonio Cultural, Antropológico, Arqueológico e Histórico de México
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+11155
+Fideicomiso privado irrevocable de administración 'Santo Domingo de Guzmán',
+Chiapas
+ 
+Instituto Nacional de Astrofísica, Óptica y Electrónica
+11291
+Fideicomiso de investigación científica y desarrollo tecnológico No. 1750-2
+ 
+Instituto Nacional de Ciencias Penales
+17111
+Fondo de ahorro capitalizable para los trabajadores operativos del INACIPE
+ 
+Instituto Nacional de Electricidad y Energías Limpias
+18471
+Fideicomiso para el apoyo a la investigación científica y desarrollo tecnológico del Instituto de Investigaciones Eléctricas
+18472
+Fondo de primas de antigüedad, beneficios al retiro y jubilaciones del Instituto de
+Investigaciones Eléctricas
+ 
+Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias
+08171
+Fideicomiso de administración e inversión para el establecimiento y operación de
+los fondos de apoyo a la investigación científica y desarrollo tecnológico del INIFAP
+ 
+Instituto Nacional de Pesca
+08200
+Fideicomiso de investigación para el desarrollo del programa de
+aprovechamiento del atún y protección de delfines y otros en torno a especies acuáticas protegidas
+ 
+Instituto Nacional de Rehabilitación Luis Guillermo Ibarra Ibarra
+12330
+Fideprotesis
+ 
+Instituto Nacional del Emprendedor
+10212
+México Emprende
+ 
+Instituto Nacional del Suelo Sustentable
+15076
+Fondo de ahorro para los trabajadores de CORETT
+ 
+Instituto Nacional Electoral
+22200
+Contrato de fideicomiso con número 108600 con el Banco Nacional del Ejército, Fuerza Aérea y Armada, S.N.C. (BANJERCITO), para la administración e inversión de los recursos que integran el patrimonio del Fondo para el cumplimiento del programa de infraestructura inmobiliaria y para la atención ciudadana y mejoramiento de módulos del Instituto Federal Electoral, aplicados
+sus fines
+22201
+Contrato de fideicomiso con número 108601 con el Banco Nacional del Ejército, Fuerza Aérea y Armada, S.N.C. (BANJERCITO), para la administración del Fondo por concepto de las aportaciones para el cumplimiento del programa del
+pasivo laboral
+ 
+Instituto Politécnico Nacional
+11172
+Fideicomiso fondo de investigación científica y desarrollo tecnológico del IPN
+ 
+Instituto Potosino de Investigación Científica y Tecnológica, A.C.
+53111
+Fondo de investigación científica y desarrollo tecnológico del Instituto Potosino de Investigación Científica y Tecnológica IPICYT, A.C.
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+ 
+Nacional Financiera, S.N.C.
+06781
+Complemento del Préstamo Especial para el Ahorro (PEA) y préstamos de corto y mediano plazo para jubilados bajo el plan de beneficio definido
+06783
+Fideicomiso de capital emprendedor
+06784
+Fideicomiso de contragarantía para el financiamiento empresarial
+06785
+Fideicomiso fondo de asistencia técnica en programas de financiamiento
+06786
+Fideicomiso programa de venta de títulos en directo al público
+06788
+Fondo de pensiones de contribución definida de Nacional Financiera
+06789
+Fondo de pensiones y primas de Antigüedad de NAFIN
+06790
+Fondo para la participación de riesgos 11480
+06791
+Fondo para la participación de riesgos en fianzas
+06792
+Mandatos fusión y liquidación (FONEP, FIDEIN, PAI)
+06793
+06795
+Mario Renato Menéndez Rodríguez 7997 Fideicomiso de Defensa y Asistencia Legal
+ 
+Oficina de la Presidencia de la República
+02102
+Fideicomiso a favor de los hijos del personal adscrito al Estado Mayor Presidencial
+ 
+Pemex Logística
+18681
+Contrato especifico abierto para la construcción y suministro de remolcadores,
+chalanes y embarcaciones multipropósito para la flota menor de Pemex Refinación
+ 
+Petróleos Mexicanos (Corporativo)
+18672
+Fid. 294.- Colonia Petrolera José Escandón
+18671
+Fondo laboral PEMEX
+ 
+Fiscalía General de la República
+17007
+Fondo de auxilio económico a familiares de las víctimas de homicidio de mujeres en el Municipio de Juárez, Chihuahua
+17008
+Mandato de administración para recompensas de la Procuraduría General de la
+Republica
+17009
+Mandato de administración y pago para programas de procuración de justicia de la Procuraduría General de la Republica
+ 
+ProMéxico
+10310
+Fideicomiso para la competitividad e innovación México-Unión Europea y/o Fideicomiso PROCEI
+10311
+Mandato para la administración de los recursos del programa de apoyo a la industria cinematográfica y audiovisual, Fondo
+ 
+Secretaría de Comunicaciones y Transportes
+09005
+Fideicomiso del fondo de cobertura social de telecomunicaciones
+09006
+Fideicomiso E-México
+ 
+Secretaría de Cultura
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+11144
+Fideicomiso Museo de Arte Popular Mexicano
+11145
+Fideicomiso para apoyar la construcción del Centro Nacional de las Artes
+11146
+Mandato Antiguo Colegio de San Idelfonso
+11147
+Mandato del fondo nacional para la cultura y las artes
+ 
+Secretaría de Desarrollo Agrario, Territorial y Urbano
+15005
+Fideicomiso para el desarrollo de la región Sur-Sureste (Fidesur)
+15006
+Fideicomiso para el desarrollo regional Noreste (Fidenor-Este)
+15007
+Fondo de desarrollo regional sustentable de Estados y Municipios mineros
+15008
+Fondo para el ordenamiento de la propiedad rural
+ 
+Secretaría de Economía
+10001
+Fideicomiso para promover el desarrollo de proveedores y contratistas nacionales de la industria energética
+10003
+Fideicomiso del Programa Nacional Financiero al Microempresario
+ 
+Secretaría de Educación Pública
+11007
+Bachillerato general en sus modalidades no escolarizada y mixta
+11010
+Convenio específico para la operación y desarrollo del Programa SEPA-Ingles
+11011
+Fideicomiso del Programa de escuelas de excelencia para abatir el rezago educativo
+11015
+Fideicomiso para el Programa especial de financiamiento a la vivienda para el
+magisterio
+11017
+Fideicomiso para la Comisión México-Estados Unidos F 22927-8
+11019
+Fideicomiso 14780-8 Fondo Nacional para Escuelas de Calidad
+11020
+Fondo de apoyo al Programa Intersectorial de Educación Saludable
+11021
+Fondo de la amistad México-Japón
+11022
+Fondo de retiro de los trabajadores de la SEP (FORTE)
+11023
+Mandato para el Fondo de apoyo al proyecto en el Distrito Federal
+ 
+Secretaría de Energía
+18010
+Fondo de servicio universal eléctrico
+18011
+Fondo para la transición energética y el aprovechamiento sustentable de la energía
+ 
+Secretaría de Gobernación
+04009
+Fideicomiso para el cumplimiento de obligaciones en materia de los derechos humanos
+04010
+Fideicomiso para la plataforma de infraestructura, mantenimiento y equipamiento de seguridad pública y de aeronaves
+04011
+Fideicomiso preventivo
+04012
+Fondo de apoyo social para ex trabajadores migratorios mexicanos
+04013
+Fondo de Desastres Naturales (FONDEN)
+04014
+Fondo para la prevención de desastres naturales
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+04015
+Fondo para la protección de personas defensoras de derechos humanos y
+periodistas
+ 
+Secretaría de Hacienda y Crédito Público
+06005
+9/11 de la recaudación por concepto de las cuotas establecidas en el artículo 2°A. Fracción II de la Ley del Impuesto Especial sobre Producción y Servicios
+06006
+Centro de Estudios para la Preparación y Evaluación Socioeconómica de
+Proyectos (CEPEP)
+02101
+Conservaduría de Palacio Nacional
+06007
+El 0.136 por ciento de la RFP
+06008
+Fid. 1327.- Gobierno Federal, Programa de vivienda para magistrados y jueces del Poder Judicial Federal
+06010
+Fideicomiso 2003 "Fondo de Desastres Naturales"
+06011
+Fideicomiso fondo de estabilización de los ingresos presupuestarios
+06013
+Fideicomiso para la implementación del Sistema de Justicia Penal en las entidades federativas
+06014
+Fideicomiso para la Infraestructura en los Estados (FIES)
+06016
+Fideicomiso que administrara el fondo para el fortalecimiento de sociedades y cooperativas de ahorro y préstamo y de apoyo a sus ahorradores
+06017
+Fondo Aportaciones para Servicio de Salud (FASSA)
+06018
+Fondo de Ahorro Capitalizable de los Trabajadores Al Servicio del Estado (FONAC)
+06019
+Fondo de Aportaciones Múltiples (FAM)
+06020
+Fondo de Aportaciones para Educación Tecnológica y de Adultos (FAETA)
+06021
+Fondo de Aportaciones para el Fortalecimiento de las Entidades Federativas (FAFEF)
+06022
+Fondo de Aportaciones para el Fortalecimiento de los Municipios y de las
+Demarcaciones Territoriales del Distrito Federal (FORTAMUN)
+06023
+Fondo de Aportaciones para la Infraestructura Social (FAIS)
+06025
+Fondo de Aportaciones para Nómina Educativa y Gasto Operativo (FONE)
+06026
+Fondo de apoyo en infraestructura y productividad
+06027
+Fondo de apoyo para infraestructura y seguridad
+06029
+Fondo de compensación
+06030
+Fondo de compensación al régimen de pequeños contribuyentes y del régimen de los intermedios
+06031
+Fondo de compensación de automóviles nuevos
+06032
+Fondo de desincorporación de entidades
+06033
+Fondo de Estabilización de los Ingresos de las Entidades Federativas (FEIEF)
+06034
+Fondo de extracción de hidrocarburos
+06035
+Fondo de fiscalización y recaudación
+06036
+Fondo de fomento municipal
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+06037
+Fondo de infraestructura para países de Mesoamérica y el Caribe
+06039
+Fondo de reconstrucción de Entidades Federativas
+06040
+Fondo general de participaciones
+06041
+Impuesto Especial sobre Producción y Servicios
+06042
+Impuesto sobre la renta participable
+06043
+La transferencia del Fondo Mexicano del Petróleo para la Estabilización y el Desarrollo
+06047
+Mandato para la administración de los recursos del Programa de Cooperación Energética para Países de Centroamérica y el Caribe
+06049
+Museo Dolores Olmedo Patiño
+06921
+Fideicomiso para el Fondo Regional (FIFONREGIÓN)
+06922
+Fideicomiso para la Evaluación de los Fondos de Aportaciones Federales (FIDEFAF)
+06327
+Fideicomiso de Transición 2018
+ 
+Secretaría de la Defensa Nacional
+07001
+Fideicomiso de apoyo a deudos de militares fallecidos o a militares que hayan
+adquirido una inutilidad en primera categoría en actos del servicio considerado de alto riesgo
+07002
+Fideicomiso público de administración y pago de equipo militar
+ 
+Secretaría de Medio Ambiente y Recursos Naturales
+16001
+Fideicomiso para apoyar los programas, proyectos y acciones ambientales de la megalópolis
+16002
+Fondo Mexicano para la conservación de la naturaleza
+16003
+Fondo para el cambio climático
+16004
+Fondo para la biodiversidad
+16005
+Mandato para remediación ambiental
+ 
+Secretaría de Relaciones Exteriores
+05005
+Fideicomiso para cubrir gastos por demandas en el extranjero
+05006
+Mandato para el establecimiento del Fondo de Contingencia de las RME´S
+05103
+Mandato para la Estrategia de Fortalecimiento para la Atención a Mexicanos en Estados Unidos
+ 
+Secretaría de Turismo
+21003
+Fideicomiso Ángeles Verdes
+ 
+Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública
+06024
+Fondo de Aportaciones para la Seguridad Pública de los Estados y del Distrito Federal (FASP)
+ 
+Servicio de Administración Tributaria
+06103
+Fideicomiso para administrar la contraprestación del artículo 16 de la Ley Aduanera
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+06105
+Fideicomiso programa de mejoramiento de los medios de informática y control de
+las autoridades aduaneras
+ 
+Servicio de Administración y Enajenación de Bienes
+64405
+Almacenadora Sur, S.A.
+06821
+Fideicomiso de pensiones del sistema BANRURAL
+06822
+Fideicomiso para administrar el fondo de pensiones de FOPPAZ
+06823
+Fideicomiso para administrar el fondo de pensiones y gastos médicos de BANPESCA
+06824
+Fideicomiso para administrar el fondo de pensiones y gastos médicos de BNCI
+06826
+Fondo de pensiones de instituciones liquidadas
+06827
+Fondo de pensiones fideicomiso liquidador de Instituciones y Organizaciones Auxiliares de Crédito
+06828
+Fondo de pensiones Financiera Nacional Azucarera
+06829
+Fondo de pensiones Servicios de Almacenamiento del Norte S.A.
+06825
+Fondo de Restitución (FORE)
+ 
+Suprema Corte de Justicia de la Nación
+03301
+Administración de los recursos producto de la venta de publicaciones de la
+Suprema Corte para el financiamiento de nuevas publicaciones y cualquier proyecto de interés para el fideicomitente
+03302
+Fondo Nacional para el Fortalecimiento y Modernización de la Impartición de
+Justicia (FONDO JURICA)
+03303
+Pensiones complementarias para mandos medios y personal operativo de la
+Suprema Corte de Justicia de la Nación
+03304
+Pensiones complementarias para servidores públicos de mando superior de la Suprema Corte de Justicia de la Nación
+03305
+Plan de prestaciones médicas
+03306
+Remanentes presupuestarios del año 1998 y anteriores
+ 
+Universidad Nacional Autónoma de México
+64401
+Fideicomiso SEP-UNAM
+ 
+Universidad Pedagógica Nacional
+29011
+Fondo de fomento para la investigación científica y el desarrollo tecnológico de la Universidad Pedagógica Nacional
+ 
+SUBTOTAL: 349
+ 
+XII. SINDICATOS
+ 
+60100
+Asociación Autónoma del Personal Académico de la Universidad Nacional
+Autónoma de México
+60101
+Confederación Patronal de la República Mexicana
+60102
+Sindicato Único de Trabajadores del Instituto Mexicano de la Propiedad Industrial
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+60104
+Sindicato de Investigadores y Profesores de El Colegio de la Frontera Norte
+60105
+Sindicato de Trabajadores Académicos de la Universidad Autónoma de Chapingo
+60109
+Sindicato de Trabajadores de la Cámara de Diputados del H. Congreso de la Unión
+60110
+Sindicato de Trabajadores de la Cámara de Diputados del Poder Legislativo
+Federal
+60111
+Sindicato de Trabajadores de la Cámara de Senadores
+60112
+Sindicato Nacional de Trabajadores de la Comisión Nacional de Seguros y Fianzas
+60115
+Sindicato de Trabajadores de la Universidad Autónoma de Chapingo
+60116
+Sindicato de Trabajadores de la Universidad Nacional Autónoma de México
+60117
+Sindicato de Trabajadores de Talleres Gráficos de México
+60118
+Sindicato de Trabajadores del Centro de Investigación y Docencia Económicas, A.C.
+60119
+Sindicato Único de Trabajadores del Centro de Investigaciones y Estudios Superiores en Antropología Social.
+60121
+Sindicato de Trabajadores del Consejo Nacional de Ciencia y Tecnología
+60122
+Sindicato de Trabajadores del Instituto Mexicano de la Juventud
+60123
+Sindicato de Trabajadores del Instituto Mexicano de Tecnología del Agua
+60124
+Sindicato de Trabajadores del Instituto Nacional de Ciencias Penales
+60125
+Sindicato de Trabajadores del Instituto Nacional para el Desarrollo de Capacidades del Sector Rural
+60127
+Sindicato de Trabajadores del Patronato de Obras e Instalaciones del Instituto
+Politécnico Nacional
+60128
+Sindicato de Trabajadores del Poder Judicial de la Federación
+60129
+Sindicato de Trabajadores del Servicio de Administración Tributaria y de Hacienda
+60130
+Sindicato de Trabajadores del Tribunal Federal de Conciliación y Arbitraje
+60131
+Sindicato de Trabajadores Democráticos de la Secretaría de Comunicaciones y Transportes
+60132
+Sindicato de Trabajadores Ferrocarrileros de la República Mexicana
+60133
+Sindicato de Trabajadores Petroleros de la República Mexicana
+60134
+Sindicato de Unidad Nacional de los Trabajadores de Acuacultura y Pesca de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación
+60135
+Sindicato de Vanguardia Nacional de los Trabajadores de la Secretaría de Comunicaciones y Transportes
+60137
+Sindicato Democrático de Trabajadores de Pesca y Acuacultura de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación
+60138
+Sindicato Gremial de Profesores - Investigadores de El Colegio de México
+60140
+Sindicato Independiente de Académicos del Colegio de Postgraduados
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+60142
+Sindicato Independiente de Investigadores del Instituto Nacional de
+Investigaciones Forestales, Agrícolas y Pecuarias
+60144
+Sindicato Independiente de Trabajadores de la Cámara de Senadores
+60147
+Sindicato Independiente de Trabajadores de la Secretaría de Comunicaciones y Transportes
+60150
+Sindicato Independiente de Trabajadores de El Colegio de Postgraduados
+60153
+Sindicato Independiente Nacional de Trabajadores del Colegio de Bachilleres
+60154
+Sindicato Nacional de Controladores de Tránsito Aéreo
+60158
+Sindicato Nacional de Trabajadores de los Tribunales Agrarios
+60159
+Sindicato Nacional de los Trabajadores del Consejo Nacional de Fomento Educativo
+60160
+Sindicato Nacional de Trabajadores de Pronósticos para la Asistencia Pública
+60162
+Sindicato Nacional de Trabajadores de DICONSA
+60163
+Sindicato Nacional de   Trabajadores de Hacienda y del Servicio de Administración Tributaria
+60164
+Sindicato Nacional de Trabajadores de la Casa de Moneda de México
+60166
+Sindicato Nacional de Trabajadores de la Comisión Nacional Bancaria y de Valores
+60167
+Sindicato Nacional de Trabajadores de la Comisión Nacional de Cultura Física y Deporte
+60168
+Sindicato Nacional de Trabajadores de la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (SINACONDUSEF)
+60169
+Sindicato Nacional de Trabajadores del Instituto Nacional del Suelo Sustentable
+60170
+Sindicato Nacional de Trabajadores de la Educación para Adultos
+60171
+Sindicato Nacional de Trabajadores de la Educación
+60172
+Sindicato Nacional de Trabajadores de la Industria Aeroportuaria y de Servicios, Similares y Conexos de la República Mexicana
+60173
+Sindicato Nacional de Trabajadores de la Lotería Nacional
+60174
+Sindicato Nacional de Trabajadores de la Procuraduría Agraria “Felipe Carrillo Puerto”
+60176
+Sindicato Nacional de Trabajadores de la Procuraduría General de la República
+60178
+Sindicato Nacional de Trabajadores de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación
+60179
+Sindicato Nacional de Trabajadores de la Secretaría de Comunicaciones y Transportes
+60180
+Sindicato Nacional de Trabajadores de la Secretaría de Desarrollo Social
+60181
+Sindicato Nacional de Trabajadores de la Secretaría de Economía
+60182
+Sindicato Nacional de Trabajadores de la Secretaría de Energía
+60183
+Sindicato Nacional de Trabajadores de la Secretaría de Gobernación
+60186
+Sindicato Nacional de Trabajadores de la Secretaría de Relaciones Exteriores
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+60187
+Sindicato Nacional de Trabajadores de la Secretaría de Salud
+60189
+Sindicato Nacional de Trabajadores de la Secretaría de Turismo
+60190
+Sindicato Nacional de Trabajadores de la Secretaría de Medio Ambiente y Recursos Naturales
+60191
+Sindicato Nacional de Trabajadores de la Secretaría del Trabajo y Previsión Social
+60193
+Sindicato Nacional de Trabajadores del Archivo General de la Nación
+60194
+Sindicato Nacional de Trabajadores del Banco del Ahorro Nacional y Servicios Financieros
+60195
+Sindicato Nacional de Trabajadores del Fideicomiso Fondo Nacional de
+Fomento Ejidal
+60196
+Sindicato Nacional de Trabajadores del Fondo Nacional de Fomento al Turismo
+60197
+Sindicato Nacional de Trabajadores del Instituto Nacional de la Infraestructura Física Educativa
+60198
+Sindicato Nacional de Trabajadores del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado
+60200
+Sindicato Nacional de Trabajadores del Instituto Mexicano de la Radio
+60201
+Sindicato Nacional de Trabajadores del Instituto Nacional de Estadística y Geografía
+60202
+Sindicato Nacional de Trabajadores del Instituto Nacional de las Personas
+Adultas Mayores
+60203
+Sindicato Nacional de Trabajadores del Seguro Social
+60204
+Sindicato Nacional de Trabajadores del Servicio Postal Mexicano “Correos de México”
+60205
+Sindicato Nacional de Trabajadores del Sistema Nacional para el Desarrollo Integral de la Familia
+60206
+Sindicato Nacional   de Trabajadores del   Tribunal   Federal   de Justicia Administrativa
+60209
+Sindicato Nacional de Unidad de los Trabajadores de la Secretaría de Comunicaciones y Transportes
+60211
+Sindicato Nacional Democrático de Trabajadores de la Secretaría de Desarrollo Agrario, Territorial y Urbano
+60212
+Sindicato Nacional Democrático de Trabajadores de los Tribunales Agrarios
+60213
+Sindicato Nacional Independiente de los Trabajadores de la Secretaría de Economía
+60214
+Sindicato Nacional Independiente de Trabajadores de la Procuraduría General
+de la Republica
+60215
+Sindicato Nacional Independiente de Trabajadores de la Secretaría de Desarrollo Social
+60216
+Sindicato Nacional Independiente de Trabajadores de la Secretaría de Medio Ambiente y Recursos Naturales
+60218
+Sindicato Nacional Único y Democrático de los Trabajadores del Banco Nacional de Comercio Exterior
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+60219
+Sindicato Revolucionario de Trabajadores de la Auditoría Superior de la
+Federación de la H. Cámara de Diputados
+60221
+Sindicato Único de Personal Técnico y Administrativo del Centro de Investigaciones Biológicas del Noroeste
+60222
+Sindicato Único de Trabajadores Académicos de la Universidad Autónoma
+Agraria Antonio Narro
+60223
+Sindicato Único de Trabajadores de Biológicos y Reactivos
+60224
+Sindicato Único de Trabajadores de El Colegio de la Frontera Sur
+60225
+Sindicato Nacional de Trabajadores de la Comisión Nacional de los Salarios Mínimos
+60226
+Sindicato Único de Trabajadores de la Industria Nuclear
+60227
+Sindicato Único de Trabajadores de la Productora Nacional de Biológicos Veterinarios
+60229
+Sindicato Único de Trabajadores de la Universidad Autónoma Agraria “Antonio Narro”
+60230
+Sindicato Único de Trabajadores de Notimex
+60231
+Sindicato Único de Trabajadores del Banco de México
+60232
+Sindicato Único de Trabajadores del Centro de Enseñanza Técnica Industrial
+60233
+Sindicato Único de Trabajadores del Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional
+60234
+Sindicato Único de Trabajadores de El Colegio de México
+60235
+Sindicato Único de Trabajadores del Colegio Nacional de Educación Profesional Técnica
+60236
+Sindicato Único de Trabajadores del Fondo de Cultura Económica
+60237
+Sindicato Único de Trabajadores del Hospital General "Dr. Manuel Gea González"
+60239
+Sindicato Único de Trabajadores del Instituto Mexicano de Cinematografía
+60240
+Sindicato Único de Trabajadores del Instituto Nacional de Ciencias Médicas y Nutrición “Salvador Zubirán”
+60241
+Sindicato Único de Trabajadores del Instituto Nacional de Pediatría
+60242
+Sindicato Único de Trabajadores del Instituto Nacional de Perinatología
+60243
+Sindicato Único de Trabajadores Democráticos de la Secretaría de Medio Ambiente y Recursos Naturales
+60244
+Sindicato Único de Trabajadores Docentes CONALEP
+60245
+Sindicato Único de Trabajadores Electricistas de la República Mexicana (SUTERM)
+60246
+Sindicato Único Nacional de Trabajadores de Nacional Financiera
+60248
+Sindicato Único Nacional de Trabajadores del Banco Nacional de Obras y Servicios Públicos
+60249
+Sindicato Único Nacional de Trabajadores del Instituto Nacional de Estadística
+y Geografía
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+60252
+Sindicato Unitario de Trabajadores del Instituto Nacional de Astrofísica, Óptica
+y Electrónica
+60254
+Sindicato Nacional de los Trabajadores de la Secretaría de Cultura
+60257
+Sindicato Nacional de Trabajadores de la Secretaría de Desarrollo Agrario, Territorial y Urbano
+60258
+Sindicato Nacional de Trabajadores del Centro Nacional de Control del Gas
+Natural
+60259
+Sindicato Nacional Independiente de Trabajadores de la Secretaría de
+Desarrollo Agrario, Territorial y Urbano
+60263
+Sindicato Independiente de Trabajadores Académicos de Oaxaca, SITAC-OAX
+60266
+Sindicato de Industrial de Trabajadores Salineros, Marineros, Maquinistas, Cargadores, Similares y Conexos de la Baja California
+60267
+Asociación Sindical de Oficiales de Máquinas de la Marina Mercante Nacional
+60268
+Sindicato Nacional de Trabajadores de la Construcción, Terraceros, Conexos y Similares de México
+60270
+Sindicato de Trabajadores en Establecimientos Comerciales, Condo-Hoteles, Restaurantes y Similares de la Costa Grande de Guerrero C.T.M.
+60271
+Sindicato de Trabajadores de Baja Mantenimiento y Operación del Puerto de
+Loreto
+60273
+Sindicato de Trabajadores de la Construcción, Materialistas, Similares y
+Conexos del Estado de Guerrero
+60274
+Sindicato Nacional de Trabajadores de la Procuraduría Federal del Consumidor
+60275
+Sindicato de Trabajadores de la Industria de la Radiodifusión, Televisión, Telecomunicaciones Similares y Conexos de la República Mexicana
+60277
+Orden de Capitanes y Pilotos Navales de la República Mexicana, Similares y Conexos
+60278
+Sindicato Nacional de Trabajadores del Instituto Mexicano del Petróleo
+60282
+Sindicato Nacional de Trabajadores y Empleados de Servicios en General, Financieros, Similares y Conexos de la República Mexicana
+60283
+Sindicato Nacional de Trabajadores de la Industria de Fideicomisos, Casas de Cambio, Casas de Bolsa, Aseguradoras, Uniones de Crédito, Hipotecarias, Administradoras de Fondos de Retiro, Arrendadoras, Almacenadoras, Empresas de Factoraje, Afianzadoras, Auto financiadoras, Cajas de Ahorros, Bancos, Instituciones de Banca Múltiple, Instituciones Financieras, Sociedades Financieras, Empresas Prestadoras de Servicios Laborales del Sector Financiero, Organismos Descentralizados de la Administración Pública Federal
+y Empresas de Participación Estatal Mayoritaria
+60284
+Sindicato Único de Trabajadores de AGROASEMEX, S. A.
+60285
+Sindicato Unificado de Trabajadores del Centro de Investigación Científica y de Educación Superior de Ensenada
+60287
+Sindicato Único de Trabajadores Docentes del Colegio Nacional de Educación Profesional Técnica en el estado de Oaxaca, SUTDCEO
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+60288
+Sindicato Independiente de Trabajadores de la Universidad Autónoma
+Metropolitana
+60289
+Sindicato Nacional de Trabajadores Revolucionarios de la Secretaría de Desarrollo Agrario, Territorial y Urbano
+60290
+Sindicato Nacional de Trabajadores del Instituto Nacional de Bellas Artes y
+Literatura
+60292
+Sindicato Único Nacional de los Trabajadores de la Secretaría de
+Comunicaciones y Transportes
+60293
+Sindicato Nacional Democrático de Trabajadores de SENEAM
+60294
+Sindicato Patrimonio de Trabajadores y Empleados de la Industria
+60295
+Sindicato Auténtico de los Trabajadores del Centro de Investigación en Alimentación y Desarrollo (CIAD)
+60297
+Unión Nacional de Trabajadores de la Industria Alimenticia, Refresquera, Turística, Hotelera, Gastronómica, Similares y Conexos
+60298
+Sindicato de los Trabajadores de la Construcción, Mantenimiento y Conservación de Infraestructura Turística, Campos de Golf y Plantas de Tratamiento de Aguas Residuales, Similares y Conexos del Estado de Baja
+California Sur
+60299
+Sindicato Nacional de Trabajadores de la Industria Láctea, Alimenticia,
+Similares y Conexos de la República Mexicana
+60300
+Sindicato Mexicano de Trabajadores en Servicios Especializados, Emergentes, Asistenciales y Administrativos
+60301
+Sindicato Independiente de Integración Nacional de Trabajadores de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación
+60302
+Sindicato Nacional de Trabajadores, Académicos e Investigadores del Instituto Nacional de Bellas Artes y Literatura
+60303
+Sindicato Nacional Independiente de Trabajadores del Instituto Nacional de Bellas Artes y Literatura
+60304
+Sindicato Nacional de Cultura
+60305
+Sindicato Nacional de Grupos Artísticos del Instituto Nacional de Bellas Artes Y Literatura
+60307
+Sindicato Único de Trabajadores del Instituto Nacional de Bellas Artes y
+Literatura
+60308
+Sindicato Nacional Democrático de Trabajadores de la Secretaría de Cultura
+60309
+Sindicato Independiente de Trabajadores de la Secretaría de Cultura
+60310
+Sindicato Nacional de Profesores de Investigación Científica y Docencia del INAH
+60311
+Sindicato Nacional de Arquitectos Conservadores del Patrimonio Cultural de la Secretaría de Cultura- Instituto Nacional de Antropología e Historia
+60312
+Sindicato Unión de Trabajadores del Partido de la Revolución Democrática
+60313
+Sindicato Revolucionario Nacional de Trabajadores de la Secretaría de Comunicaciones y Transportes
+ 
+10
+ 
+￼
+Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales
+ 
+ 
+60314
+Sindicato Nacional de Trabajadores del Instituto Nacional de Bellas Artes y
+Literatura 227
+60315
+Sindicato Democrático Nacional Autónomo de Trabajadores de la Secretaría de Desarrollo Social
+ 
+SUBTOTAL: 158
+ 
+Total de sujetos obligados: 8671
+ 
+ 

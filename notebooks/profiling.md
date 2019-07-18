@@ -35,6 +35,10 @@ sol = pd.concat(sol)
 ```
 
 ```python
+sol.columns
+```
+
+```python
 sol.head()
 ```
 
@@ -115,5 +119,9 @@ sol.describe(include="all")
 ```
 
 ```python
-sol.reset_index(drop=True).to_feather('../data/inai.feather')
+ sol.reset_index(drop=True).to_feather('../data/inai.feather')
+```
+
+```python
+
 ```
