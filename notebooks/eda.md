@@ -27,12 +27,16 @@ import re
 ```
 
 
-# Profiling
+# Vista rápida
 
 ```python
 sol = pd.read_feather('../data/inai.feather')
-sol['clave_dependencia'] = sol.folio.astype(str).apply(lambda x: x[:5])
 sol.sample(5)
+```
+
+```python
+for col in ['fecha_solicitud', 'fecha_respuesta', 'fecha_limite']:
+    sol[col] = sol[col].dt.date
 ```
 
 ### `estatus`
@@ -132,12 +136,38 @@ sol['fecha_solicitud'] = sol.fecha_solicitud.apply(lambda x: x.date())
 ```
 
 ```python
-sol.groupby('fecha_solicitud').size()
-```
-
-```python
 tseries = sol.groupby('fecha_solicitud').size()
 sns.lineplot(tseries.index, tseries.values)
 ```
 
+```python
+tseries = sol.groupby(['fecha_solicitud', 'respuesta']).size().to_frame('n').reset_index()
+sns.lineplot(tseries.fecha_solicitud, tseries.n, hue=tseries.respuesta)
+```
+
+```python
+plt.rcParams['figure.figsize']
+```
+
+```python
+sns.relplot(x='fecha_solicitud', y='n', 
+            row='respuesta', 
+            facet_kws=dict(sharex=False), 
+            kind='line',
+            height = 5,
+            aspect = 7,
+            data=tseries)
+```
+
 > Hacer análisis de punto de cambio.
+
+
+## Separación por entidad
+
+```python
+sns.distplot(sol.groupby('clave_dependencia').size(), kde=False)
+```
+
+```python
+sns.distplot(sol.groupby('clave_dependencia').size().apply(np.log), kde=False)
+```

@@ -23,7 +23,7 @@ from glob import glob
 ```python
 files = [f for f in glob('../data/*.xls')]
 years = [f[-8:-4] for f in files]
-sol = [pd.concat(pd.read_excel(f, sheet_name=None).values()) for f in files]
+sol = [pd.concat(pd.read_excel(f, sheet_name=None, dtypes={'FOLIO':str}).values()) for f in files]
 ```
 
 ```python
@@ -35,6 +35,11 @@ sol = map(
 
 ```python
 sol = pd.concat(list(sol)).reset_index(drop=True)
+```
+
+```python
+df = pd.read_excel(files[0], dtypes={'FOLIO': object})
+df.head()
 ```
 
 ```python
@@ -117,5 +122,5 @@ sol.describe(include="all")
 ```
 
 ```python
-sol.reset_index(drop=True).to_feather('../data/inai.feather')
+sol.reset_index(drop=True).to_parquet('../data/inai.parquet', engine='pyarrow')
 ```
