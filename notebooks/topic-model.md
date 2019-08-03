@@ -20,16 +20,22 @@ import multiprocessing as mp
 ```
 
 ```python
+import matplotlib.pyplot as plt
+plt.rcParams['figure.figsize'] = (20,10)
+import seaborn as sns
+sns.set()
+```
+
+```python
 import spacy
 from spacy.lang.es import Spanish 
 from spacy.lang.es.stop_words import STOP_WORDS 
-parser = spacy.load('es_core_news_sm')''
+parser = spacy.load('es_core_news_md')
 ```
 
 ```python
 from gensim.models import LdaMulticore, Phrases
 from gensim.corpora import Dictionary, MmCorpus
-
 ```
 
 ```python
@@ -53,10 +59,34 @@ def is_stopword(token):
 sol = pd.read_parquet('../data/inai.parquet')
 desc = sol.descripcion.unique()
 desc = desc[1:]
+desc = [a.lower().strip() for a in desc]
 ```
 
 ```python
-desc = [[s.lower() for s in a] for a in res]
+desc = pd.DataFrame({'p':desc, 'n':[len(a) for a in desc]}).sort_values('n')
+desc.head()
+```
+
+```python
+desc = desc[desc.n>20]
+```
+
+```python
+g = sns.distplot(desc.n, kde=False)
+g.set_title('Longitud de cada pregunta')
+```
+
+```python
+sol = sol.loc[sol.descripcion!='DESCRIPCIÓN SOLICITUD', ['clave_dependencia', 'descripcion']]
+sol = sol.groupby('clave_dependencia').size().to_frame('n').sort_values('n', ascending=False)
+```
+
+```python
+sns.countplot()
+```
+
+```python
+sns.distplot(sol.head(20).n, kde=False, bins=20)
 ```
 
 ```python
@@ -64,6 +94,24 @@ def tokenize(text):
     tokens = parser(text)
     ldatokens = [t.lemma_ for t in tokens if not is_stopword(t)]
     return ldatokens
+```
+
+```python
+desc.sample(1).p.values
+```
+
+```python
+for r in res:
+    print(r, f'==>({r.lemma_})')
+    print(2*' ', r.i, r.idx)
+    print(2*' ', r.sentiment)
+    print(2*' ', list(r.subtree))
+    print(2*' ', r.tag_)
+    print(2*' ', r.vector)
+```
+
+```python
+dir(res[0])
 ```
 
 ```python
