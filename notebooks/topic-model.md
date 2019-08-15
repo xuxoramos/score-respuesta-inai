@@ -30,7 +30,9 @@ sns.set()
 import spacy
 from spacy.lang.es import Spanish 
 from spacy.lang.es.stop_words import STOP_WORDS 
-parser = spacy.load('es_core_news_md')
+nlp = spacy.load('es_core_news_md')
+
+plt.rcParams['figure.figsize'] = (20,10)
 ```
 
 ```python
@@ -44,60 +46,53 @@ STOP_WORDS = STOP_WORDS.union({
     'solicitar', 'solicitud', 'querer',
     'solicito', 'informar', 'nombrar',
     '?', '¿', '!', '¡', r'\s', ',', '.', 
-    'cordial', 'saludar', 'instituto',
-    '(', ')', ';', ''})
+    'cordial', 'saludar'})
 ```
 
 ```python
-def is_stopword(token): 
+def is_stopword(token):
+    if (not token.is_alpha) or (not token.is_digit):
+        return True
     return token.is_stop or token.lower_ in STOP_WORDS or token.lemma_ in STOP_WORDS 
 ```
 
-## `descripción` :)
+## `descripción` 
 
 ```python
-sol = pd.read_parquet('../data/inai.parquet')
-desc = sol.descripcion.unique()
-desc = desc[1:]
-desc = [a.lower().strip() for a in desc]
+inai = (
+    pd.read_parquet('../data/inai.parquet')
+    .drop_duplicates('descripcion')
+    .pipe(lambda df: df.assign(n_desc=df.descripcion.str.len()))
+    .query('n_desc > 20')
+)
 ```
 
 ```python
-desc = pd.DataFrame({'p':desc, 'n':[len(a) for a in desc]}).sort_values('n')
-desc.head()
-```
-
-```python
-desc = desc[desc.n>20]
-```
-
-```python
-g = sns.distplot(desc.n, kde=False)
+g = sns.distplot(inai.n_desc)
 g.set_title('Longitud de cada pregunta')
 ```
 
 ```python
-sol = sol.loc[sol.descripcion!='DESCRIPCIÓN SOLICITUD', ['clave_dependencia', 'descripcion']]
-sol = sol.groupby('clave_dependencia').size().to_frame('n').sort_values('n', ascending=False)
+g = sns.distplot(np.log(inai.n_desc))
+g.set_title('log Longitud de cada pregunta')
 ```
 
 ```python
-sns.countplot()
-```
-
-```python
-sns.distplot(sol.head(20).n, kde=False, bins=20)
+g = sns.countplot(inai.sector)
+g = g.set_xticklabels(g.get_xticklabels(), rotation=30, ha='right')
 ```
 
 ```python
 def tokenize(text):
-    tokens = parser(text)
+    tokens = nlp(text)
     ldatokens = [t.lemma_ for t in tokens if not is_stopword(t)]
     return ldatokens
 ```
 
 ```python
-desc.sample(1).p.values
+pool = mp.Pool(4)
+res = pool.map(tokenize, inai.descripcion)
+pool.close()
 ```
 
 ```python
@@ -108,16 +103,7 @@ for r in res:
     print(2*' ', list(r.subtree))
     print(2*' ', r.tag_)
     print(2*' ', r.vector)
-```
-
-```python
-dir(res[0])
-```
-
-```python
-pool = mp.Pool(4)
-res = pool.map(tokenize, desc)
-pool.close()
+    break
 ```
 
 ```python
