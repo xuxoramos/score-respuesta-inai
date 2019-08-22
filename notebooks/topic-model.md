@@ -85,31 +85,28 @@ g = g.set_xticklabels(g.get_xticklabels(), rotation=30, ha='right')
 ```python
 def tokenize(text):
     tokens = nlp(text)
-    ldatokens = [t.lemma_ for t in tokens if not is_stopword(t)]
-    return ldatokens
+    ttokens = [t for t in tokens if not is_stopword(t)]
+    return ttokens
 ```
 
 ```python
-pool = mp.Pool(4)
-res = pool.map(tokenize, inai.descripcion)
-pool.close()
+inai.descripcion.index
 ```
 
 ```python
-for r in res:
-    print(r, f'==>({r.lemma_})')
-    print(2*' ', r.i, r.idx)
-    print(2*' ', r.sentiment)
-    print(2*' ', list(r.subtree))
-    print(2*' ', r.tag_)
-    print(2*' ', r.vector)
-    break
+tokenize(inai.descripcion.[5])
+```
+
+```python
+res = map(tokenize, inai.descripcion)
 ```
 
 ```python
 with open('../output/tokenized_desc.pkl', 'wb') as f:
     pkl.dump(res, f)
 ```
+
+## Clasificador
 
 ```python
 dictionary = Dictionary()

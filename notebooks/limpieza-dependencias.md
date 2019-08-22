@@ -15,6 +15,7 @@ jupyter:
 ```python
 import numpy as np
 import pandas as pd
+import pickle as pkl
 np.set_printoptions(threshold=20000)
 ```
 
