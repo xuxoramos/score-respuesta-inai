@@ -321,10 +321,6 @@ g = (
 ```
 
 ```python
-g['mes'] = g.fecha_solicitud.astype(str).apply(lambda s: s[0:7])
-```
-
-```python
 g = g.sort_values(['mes', 'sector', 'calidad_respuesta'])
 ```
 
@@ -357,6 +353,33 @@ ii.columns = ['mes', 'calidad_respuesta', 'sector']
 
 ```python
 g = ii.merge(g, how='left').fillna(0).sort_values(['mes', 'sector', 'calidad_respuesta'])
+```
+
+```python
+gg = g.groupby(['mes', 'sector']).agg({'n':'sum'}).reset_index()
+gg.columns = ['mes', 'sector', 'n']
+gg['calidad_respuesta'] = 2
+gg.head()
+```
+
+```python
+gg = pd.concat((g, gg), sort=False).sort_values(['mes', 'sector', 'calidad_respuesta'])
+```
+
+```python
+plt.rcParams['figure.figsize'] = (15, 5)
+sns_ch = sns.cubehelix_palette(n_colors=3, as_cmap=True)
+```
+
+```python
+for i, s in enumerate(sectores):
+    plt.figure(i)
+    df = gg[gg.sector==s].drop('sector', axis=1)
+    df = df.pivot(index='mes', columns='calidad_respuesta', values='n')
+    df.columns = ['falta del solicitante', 'mala', 'buena', 'total']
+    df.drop('total', axis=1, inplace=True)
+    df.plot.area(colormap=sns_ch, alpha=0.75)
+    plt.title(s)
 ```
 
 ```python
