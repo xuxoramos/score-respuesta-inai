@@ -38,7 +38,7 @@ inai.sample(5)
 
 ```python
 for col in ['fecha_solicitud', 'fecha_respuesta', 'fecha_limite']:
-    inai[col] = pd.to_datetime(inai[col])
+    inai[col] = pd.to_datetime(inai[col]).dt.date
 ```
 
 ### `estatus`
@@ -226,42 +226,148 @@ inai.columns
 
 ```python
 inai['tiempo_respuesta'] = (inai.fecha_respuesta - inai.fecha_solicitud).dt.days
-inai['demora'] = (inai.fecha_respuesta - inai.fecha_limite).dt.days
 ```
+
+## Tiempo de respuesta
 
 ```python
 sns.distplot(inai.tiempo_respuesta, kde=False)
 ```
 
 ```python
-inai.sort_values('demora', ascending=False)
+sns.distplot(inai.tiempo_respuesta, 
+             kde=False,
+             hist_kws={'cumulative':True})
 ```
 
 ```python
-sns.distplot(inai.demora.dropna(), kde=False)
+inai.tiempo_respuesta.quantile(q=[0.95, 0.975, 0.99, 0.999])
 ```
 
 ```python
-tseries = inai.groupby(['por_mes_sol', 'sector']).agg({'demora':np.mean}).reset_index()
+sns.distplot(inai.tiempo_respuesta[inai.tiempo_respuesta < 141], 
+             kde=False, norm_hist=True)
 ```
 
 ```python
-iii.columns = ['por_mes_sol', 'sector']
+g = sns.catplot(y='tiempo_respuesta', x='sector',
+            kind='boxen',
+            aspect=5,
+            data=inai[inai.tiempo_respuesta<141].sort_values('tiempo_respuesta'))
+g = g.set_xticklabels(rotation=90)
 ```
 
 ```python
-tseries = iii.merge(tseries, how='left')
+inai.dtypes
 ```
 
 ```python
-tseries['demora'] = tseries.demora.fillna(0)
-```
-
-```python
-sns.relplot(x='por_mes_sol', y='demora', 
-            row='sector', 
+sns.relplot(x='fecha_solicitud', y='tiempo_respuesta', 
+            row='sector',
+            estimator='mean',
+            ci='sd',
             kind='line',
-            height = 3,
-            aspect = 7,
-            data=tseries)
+            facet_kws={'sharey': False, 'sharex': True},
+            aspect=3,
+            data=inai)
+```
+
+En casi todos los sectores, el tiempo medio de respuesta va a la baja con respecto al inicio del año. En el último mes de 2018 hay muchos ceros. A ver qué dice calidad.
+
+```python
+dic18 = inai[(pd.to_datetime(inai.fecha_solicitud).dt.year==2018) & (pd.to_datetime(inai.fecha_solicitud).dt.month==12)]
+```
+
+```python
+g = sns.countplot(dic18.respuesta)
+g.set_xticklabels(g.get_xticklabels(), rotation=90)
+```
+
+Intentemos generalizar.
+
+
+## Calidad de respuesta
+
+```python
+inai.respuesta.unique().shape
+```
+
+```python
+labels = inai.respuesta.unique().astype(str)
+labels
+```
+
+```python
+categorias = [0, 1, 0, 1, -1, 0, 0, 0, 0, -1, 0, 0, 0, -1, -1, 1, 1, 1, -1]
+category_translation = dict(zip(labels, categorias))
+```
+
+```python
+inai['calidad_respuesta'] = inai.respuesta.map(category_translation)
+```
+
+```python
+inai.groupby(['sector', 'calidad_respuesta']).size().unstack().plot(kind='bar', stacked=True)
+```
+
+```python
+g = (
+    inai.assign(mes=lambda df: df.fecha_solicitud.astype(str).apply(lambda s: s[0:7]))
+    .groupby(['mes', 'calidad_respuesta', 'sector'])
+    .size()
+    .to_frame('n')
+    .reset_index(drop=False)
+)
+```
+
+```python
+g['mes'] = g.fecha_solicitud.astype(str).apply(lambda s: s[0:7])
+```
+
+```python
+g = g.sort_values(['mes', 'sector', 'calidad_respuesta'])
+```
+
+```python
+g_todas_fechas = []
+for year in range(2012, 2019):
+    for month in range(1, 13):
+        if month < 10:
+            strm = '0'+str(month)
+        else:
+            strm = str(month)
+        g_todas_fechas.append(str(year)+'-'+strm)
+for month in range(1, 7):
+    if month < 10:
+        strm = '0'+str(month)
+    else:
+        strm = str(month)
+    g_todas_fechas.append('2019-'+strm)
+        
+```
+
+```python
+sectores = g.sector.unique()
+```
+
+```python
+ii = pd.DataFrame(list(product(g_todas_fechas, [-1, 0, 1], sectores)))
+ii.columns = ['mes', 'calidad_respuesta', 'sector']
+```
+
+```python
+g = ii.merge(g, how='left').fillna(0).sort_values(['mes', 'sector', 'calidad_respuesta'])
+```
+
+```python
+sns.relplot(x='mes',  y='n',
+            row='sector', hue='calidad_respuesta',
+            kind='line',
+            aspect=3, 
+            facet_kws={'sharey':False},
+            data=g)
+```
+
+```python
+
 ```
