@@ -23,7 +23,7 @@ from glob import glob
 ```python
 files = [f for f in glob('../data/*.xls')]
 years = [f[-8:-4] for f in files]
-sol = [pd.read_excel(f) for f in files]
+sol = [pd.concat(pd.read_excel(f, sheet_name=None, dtypes={'FOLIO':str}).values()) for f in files]
 ```
 
 ```python
@@ -31,15 +31,17 @@ sol = map(
     lambda y, df: df.assign(anio=int(y)),
     years, sol
 )
-sol = pd.concat(sol)
+```
+
+
+
+```python
+sol = pd.concat(list(sol)).reset_index(drop=True)
 ```
 
 ```python
-sol.columns
-```
-
-```python
-sol.head()
+df = pd.read_excel(files[0], dtypes={'FOLIO': object})
+df.head()
 ```
 
 ```python
@@ -93,7 +95,7 @@ sol.loc[sol.codigo_postal=='680O0', 'codigo_postal'] = '68000'
 ```python
 # Fechas 
 for c in ['fecha_solicitud', 'fecha_limite', 'fecha_respuesta']:
-    sol[c] = pd.to_datetime(sol[c])
+    sol[c] = pd.to_datetime(sol[c], errors='coerce')
 
 # Categorías 
 for c in ['dependencia', 'estatus', 'medio_entrada', 'tipo_solicitud', 
@@ -107,9 +109,12 @@ for c in ['descripcion', 'otros', 'archivo_adjunto', 'texto_respuesta',
     sol[c] = sol[c].astype(str)
     
 # double
-sol['codigo_postal'] = sol.codigo_postal.replace(to_replace=r'[Oo]', 
-                          value='0', 
-                          regex=True).astype(float)
+sol['codigo_postal'] = pd.to_numeric(
+                        sol.codigo_postal.replace(
+                            to_replace=r'[Oo]', 
+                            value='0', 
+                            regex=True),
+                        errors='coerce')
     
 sol.dtypes
 ```
@@ -119,9 +124,13 @@ sol.describe(include="all")
 ```
 
 ```python
+<<<<<<< HEAD
  sol.reset_index(drop=True).to_feather('../data/inai.feather')
 ```
 
 ```python
 
+=======
+sol.reset_index(drop=True).to_parquet('../data/inai.parquet', engine='pyarrow')
+>>>>>>> exploratorio
 ```
