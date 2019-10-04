@@ -20,16 +20,24 @@ import multiprocessing as mp
 ```
 
 ```python
+import matplotlib.pyplot as plt
+plt.rcParams['figure.figsize'] = (20,10)
+import seaborn as sns
+sns.set()
+```
+
+```python
 import spacy
 from spacy.lang.es import Spanish 
 from spacy.lang.es.stop_words import STOP_WORDS 
-parser = spacy.load('es_core_news_sm')''
+nlp = spacy.load('es_core_news_md')
+
+plt.rcParams['figure.figsize'] = (20,10)
 ```
 
 ```python
 from gensim.models import LdaMulticore, Phrases
 from gensim.corpora import Dictionary, MmCorpus
-
 ```
 
 ```python
@@ -38,44 +46,67 @@ STOP_WORDS = STOP_WORDS.union({
     'solicitar', 'solicitud', 'querer',
     'solicito', 'informar', 'nombrar',
     '?', '¿', '!', '¡', r'\s', ',', '.', 
-    'cordial', 'saludar', 'instituto',
-    '(', ')', ';', ''})
+    'cordial', 'saludar'})
 ```
 
 ```python
-def is_stopword(token): 
+def is_stopword(token):
+    if (not token.is_alpha) or (not token.is_digit):
+        return True
     return token.is_stop or token.lower_ in STOP_WORDS or token.lemma_ in STOP_WORDS 
 ```
 
-## `descripción` :)
+## `descripción` 
 
 ```python
-sol = pd.read_parquet('../data/inai.parquet')
-desc = sol.descripcion.unique()
-desc = desc[1:]
+inai = (
+    pd.read_parquet('../data/inai.parquet')
+    .drop_duplicates('descripcion')
+    .pipe(lambda df: df.assign(n_desc=df.descripcion.str.len()))
+    .query('n_desc > 20')
+)
 ```
 
 ```python
-desc = [[s.lower() for s in a] for a in res]
+g = sns.distplot(inai.n_desc)
+g.set_title('Longitud de cada pregunta')
+```
+
+```python
+g = sns.distplot(np.log(inai.n_desc))
+g.set_title('log Longitud de cada pregunta')
+```
+
+```python
+g = sns.countplot(inai.sector)
+g = g.set_xticklabels(g.get_xticklabels(), rotation=30, ha='right')
 ```
 
 ```python
 def tokenize(text):
-    tokens = parser(text)
-    ldatokens = [t.lemma_ for t in tokens if not is_stopword(t)]
-    return ldatokens
+    tokens = nlp(text)
+    ttokens = [t for t in tokens if not is_stopword(t)]
+    return ttokens
 ```
 
 ```python
-pool = mp.Pool(4)
-res = pool.map(tokenize, desc)
-pool.close()
+inai.descripcion.index
+```
+
+```python
+tokenize(inai.descripcion.[5])
+```
+
+```python
+res = map(tokenize, inai.descripcion)
 ```
 
 ```python
 with open('../output/tokenized_desc.pkl', 'wb') as f:
     pkl.dump(res, f)
 ```
+
+## Clasificador
 
 ```python
 dictionary = Dictionary()

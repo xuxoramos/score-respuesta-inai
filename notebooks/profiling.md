@@ -18,6 +18,7 @@ jupyter:
 import numpy as np
 import pandas as pd
 from glob import glob
+import pickle as pkl
 ```
 
 ```python
@@ -27,21 +28,20 @@ sol = [pd.concat(pd.read_excel(f, sheet_name=None, dtypes={'FOLIO':str}).values(
 ```
 
 ```python
-sol = map(
+sol[1]
+```
+
+
+
+```python
+sol = list(map(
     lambda y, df: df.assign(anio=int(y)),
     years, sol
-)
-```
-
-
-
-```python
-sol = pd.concat(list(sol)).reset_index(drop=True)
+))
 ```
 
 ```python
-df = pd.read_excel(files[0], dtypes={'FOLIO': object})
-df.head()
+sol = pd.concat(sol).reset_index(drop=True)
 ```
 
 ```python
@@ -71,21 +71,9 @@ sol.columns = [
 ```
 
 ```python
-sol.describe(include='all')
-```
-
-```python
-sol.dtypes
-```
-
-```python
 sol['fecha_solicitud'] = pd.to_datetime(sol['fecha_solicitud'])
 sol['dependencia'] = sol['dependencia'].astype(str)
 sol['estatus'] = sol['estatus'].astype('category')
-```
-
-```python
-sol.respuesta.nunique()
 ```
 
 ```python
@@ -124,13 +112,10 @@ sol.describe(include="all")
 ```
 
 ```python
-<<<<<<< HEAD
  sol.reset_index(drop=True).to_feather('../data/inai.feather')
 ```
 
 ```python
-
-=======
 sol.reset_index(drop=True).to_parquet('../data/inai.parquet', engine='pyarrow')
->>>>>>> exploratorio
+sol.to_parquet('../data/inai.parquet', engine='pyarrow')
 ```
