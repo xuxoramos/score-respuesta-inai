@@ -464,32 +464,221 @@ plt.show()
 <!-- #region -->
 El 87% de las solicitudes se cuentan como terminadas. El resto de las solicitudes siguen en proceso, están esperando a un pago o respuesta del ciudadano, o fueron rechazadas. Como las claves identificadoras de las solicitudes son únicas, realmente no hay forma de saber si las solicitudes "en proceso" o "en espera" sí se concluyeron o no.
 
+Como no hay una forma muy clara de conocer si al final todas las solicitudes sí se completaron o no al 100%, vamos a calificar las respuestas como  **satisfactoria** o **no satisfactoria**. Además, tomaremos en cuenta aquellas solicitudes cuya respuesta fue que hubo falta por parte del ciudadano. Así vamos a calificar las respuestas: 
 
+Satisfactoria: 
++ Entrega de información en medio electrónico
 
++ Notificación de disponibilidad de información
 
++ Notificación lugar y fecha de entrega
 
++ Notificación de envío
 
-Como no hay una forma muy clara de conocer si al final todas las solicitudes sí se completaron 
++ La información está disponible públicamente
+
+ 
+No satisfactoria:
++ No es de competencia de la unidad de enlace
+
++ La solicitud no corresponde al marco de la Ley
+
++ La solicitud no corresponde al marco de la Ley
+
++ Inexistencia de la información solicitada
+
++ Negativa por ser reservada o confidencial
+
++ Información parcialmente reservada o confidencial
+
++ No se dará trámite a la solicitud
+
++ Sin respuesta
+
++ Notificación de cambio de tipo de solicitud
+
++ Notificación de prórroga
+
+ 
+Falta del solicitante: 
+
++ Requerimiento de información adicional
+
++ Respuesta del solicitante a la notificación de entrega de información sin costo
+
++ Respuesta a solicitud de información adicional
+
++ Respuesta del solicitante a la notificación de entrega de información con  costo
+
++ Notificación de pago
 
 <!-- #endregion -->
 
-```python
+```python ExecuteTime={"end_time": "2019-08-25T18:36:31.278566Z", "start_time": "2019-08-25T18:36:31.140534Z"} tags=["to_remove"]
+labels = inai.respuesta.unique().astype(str)
+# labels
+```
 
+```python ExecuteTime={"end_time": "2019-08-25T18:46:16.887278Z", "start_time": "2019-08-25T18:46:16.883702Z"} tags=["to_remove"]
+categorias = [0, 1, 0, 1, -1, 0, 0, 0, 0, -1, 0, 0, 0, -1, -1, 1, 1, 1, -1]
+category_translation = dict(zip(labels, categorias))
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T18:46:34.656737Z", "start_time": "2019-08-25T18:46:34.514717Z"} tags=["to_remove"]
+inai['calidad_respuesta'] = inai.respuesta.map(category_translation)
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:34:46.293434Z", "start_time": "2019-08-25T21:34:25.187570Z"} tags=["to_remove"]
+g = (
+    inai.assign(mes=lambda df: df.fecha_solicitud.astype(str).apply(lambda s: s[0:7]))
+    .groupby(['mes', 'calidad_respuesta', 'sector'])
+    .size()
+    .to_frame('n')
+    .reset_index(drop=False)
+)
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:35:01.911377Z", "start_time": "2019-08-25T21:35:01.900649Z"} tags=["to_remove"]
+g = g.sort_values(['mes', 'sector', 'calidad_respuesta'])
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:35:04.341080Z", "start_time": "2019-08-25T21:35:04.333591Z"} tags=["to_remove"]
+g_todas_fechas = []
+for year in range(2012, 2019):
+    for month in range(1, 13):
+        if month < 10:
+            strm = '0'+str(month)
+        else:
+            strm = str(month)
+        g_todas_fechas.append(str(year)+'-'+strm)
+for month in range(1, 7):
+    if month < 10:
+        strm = '0'+str(month)
+    else:
+        strm = str(month)
+    g_todas_fechas.append('2019-'+strm)
+        
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:35:05.742163Z", "start_time": "2019-08-25T21:35:05.738657Z"} tags=["to_remove"]
+sectores = g.sector.unique()
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:35:08.526495Z", "start_time": "2019-08-25T21:35:08.491422Z"} tags=["to_remove"]
+ii = pd.DataFrame(list(product(g_todas_fechas, [-1, 0, 1], sectores)))
+ii.columns = ['mes', 'calidad_respuesta', 'sector']
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:35:11.333873Z", "start_time": "2019-08-25T21:35:11.307945Z"} tags=["to_remove"]
+g = ii.merge(g, how='left').fillna(0).sort_values(['mes', 'sector', 'calidad_respuesta'])
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:35:12.686899Z", "start_time": "2019-08-25T21:35:12.666502Z"} tags=["to_remove"]
+gg = g.groupby(['mes', 'sector']).agg({'n':'sum'}).reset_index()
+gg.columns = ['mes', 'sector', 'n']
+gg['calidad_respuesta'] = 2
+#gg.head()
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:35:17.225157Z", "start_time": "2019-08-25T21:35:17.210574Z"} tags=["to_remove"]
+gg = pd.concat((g, gg), sort=False).sort_values(['mes', 'sector', 'calidad_respuesta'])
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:38:12.069023Z", "start_time": "2019-08-25T21:38:12.065760Z"} tags=["to_remove"]
+plt.rcParams['figure.figsize'] = (18, 9)
+sns_ch = sns.cubehelix_palette(n_colors=3, as_cmap=True)
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:39:29.824401Z", "start_time": "2019-08-25T21:39:18.019434Z"} tags=["to_remove"]
+for i, s in enumerate(sectores):
+    plt.figure(i)
+    df = gg[gg.sector==s].drop('sector', axis=1)
+    df = df.pivot(index='mes', columns='calidad_respuesta', values='n')
+    df.columns = ['Falta del solicitante', 'No satisfactoria', 'Satisfactoria', 'total']
+    df.drop('total', axis=1, inplace=True)
+    df.plot.area(colormap=sns_ch, alpha=0.75)
+    plt.title(s)
+    plt.xlabel('Mes/Año')
+    plt.ylabel('Número de solicitudes')
+    #plt.show()
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T21:12:43.421449Z", "start_time": "2019-08-25T21:12:10.121030Z"} tags=["to_remove"]
+sns.relplot(x='mes',  y='n',
+            row='sector', hue='calidad_respuesta',
+            kind='line',
+            aspect=3, 
+            facet_kws={'sharey':False},
+            data=g)
+```
+
+## Tiempo de respuesta
+
+```python ExecuteTime={"end_time": "2019-08-25T17:52:52.241735Z", "start_time": "2019-08-25T17:52:46.096401Z"}
+inai['tiempo_respuesta'] = (inai.fecha_respuesta - inai.fecha_solicitud).dt.days
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T17:53:04.386949Z", "start_time": "2019-08-25T17:53:03.734656Z"}
+plt.figure(figsize=(24,12))
+
+sns.distplot(inai.tiempo_respuesta, kde=False)
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T17:53:06.825904Z", "start_time": "2019-08-25T17:53:06.118368Z"}
+plt.figure(figsize=(24,12))
+
+
+sns.distplot(inai.tiempo_respuesta, 
+             kde=False,
+             hist_kws={'cumulative':True})
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T17:53:09.099271Z", "start_time": "2019-08-25T17:53:09.059564Z"}
+inai.tiempo_respuesta.quantile(q=[0.95, 0.975, 0.99, 0.999])
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T17:53:11.374781Z", "start_time": "2019-08-25T17:53:10.676332Z"}
+plt.figure(figsize=(24,12))
+
+sns.distplot(inai.tiempo_respuesta[inai.tiempo_respuesta < 141], 
+             kde=False, norm_hist=True)
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T17:53:37.717203Z", "start_time": "2019-08-25T17:53:17.573833Z"}
+plt.figure(figsize=(24,12))
+
+g = sns.catplot(y='tiempo_respuesta', x='sector',
+            kind='boxen',
+            aspect=5,
+            data=inai[inai.tiempo_respuesta<141].sort_values('tiempo_respuesta'))
+g = g.set_xticklabels(rotation=90)
+```
+
+```python ExecuteTime={"end_time": "2019-08-25T18:11:23.462925Z", "start_time": "2019-08-25T18:10:57.863200Z"}
+plt.figure(figsize=(24,12))
+
+
+sns.relplot(x='fecha_solicitud', y='tiempo_respuesta', 
+            row='sector',
+            estimator='mean',
+            ci='sd',
+            kind='line',
+            facet_kws={'sharey': False, 'sharex': True},
+            aspect=3,
+            data=inai)
+```
+
+En casi todos los sectores, el tiempo medio de respuesta va a la baja con respecto al inicio del año. En el último mes de 2018 hay muchos ceros. A ver qué dice calidad.
+
+```python
+# hasta aquí
 ```
 
 ```python
 
 ```
 
-```python
-
-```
-
-```python
-
-```
-
-## Un poquillo de tiempo
+# Un poquillo de tiempo (todavía no)
 
 ```python ExecuteTime={"end_time": "2019-08-22T04:29:06.689370Z", "start_time": "2019-08-22T04:29:05.689563Z"}
 plt.figure(figsize=(18, 9))
@@ -656,197 +845,3 @@ sns.relplot(x='por_mes_sol', y='n',
 ```
 
 > Hacer análisis de punto de cambio.
-
-
-## Eficiencia
-
-```python ExecuteTime={"end_time": "2019-08-25T17:52:37.237185Z", "start_time": "2019-08-25T17:52:37.232369Z"}
-inai.columns
-```
-
-## Tiempo de respuesta
-
-```python ExecuteTime={"end_time": "2019-08-25T17:52:52.241735Z", "start_time": "2019-08-25T17:52:46.096401Z"}
-inai['tiempo_respuesta'] = (inai.fecha_respuesta - inai.fecha_solicitud).dt.days
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T17:53:04.386949Z", "start_time": "2019-08-25T17:53:03.734656Z"}
-plt.figure(figsize=(24,12))
-
-sns.distplot(inai.tiempo_respuesta, kde=False)
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T17:53:06.825904Z", "start_time": "2019-08-25T17:53:06.118368Z"}
-plt.figure(figsize=(24,12))
-
-
-sns.distplot(inai.tiempo_respuesta, 
-             kde=False,
-             hist_kws={'cumulative':True})
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T17:53:09.099271Z", "start_time": "2019-08-25T17:53:09.059564Z"}
-inai.tiempo_respuesta.quantile(q=[0.95, 0.975, 0.99, 0.999])
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T17:53:11.374781Z", "start_time": "2019-08-25T17:53:10.676332Z"}
-plt.figure(figsize=(24,12))
-
-sns.distplot(inai.tiempo_respuesta[inai.tiempo_respuesta < 141], 
-             kde=False, norm_hist=True)
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T17:53:37.717203Z", "start_time": "2019-08-25T17:53:17.573833Z"}
-plt.figure(figsize=(24,12))
-
-g = sns.catplot(y='tiempo_respuesta', x='sector',
-            kind='boxen',
-            aspect=5,
-            data=inai[inai.tiempo_respuesta<141].sort_values('tiempo_respuesta'))
-g = g.set_xticklabels(rotation=90)
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T17:58:04.882554Z", "start_time": "2019-08-25T17:58:04.877231Z"}
-inai.dtypes
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T18:11:23.462925Z", "start_time": "2019-08-25T18:10:57.863200Z"}
-plt.figure(figsize=(24,12))
-
-
-sns.relplot(x='fecha_solicitud', y='tiempo_respuesta', 
-            row='sector',
-            estimator='mean',
-            ci='sd',
-            kind='line',
-            facet_kws={'sharey': False, 'sharex': True},
-            aspect=3,
-            data=inai)
-```
-
-En casi todos los sectores, el tiempo medio de respuesta va a la baja con respecto al inicio del año. En el último mes de 2018 hay muchos ceros. A ver qué dice calidad.
-
-```python ExecuteTime={"end_time": "2019-08-25T18:21:48.609479Z", "start_time": "2019-08-25T18:21:48.254693Z"}
-dic18 = inai[(pd.to_datetime(inai.fecha_solicitud).dt.year==2018) & (pd.to_datetime(inai.fecha_solicitud).dt.month==12)]
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T18:25:54.841370Z", "start_time": "2019-08-25T18:25:54.319876Z"}
-plt.figure(figsize=(24,12))
-
-g = sns.countplot(dic18.respuesta)
-g.set_xticklabels(g.get_xticklabels(), rotation=70)
-```
-
-Intentemos generalizar.
-
-
-## Calidad de respuesta
-
-```python ExecuteTime={"end_time": "2019-08-25T18:35:37.138926Z", "start_time": "2019-08-25T18:35:36.600800Z"}
-inai.respuesta.unique().shape
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T18:36:31.278566Z", "start_time": "2019-08-25T18:36:31.140534Z"}
-labels = inai.respuesta.unique().astype(str)
-labels
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T18:46:16.887278Z", "start_time": "2019-08-25T18:46:16.883702Z"}
-categorias = [0, 1, 0, 1, -1, 0, 0, 0, 0, -1, 0, 0, 0, -1, -1, 1, 1, 1, -1]
-category_translation = dict(zip(labels, categorias))
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T18:46:34.656737Z", "start_time": "2019-08-25T18:46:34.514717Z"}
-inai['calidad_respuesta'] = inai.respuesta.map(category_translation)
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T19:08:51.288810Z", "start_time": "2019-08-25T19:08:49.939565Z"}
-inai.groupby(['sector', 'calidad_respuesta']).size().unstack().plot(kind='bar', stacked=True)
-plt.figure(figsize=(24,12))
-
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:34:46.293434Z", "start_time": "2019-08-25T21:34:25.187570Z"}
-g = (
-    inai.assign(mes=lambda df: df.fecha_solicitud.astype(str).apply(lambda s: s[0:7]))
-    .groupby(['mes', 'calidad_respuesta', 'sector'])
-    .size()
-    .to_frame('n')
-    .reset_index(drop=False)
-)
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:35:01.911377Z", "start_time": "2019-08-25T21:35:01.900649Z"}
-g = g.sort_values(['mes', 'sector', 'calidad_respuesta'])
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:35:04.341080Z", "start_time": "2019-08-25T21:35:04.333591Z"}
-g_todas_fechas = []
-for year in range(2012, 2019):
-    for month in range(1, 13):
-        if month < 10:
-            strm = '0'+str(month)
-        else:
-            strm = str(month)
-        g_todas_fechas.append(str(year)+'-'+strm)
-for month in range(1, 7):
-    if month < 10:
-        strm = '0'+str(month)
-    else:
-        strm = str(month)
-    g_todas_fechas.append('2019-'+strm)
-        
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:35:05.742163Z", "start_time": "2019-08-25T21:35:05.738657Z"}
-sectores = g.sector.unique()
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:35:08.526495Z", "start_time": "2019-08-25T21:35:08.491422Z"}
-ii = pd.DataFrame(list(product(g_todas_fechas, [-1, 0, 1], sectores)))
-ii.columns = ['mes', 'calidad_respuesta', 'sector']
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:35:11.333873Z", "start_time": "2019-08-25T21:35:11.307945Z"}
-g = ii.merge(g, how='left').fillna(0).sort_values(['mes', 'sector', 'calidad_respuesta'])
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:35:12.686899Z", "start_time": "2019-08-25T21:35:12.666502Z"}
-gg = g.groupby(['mes', 'sector']).agg({'n':'sum'}).reset_index()
-gg.columns = ['mes', 'sector', 'n']
-gg['calidad_respuesta'] = 2
-gg.head()
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:35:17.225157Z", "start_time": "2019-08-25T21:35:17.210574Z"}
-gg = pd.concat((g, gg), sort=False).sort_values(['mes', 'sector', 'calidad_respuesta'])
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:38:12.069023Z", "start_time": "2019-08-25T21:38:12.065760Z"}
-plt.rcParams['figure.figsize'] = (15, 5)
-sns_ch = sns.cubehelix_palette(n_colors=3, as_cmap=True)
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:39:29.824401Z", "start_time": "2019-08-25T21:39:18.019434Z"}
-for i, s in enumerate(sectores):
-    plt.figure(i)
-    df = gg[gg.sector==s].drop('sector', axis=1)
-    df = df.pivot(index='mes', columns='calidad_respuesta', values='n')
-    df.columns = ['falta del solicitante', 'mala', 'buena', 'total']
-    df.drop('total', axis=1, inplace=True)
-    df.plot.area(colormap=sns_ch, alpha=0.75)
-    plt.title(s)
-```
-
-```python ExecuteTime={"end_time": "2019-08-25T21:12:43.421449Z", "start_time": "2019-08-25T21:12:10.121030Z"}
-sns.relplot(x='mes',  y='n',
-            row='sector', hue='calidad_respuesta',
-            kind='line',
-            aspect=3, 
-            facet_kws={'sharey':False},
-            data=g)
-```
-
-```python
-
-```
