@@ -1,0 +1,6 @@
+awscli
+requests
+lxml
+numpy
+s3fs
+pandas
