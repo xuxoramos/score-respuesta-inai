@@ -1,0 +1,867 @@
+,clave_dependencia,dependencia
+0,01100,Auditoría Superior de la Federación
+1,01200,Cámara de Diputados
+2,01300,Senado de la República
+3,02100,Oficina de la Presidencia de la República
+4,00008,Secretaría de Agricultura y Desarrollo Rural
+5,08100,Agencia de Servicios a la Comercialización y Desarrollo de Mercados Agropecuarios
+6,08609,Colegio Superior Agropecuario del Estado de Guerrero
+7,08197,Comisión Nacional de Acuacultura y Pesca
+8,08199,Servicio de Información Agroalimentaria y Pesquera
+9,08610,Servicio Nacional de Inspección y Certificación de Semillas
+10,08210,"Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria"
+11,00009,Secretaría de Comunicaciones y Transportes
+12,09010,Agencia Reguladora del Transporte Ferroviario (*)
+13,09001,Instituto Mexicano del Transporte (*)
+14,09111,Servicios a la Navegación en el Espacio Aéreo Mexicano
+15,11141,Secretaría de Cultura
+16,11151,Instituto Nacional de Antropología e Historia
+17,11161,Instituto Nacional de Bellas Artes y Literatura
+18,11142,Instituto Nacional del Derecho de Autor (*)
+19,11143,Radio Educación (*)
+20,11199,Instituto Nacional de Estudios Históricos de las Revoluciones de México
+21,00015,"Secretaría de Desarrollo Agrario, Territorial y Urbano"
+22,15111,Registro Agrario Nacional
+23,00020,Secretaría de Bienestar
+24,20001,Coordinación Nacional de PROSPERA Programa de Inclusión Social
+25,20999,Instituto Nacional de Desarrollo Social
+26,20100,Instituto Nacional de la Economía Social
+27,00010,Secretaría de Economía
+28,10141,Comisión Nacional de Mejora Regulatoria
+29,10211,Instituto Nacional del Emprendedor
+30,00011,Secretaría de Educación Pública
+31,25101,Autoridad Educativa Federal en la Ciudad de México
+32,11001,Comisión de Apelación y Arbitraje del Deporte (*)
+33,11002,Coordinación General @prende.mx (*)
+34,11003,Coordinación Nacional del Servicio Profesional Docente (*)
+35,11171,Instituto Politécnico Nacional
+36,11004,Tecnológico Nacional de México (*)
+37,11005,Universidad Abierta y a Distancia de México (*)
+38,29010,Universidad Pedagógica Nacional
+39,11006,XE-IPN Canal 11 (*)
+40,00018,Secretaría de Energía
+41,18100,Comisión Nacional de Seguridad Nuclear y Salvaguardias
+42,18191,Comisión Nacional para el Uso Eficiente de la Energía
+43,00004,Secretaría de Gobernación
+44,04001,Centro de Producción de Programas Informativos y Especiales (*)
+45,04016,Comisión Nacional de Búsqueda de Personas (*)
+46,04002,Comisión Nacional para Prevenir y Erradicar la Violencia Contra las Mujeres (*)
+47,04220,Coordinación General de la Comisión Mexicana de Ayuda a Refugiados
+48,04004,Coordinación para la Atención Integral de la Migración en la Frontera Sur (*)
+49,04111,Instituto Nacional de Migración
+50,04005,Instituto Nacional para el Federalismo y el Desarrollo Municipal (*)
+51,04006,"Secretaría Ejecutiva del Sistema Nacional para la Protección Integral de Niñas, Niños y Adolescentes (*)"
+52,04160,Secretaría General del Consejo Nacional de Población
+53,04007,Secretaría Técnica de la Comisión Calificadora de Publicaciones y Revistas Ilustradas (*)
+54,00006,Secretaría de Hacienda y Crédito Público
+55,06050,Autoridad Federal para el Desarrollo de las Zonas Económicas Especiales (*)
+56,06100,Comisión Nacional Bancaria y de Valores
+57,06111,Comisión Nacional de Seguros y Fianzas
+58,06121,Comisión Nacional del Sistema de Ahorro para el Retiro
+59,27001,Instituto de Administración y Avalúos de Bienes Nacionales (*)
+60,06101,Servicio de Administración Tributaria
+61,00007,Secretaría de la Defensa Nacional
+62,00027,Secretaría de la Función Pública
+63,00013,Secretaría de Marina
+64,00016,Secretaría de Medio Ambiente y Recursos Naturales
+65,16211,Agencia Nacional de Seguridad Industrial y de Protección al Medio Ambiente del Sector Hidrocarburos
+66,16151,Comisión Nacional de Áreas Naturales Protegidas
+67,16101,Comisión Nacional del Agua
+68,16131,Procuraduría Federal de Protección al Ambiente
+69,00005,Secretaría de Relaciones Exteriores
+70,05100,Agencia Mexicana de Cooperación Internacional para el Desarrollo (*)
+71,05001,Instituto de los Mexicanos en el Exterior (*)
+72,05002,Instituto Matías Romero (*)
+73,05003,Sección Mexicana de la Comisión Internacional de Límites y Aguas entre México y Estados Unidos (*)
+74,05004,"Secciones Mexicanas de las Comisiones Internacionales de Límites y Aguas entre México y Guatemala, y entre México y Belice (*)"
+75,00012,Secretaría de Salud
+76,12001,Administración del Patrimonio de la Beneficencia Pública (*)
+77,12002,Centro Nacional de Equidad de Género y Salud Reproductiva (*)
+78,12003,Centro Nacional de Excelencia Tecnológica en Salud (*)
+79,12004,Centro Nacional de la Transfusión Sanguínea (*)
+80,12005,Centro Nacional de Programas Preventivos y Control de Enfermedades (*)
+81,12006,Centro Nacional de Trasplantes (*)
+82,12007,Comisión Nacional contra las Adicciones (*)
+83,12008,Centro Nacional para la Prevención y el Control del VIH/SIDA (*)
+84,12009,Centro Nacional para la Salud de la Infancia y la Adolescencia (*)
+85,12151,Comisión Federal para la Protección contra Riesgos Sanitarios
+86,42207,Comisión Nacional de Arbitraje Médico
+87,12010,Comisión Nacional de Bioética (*)
+88,12102,Comisión Nacional de Protección Social en Salud
+89,12011,Servicios de Atención Psiquiátrica (*)
+90,00028,Secretaría de Seguridad y Protección Ciudadana
+91,04100,Centro Nacional de Inteligencia
+92,04130,Centro Nacional de Prevención de Desastres
+93,04003,Coordinación Nacional Antisecuestro (*)
+94,22103,Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública
+95,36001,Servicio de Protección Federal
+96,04131,Policía Federal
+97,36700,Prevención y Readaptación Social
+98,00021,Secretaría de Turismo
+99,21001,Corporación de Servicios al Turista Ángeles Verdes (*)
+100,21002,Instituto de Competitividad Turística (*)
+101,00014,Secretaría del Trabajo y Previsión Social
+102,14100,Junta Federal de Conciliación y Arbitraje
+103,14111,Procuraduría Federal de la Defensa del Trabajo
+104,02200,Consejería Jurídica del Ejecutivo Federal
+105,18001,Comisión Nacional de Hidrocarburos
+106,18111,Comisión Reguladora de Energía
+107,04950,Archivo General de la Nación
+108,04410,Consejo Nacional para Prevenir la Discriminación
+109,04101,Talleres Gráficos de México
+110,07150,Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas
+111,06363,Casa de Moneda
+112,06370,Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros
+113,06565,"Financiera Nacional de Desarrollo Agropecuario, Rural, Forestal y Pesquero"
+114,06110,Instituto para el Desarrollo Técnico de las Haciendas Públicas
+115,06747,Instituto para la Protección al Ahorro Bancario
+116,06750,Lotería Nacional para la Asistencia Pública
+117,06810,Pronósticos para la Asistencia Pública
+118,06812,Servicio de Administración y Enajenación de Bienes
+119,20237,Consejo Nacional de Evaluación de la Política de Desarrollo Social
+120,00634,Consejo Nacional para el Desarrollo y la Inclusión de las Personas con
+121,11318,Instituto Mexicano de la Juventud
+122,20410,Instituto Nacional de las Personas Adultas Mayores
+123,16161,Comisión Nacional Forestal
+124,16111,Instituto Mexicano de Tecnología del Agua
+125,16121,Instituto Nacional de Ecología y Cambio Climático
+126,11205,Centro Nacional de Control de Energía
+127,18112,Centro Nacional de Control del Gas Natural
+128,18470,Instituto Nacional de Electricidad y Energías Limpias
+129,18474,Instituto Mexicano del Petróleo
+130,18476,Instituto Nacional de Investigaciones Nucleares
+131,10095,Centro Nacional de Metrología
+132,10265,Instituto Mexicano de la Propiedad Industrial
+133,10315,Procuraduría Federal del Consumidor
+134,10100,Servicio Geológico Mexicano
+135,08140,Colegio de Postgraduados
+136,20090,Comisión Nacional de las Zonas Áridas
+137,08001,Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar (*)
+138,08170,"Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias"
+139,08198,Instituto Nacional de Pesca
+140,08460,Productora Nacional de Biológicos Veterinarios
+141,09085,Aeropuertos y Servicios Auxiliares
+142,09087,Agencia Espacial Mexicana
+143,09120,Caminos y Puentes Federales de Ingresos y Servicios Conexos
+144,09011,Organismo Promotor de Inversiones en Telecomunicaciones
+145,09338,Servicio Postal Mexicano
+146,09437,Telecomunicaciones de México
+147,11065,Centro de Enseñanza Técnica Industrial
+148,11085,Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional
+149,11115,Colegio de Bachilleres
+150,11125,Colegio Nacional de Educación Profesional Técnica
+151,11135,Comisión de Operación y Fomento de Actividades Académicas del Instituto
+152,11131,Comisión Nacional de Cultura Física y Deporte
+153,11137,Comisión Nacional de Libros de Texto Gratuitos
+154,11150,Consejo Nacional de Fomento Educativo
+155,11249,Fondo de Cultura Económica
+156,11312,Instituto Mexicano de Cinematografía
+157,11321,Instituto Mexicano de la Radio
+158,11140,Instituto Nacional de la Infraestructura Física Educativa
+159,11311,Instituto Nacional de Lenguas Indígenas
+160,11310,Instituto Nacional para la Educación de los Adultos
+161,11390,Patronato de Obras e Instalaciones del Instituto Politécnico Nacional
+162,12090,Centro Regional de Alta Especialidad de Chiapas
+163,12195,"Hospital General ""Dr. Manuel Gea González"""
+164,12197,"Hospital General de México ""Dr. Eduardo Liceaga"""
+165,12200,Hospital Infantil de México Federico Gómez
+166,12190,Hospital Juárez de México
+167,12213,"Hospital Regional de Alta Especialidad de Ciudad Victoria ""Bicentenario 2010"""
+168,12214,Hospital Regional de Alta Especialidad de Ixtapaluca
+169,12212,Hospital Regional de Alta Especialidad de la Península de Yucatán
+170,12211,Hospital Regional de Alta Especialidad de Oaxaca
+171,12210,Hospital Regional de Alta Especialidad del Bajío
+172,12215,Instituto Nacional de Cancerología
+173,12220,Instituto Nacional de Cardiología Ignacio Chávez
+174,12226,Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán
+175,12223,Instituto Nacional de Enfermedades Respiratorias Ismael Cosío Villegas
+176,12012,Instituto Nacional de Geriatría (*)
+177,12370,Instituto Nacional de Medicina Genómica
+178,12230,Instituto Nacional de Neurología y Neurocirugía Manuel Velasco Suárez
+179,12245,Instituto Nacional de Pediatría
+180,12250,Instituto Nacional de Perinatología Isidro Espinosa de los Reyes
+181,12295,Instituto Nacional de Psiquiatría Ramón de la Fuente Muñiz
+182,12329,Instituto Nacional de Rehabilitación Luis Guillermo Ibarra Ibarra
+183,12270,Instituto Nacional de Salud Pública
+184,12360,Sistema Nacional para el Desarrollo Integral de la Familia
+185,14075,Comisión Nacional de los Salarios Mínimos
+186,14120,Instituto del Fondo Nacional para el Consumo de los Trabajadores
+187,20120,Comisión Nacional de Vivienda
+188,15075,Instituto Nacional del Suelo Sustentable
+189,15105,Procuraduría Agraria
+190,11121,Centro de Ingeniería y Desarrollo Industrial
+191,11101,"Centro de Investigación Científica y de Educación Superior de Ensenada, Baja California"
+192,11111,Centro de Investigación en Química Aplicada
+193,11100,Centro de Investigaciones y Estudios Superiores en Antropología Social
+194,11109,El Colegio de la Frontera Sur
+195,11280,"Instituto de Investigaciones ""Dr. José María Luis Mora"""
+196,11290,"Instituto Nacional de Astrofísica, Óptica y Electrónica"
+197,00633,Comisión Ejecutiva de Atención a Víctimas
+198,11112,Consejo Nacional de Ciencia y Tecnología
+199,00637,Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado
+200,00641,Instituto Mexicano del Seguro Social
+201,17110,Instituto Nacional de Ciencias Penales
+202,06104,Instituto Nacional de las Mujeres
+203,00625,Instituto Nacional de los Pueblos Indígenas
+204,06630,"Notimex, Agencia de Noticias del Estado Mexicano"
+205,00632,Procuraduría de la Defensa del Contribuyente
+206,47001,Secretaría Ejecutiva del Sistema Nacional Anticorrupción
+207,04430,Sistema Público de Radiodifusión del Estado Mexicano
+208,09176,"Administración Portuaria Integral de Altamira, S.A. de C.V."
+209,09183,"Administración Portuaria Integral de Coatzacoalcos, S.A. de C.V."
+210,09180,"Administración Portuaria Integral de Dos Bocas, S.A. de C.V."
+211,09169,"Administración Portuaria Integral de Ensenada, S.A. de C.V."
+212,09177,"Administración Portuaria Integral de Guaymas, S.A. de C.V."
+213,09178,"Administración Portuaria Integral de Lázaro Cárdenas, S.A. de C.V."
+214,09179,"Administración Portuaria Integral de Manzanillo, S.A. de C.V."
+215,09171,"Administración Portuaria Integral de Mazatlán, S.A. de C.V."
+216,09172,"Administración Portuaria Integral de Progreso, S.A. de C.V."
+217,09186,"Administración Portuaria Integral de Puerto Madero, S.A. de C.V."
+218,09173,"Administración Portuaria Integral de Puerto Vallarta, S.A. de C.V."
+219,09184,"Administración Portuaria Integral de Salina Cruz, S.A. de C.V."
+220,09181,"Administración Portuaria Integral de Tampico, S.A. de C.V."
+221,09174,"Administración Portuaria Integral de Topolobampo, S.A. de C.V."
+222,09175,"Administración Portuaria Integral de Tuxpan, S.A. de C.V."
+223,09182,"Administración Portuaria Integral de Veracruz, S.A. de C.V."
+224,09451,"Aeropuerto Internacional de la Ciudad de México, S.A. de C.V."
+225,11063,"Centro de Capacitación Cinematográfica, A.C."
+226,11108,"Centro de Investigación Científica de Yucatán, A.C."
+227,11083,"Centro de Investigación en Alimentación y Desarrollo, A.C."
+228,11080,Centro de Investigación en Ciencias de Información Geoespacial
+229,11102,"Centro de Investigación en Matemáticas, A.C."
+230,11088,"Centro de Investigación en Materiales Avanzados, S.C."
+231,11103,"Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco, A.C."
+232,11106,"Centro de Investigación y Desarrollo Tecnológico en Electroquímica, S.C."
+233,11090,"Centro de Investigación y Docencia Económicas, A.C."
+234,11107,"Centro de Investigaciones Biológicas del Noroeste, S.C."
+235,11110,"Centro de Investigaciones en Óptica, A.C."
+236,12100,"Centros de Integración Juvenil, A.C."
+237,11105,"CIATEC, A.C. ""Centro de Innovación Aplicada en Tecnologías Competitivas"""
+238,11104,"CIATEQ, A.C. Centro de Tecnología Avanzada"
+239,18200,"Compañía Mexicana de Exploraciones, S.A. de C.V."
+240,11148,"Compañía Operadora del Centro Cultural y Turístico de Tijuana, S.A. de C.V."
+241,21355,"Consejo de Promoción Turística de México, S.A. de C.V."
+242,11163,"Corporación Mexicana de Investigación en Materiales, S.A. de C.V."
+243,20150,"Diconsa, S.A. de C.V."
+244,11186,"Educal, S.A. de C.V."
+245,11075,"El Colegio de la Frontera Norte, A.C."
+246,11120,"El Colegio de México, A.C."
+247,11187,"El Colegio de Michoacán, A.C."
+248,53123,"El Colegio de San Luis, A.C."
+249,11195,"Estudios Churubusco Azteca, S.A."
+250,10101,"Exportadora de Sal, S.A. de C.V."
+251,09189,"Ferrocarril del Istmo de Tehuantepec, S.A. de C.V."
+252,21068,"FONATUR Constructora, S.A. de C.V."
+253,21364,"FONATUR Infraestructura, S.A. de C.V."
+254,21372,"FONATUR Tren Maya, S.A. de C.V."
+255,09450,"Grupo Aeroportuario de la Ciudad de México, S.A. de C.V."
+256,11190,"Impresora y Encuadernadora Progreso, S.A. de C.V."
+257,11279,"Instituto de Ecología, A.C."
+258,08162,"Instituto Nacional para el Desarrollo de Capacidades del Sector Rural, A.C."
+259,53110,"Instituto Potosino de Investigación Científica y Tecnológica, A.C."
+260,12277,"Laboratorios de Biológicos y Reactivos de México, S.A. de C.V."
+261,20143,"Liconsa, S.A. de C.V."
+262,09448,"Servicios Aeroportuarios de la Ciudad de México, S.A. de C.V."
+263,11425,"Televisión Metropolitana, S.A. de C.V."
+264,21161,"FONATUR Prestadora de Servicios, S.A. de C.V. (*)"
+265,06084,"Agroasemex, S.A."
+266,06800,"Banco del Ahorro Nacional y Servicios Financieros, S.N.C."
+267,06305,"Banco Nacional de Comercio Exterior, S.N.C."
+268,06320,"Banco Nacional de Obras y Servicios Públicos, S.N.C."
+269,06325,"Banco Nacional del Ejército, Fuerza Aérea y Armada, S.N.C."
+270,06780,"Nacional Financiera, S.N.C."
+271,06820,"Sociedad Hipotecaria Federal, S.N.C."
+272,06920,"Seguros de Crédito a la Vivienda SHF, S.A. de C.V. (*)"
+273,06814,Extinta Luz y Fuerza del Centro
+274,06815,Ferrocarriles Nacionales de México
+275,18680,"Terrenos para Industrias, S.A."
+276,18164,Comisión Federal de Electricidad
+277,18572,Petróleos Mexicanos
+278,18573,Pemex Etileno
+279,18575,Pemex Exploración y Producción
+280,18571,Pemex Fertilizantes
+281,18570,Pemex Logística
+282,18569,Pemex Perforación y Servicios
+283,18679,Pemex Transformación Industrial
+284,04200,Tribunal Federal de Conciliación y Arbitraje
+285,32100,Tribunal Federal de Justicia Administrativa
+286,31100,Tribunal Superior Agrario
+287,03200,Consejo de la Judicatura Federal
+288,03300,Suprema Corte de Justicia de la Nación
+289,03100,Tribunal Electoral del Poder Judicial de la Federación
+290,61100,Banco de México
+291,10111,Comisión Federal de Competencia Económica
+292,35100,Comisión Nacional de los Derechos Humanos
+293,09121,Instituto Federal de Telecomunicaciones
+294,40100,Instituto Nacional de Estadística y Geografía
+295,06738,"Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales"
+296,22100,Instituto Nacional Electoral
+297,11323,Instituto Nacional para la Evaluación de la Educación
+298,00017,Fiscalía General de la República
+299,00635,Instituto del Fondo Nacional de la Vivienda para los Trabajadores
+300,64100,Universidad Autónoma Agraria Antonio Narro
+301,29004,Universidad Autónoma Chapingo
+302,64300,Universidad Autónoma Metropolitana
+303,64400,Universidad Nacional Autónoma de México
+304,22330,Partido Acción Nacional
+305,22370,Partido Revolucionario Institucional
+306,22340,Partido de la Revolución Democrática
+307,22380,Partido Verde Ecologista de México
+308,22350,Partido del Trabajo
+309,22310,Movimiento Ciudadano
+310,22300,Morena
+311,10102,Fideicomiso de Fomento Minero
+312,09225,Fideicomiso de Formación y Capacitación para el Personal de la Marina Mercante Nacional
+313,11225,Fideicomiso de los Sistemas Normalizado de Competencia Laboral y de
+314,08331,Fideicomiso de Riesgo Compartido
+315,15100,Fideicomiso Fondo Nacional de Fomento Ejidal
+316,20285,Fideicomiso Fondo Nacional de Habitaciones Populares
+317,04310,Fideicomiso para la Cineteca Nacional
+318,06571,Fondo de Capitalización e Inversión del Sector Rural
+319,08002,Fondo de Empresas Expropiadas del Sector Azucarero (*)
+320,06600,"Fondo de Garantía y Fomento para la Agricultura, Ganadería y Avicultura"
+321,06601,Fondo de Garantía y Fomento para las Actividades Pesqueras (*)
+322,06610,Fondo de Operación y Financiamiento Bancario a la Vivienda (*)
+323,06602,Fondo Especial de Asistencia Técnica y Garantía para Créditos Agropecuarios (*)
+324,06603,Fondo Especial para Financiamientos Agropecuarios (*)
+325,21160,Fondo Nacional de Fomento al Turismo
+326,20312,Fondo Nacional para el Fomento de las Artesanías
+327,11275,Fondo para el Desarrollo de Recursos Humanos (*)
+328,11262,INFOTEC Centro de Investigación e Innovación en Tecnologías de la Información y Comunicación
+329,10110,ProMéxico
+330,06002,Fid. 66.- Gobierno Federal para créditos especiales
+331,06003,Fid. 285.-Promotora de desarrollo urbano.- Fraccionamiento Bosques del Valle Coacalco
+332,06001,Fid. 351.- Unidad Morazán
+333,06004,M. 133.- Fraccionamiento Agua Hedionda
+334,11515,Fondo de investigación y desarrollo para la modernización tecnológica
+335,11012,"Fideicomiso irrevocable de administración ""Centro Cultural Santo Domingo"", Oaxaca"
+336,10002,Fideicomiso de Fomento Industrial LANFI
+337,09003,Fid. 122.- Benjamín Hill Trabajadores F.F.C.C. Sonora-Baja California
+338,09004,Fideicomiso de inversión y administración del tramo carretero Nizuc-Tulum No. 160265-7
+339,09007,Fideicomiso programa habitacional de FERRONALES en la República Mexicana
+340,11014,Fideicomiso para la cultura de la comisión México-Estados Unidos para el intercambio educativo y cultural F/22514 (FONCA)
+341,11016,Fideicomiso para la adaptación de los museos Diego Rivera y Frida Kahlo
+342,11018,Fideicomiso para la conservación de la Casa del Risco y Pinacoteca Isidro Fabela
+343,15001,Fideicomiso de administración y garantía complementaria Fondo 95
+344,15002,Fideicomiso de apoyo a los propietarios rurales en Chiapas (FIAPAR)
+345,11008,Convenio de cooperación para la operación del Programa de Educación a
+346,11009,Convenio de cooperación para la operación del Programa de Educación a Distancia II
+347,11024,Programa Nacional de Superación de Personal Académico (SUPERA)
+348,06012,Fideicomiso para coadyuvar al desarrollo de las entidades federativas y municipios (FIDEM)
+349,06044,Mand. 1312.- Juicio promovido por ICA vs INECEL de la República de Ecuador
+350,06045,Mandato extinta Comisión Monetaria
+351,06046,Mandato fiduciario de inversión y admón. apoyo financiero a favor del Fideicomiso Sindicatura de Promotora del Valle de Morelia (PROVAM)
+352,06048,Mandato SHCP Mex. Tex Development Corp.
+353,21005,Fondo Mixto Ciudades Coloniales
+354,21006,Fondo Mixto de Acapulco
+355,21007,"Fondo Mixto de Cozumel, Quintana Roo"
+356,21008,Fondo Mixto de Mazatlán
+357,21009,Fondo Mixto del Estado de Morelos
+358,21010,Fondo Mixto Mundo Maya
+359,12013,Fideicomiso DIF-Bosques de las Lomas
+360,09086,Mandato para el pago de compromisos del Pabellón Aeroespacial CFE-SCT-ASA
+361,05101,Fondo mixto de cooperación técnica y científica México-España
+362,05102,Fondo nacional de cooperación internacional para el desarrollo
+363,61200,Fondo Mexicano del Petróleo para la Estabilización y el Desarrollo
+364,06802,Fideicomiso de administración para el otorgamiento y primas de antigüedad
+365,06803,Fideicomiso irrevocable de administración No. 10055 (L@Red de la Gente)
+366,06801,"Fideicomiso irrevocable de inversión y administración para el pago de pensiones y jubilaciones, F/10045"
+367,06805,Fondo de protección de sociedades financieras populares y de protección a sus
+368,06804,Fondo de supervisión auxiliar de sociedades cooperativas de ahorro y Préstamo y de Protección a sus Ahorradores. F/10217
+369,06314,Fideicomiso de apoyo a las exportaciones FIDAPEX
+370,06309,Fideicomiso para el impulso al financiamiento de las empresas
+371,06306,Fideicomiso Patronato del Centro de Diseño México
+372,06313,Fideicomiso PEA y préstamos jubilados
+373,06308,Fondo de pensiones BANCOMEXT
+374,06312,Fondo de pensiones de contribución definida de BANCOMEXT
+375,06307,Fondo editorial de la Plástica Mexicana
+376,06315,Fideicomiso para el Pago de Gastos de Servicios de Asistencia y Defensa Legal BANCOMEXT
+377,06322,Fid. 2065.- Plan de pensiones de los jubilados de BANOBRAS
+378,06323,Fid. 2160 Fondo de pensiones de contribución definida
+379,06321,Fideicomiso 1936 Fondo Nacional de Infraestructura
+380,06324,Fideicomiso Fondo de Apoyo a Municipios
+381,01301,Para apoyar la construcción y equipamiento del nuevo recinto legislativo de la Cámara de Senadores
+382,06326,Fideicomiso irrevocable de administración e inversión del fondo de pensiones o jubilaciones o primas de antigüedad de los trabajadores del Banco Nacional del
+383,09123,"F/11025590 (Antes 4483-0) ""Durango-Yerbanis"""
+384,09124,"F/21935-2 ""Kantunil-Cancún"""
+385,09131,F/689 San Martín Texmelucan-Tlaxcala-El Molinito
+386,09132,Fideicomiso 11029386 (antes SM940243) Gómez Palacio-Cuencamé-Yerbanis
+387,09126,"Fideicomiso 148687 ""Fondo para préstamos a corto plazo para apoyar a los trabajadores de CAPUFE en casos de contingencia"""
+388,09125,"Fideicomiso 2165-8 ""Fondo para liquidación de trabajadores de la red FONADIN"" (Antes FARAC)"
+389,09127,F/1516 ATM (Antes 639-00-5) Tijuana-Tecate
+390,09129,Fideicomiso No. F/745293 (antes 2103) Cuauhtémoc-Osiris
+391,09128,Fideicomiso irrevocable de administración y fuente de pago número CIB/2064
+392,09122,F/31293-4 Libramiento Oriente de San Luis Potosí
+393,09130,"Fideicomiso para la construcción, explotación y conservación del tramo carretero Atlacomulco-Maravatio"
+394,11122,Fideicomiso Centro de Ingeniería y Desarrollo Industrial No. 135826-8
+395,11118,"Fondo de investigación científica y desarrollo tecnológico del Centro de Investigación Científica de Yucatán, A.C."
+396,11201,"Fideicomiso de proyectos de investigación del Centro de Investigación Científica y de Educación Superior de Ensenada, B.C."
+397,11184,"Fideicomiso Centro de Investigación en Alimentación y Desarrollo, A.C. (CIAD)"
+398,11183,Fideicomiso para el Fondo de los Trabajadores del CIAD
+399,11081,"Fondo de investigación científica y desarrollo tecnológico del Centro de Investigación en Geografía y Geomática, Ing. Jorge L. Tamayo, A.C."
+400,11301,Fideicomiso Centro de Investigación en Matemáticas No. 040024-1
+401,11302,Fideicomiso de obligaciones laborales del CIMAT
+402,11089,"Fideicomiso Centro de Investigación en Materiales Avanzados, S.C. (CIMAV)"
+403,11203,Fideicomiso inversión y administración
+404,11202,Fideicomiso para pago de primas de antigüedad y jubilación CIQA
+405,11303,Fideicomiso de investigación científica y de desarrollo tecnológico
+406,11086,Fideicomiso de apoyo a las actividades del CINVESTAV
+407,11206,Fideicomiso de investigación científica y desarrollo tecnológico del Centro Publico
+408,11091,Fideicomiso 1725-1-Para integrar diversos fondos (Patrimonial)
+409,11092,Fideicomiso 1738-3-Ciencia y Tecnología
+410,11207,"Fideicomiso Centro de Investigaciones Biológicas del Noroeste, S.C."
+411,11180,"Fideicomiso Centro de Investigaciones en Óptica, A.C. No. 040026-8"
+412,11181,"Fideicomiso para el pago de las obligaciones laborales de los trabajadores del Centro de Investigaciones en Óptica, A.C."
+413,11204,Fondo de investigación científica y desarrollo tecnológico
+414,11306,Fideicomiso CIATEC
+415,11305,Fideicomiso para pasivos laborales y primas de antigüedad para el personal del CIATEC
+416,11404,Fideicomiso N° 030051-4
+417,11405,"Fondo de retiro voluntario y liquidaciones del personal de CIATEQ, A.C."
+418,08141,Fideicomiso de apoyo a la investigación científica y desarrollo tecnológico del Colegio de Postgraduados
+419,00638,"Fondo de ayuda, asistencia y reparación integral"
+420,10112,Fondo para solventar las contingencias derivadas de juicios laborales de la Comisión Federal de Competencia Económica
+421,18167,Fideicomiso de administración de gastos previos
+422,18168,Fideicomiso de administración y traslativo de dominio (Obras de Infraestructura para el Sistema Eléctrico Federal)
+423,18169,Fideicomiso para el ahorro de energía eléctrica
+424,18170,"Fideicomiso para la constitución de un fondo revolvente de financiamiento para el programa de aislamiento térmico de la vivienda en el Valle de Mexicali, B.C. (FIPATERM Mexicali)"
+425,06201,Fideicomiso fondo de apoyo a los trabajadores de confianza de la Comisión Nacional Bancaria y de Valores
+426,06202,Fideicomiso para el pago de gratificación por antigüedad a los trabajadores de base de la CNBV que se retiren después de 15 años de servicios ininterrumpidos.
+427,06203,"Fondo para la asistencia y defensa legal de los miembros de la Junta de Gobierno de la Comisión Nacional Bancaria y de Valores que no sean servidores públicos de ésta, así como de los Interventores y personal auxiliar al cual los propios"
+428,16152,"Fideicomiso de administración, inversión y pago número 013 ANP Valle de Bravo"
+429,11231,Fideicomiso de administración e inversión para el desarrollo y fomento del deporte en el Estado de Puebla
+430,11232,Fideicomiso de inversión y administración (FINDEPO)
+431,11233,"Fideicomiso de inversión y administración denominado ""World Cup in Shotgun Acapulco 2010"""
+432,11234,"Fideicomiso para becas y apoyos deportivos ""Chelito Zamora"""
+433,11235,"Fideicomiso para el desarrollo de infraestructura y equipamiento deportivo para los Juegos Panamericanos, Guadalajara 2011"
+434,11236,Fideicomiso para la infraestructura deportiva
+435,11237,Fideicomiso para la infraestructura deportiva (FINDEPO) [201011L6I01528]
+436,11238,Fideicomiso para la infraestructura deportiva (FINDEPO) [201011L6I01539]
+437,11239,Fideicomiso público de administración e inversión para el desarrollo de la infraestructura y equipamiento deportivo en el Estado de Veracruz de Ignacio de
+438,11240,Fondo para el deporte de alto rendimiento
+439,18002,Fideicomiso de la Comisión Nacional de Hidrocarburos
+440,12103,Fideicomiso del Sistema de Protección Social en Salud
+441,06112,"Fideicomiso para la asistencia legal de los miembros de la Junta de Gobierno y servidores públicos de la Comisión Nacional de Seguros y Fianzas, así como de los interventores administrativos o gerentes y funcionarios auxiliares de las"
+442,16102,"Fideicomiso irrevocable de administración y fuente de pago, No. 1928.- para apoyar el proyecto de saneamiento del Valle de México"
+443,16103,Mandato del Túnel Emisor Oriente (TEO)
+444,06122,"Fideicomiso para la asistencia legal de los miembros de la Junta de Gobierno, del Comité Consultivo y de Vigilancia y servidores públicos de la Comisión"
+445,18113,Fideicomiso de la Comisión Reguladora de Energía
+446,03207,Fideicomiso para el desarrollo de infraestructura que implementa la reforma constitucional en materia penal
+447,03208,Fideicomiso para el mantenimiento de casas habitación de Magistrados y Jueces
+448,03209,Fideicomiso pensiones complementarias de Magistrados y Jueces jubilados
+449,03206,Fondo de apoyo a la administración de justicia
+450,03210,"Fondo para la administración de los recursos provenientes de sentencias que deriven de las Acciones Colectivas Difusas, a que se refiere el artículo 624 del"
+451,03102,"Fideicomiso de apoyos médicos complementarios y de apoyo económico extraordinario para los servidores públicos del Poder Judicial de la Federación,"
+452,11512,Fondo de cooperación internacional en ciencia y tecnología
+453,11513,Fondo de desarrollo científico y tecnológico para el fomento de la producción y financiamiento de vivienda y el crecimiento del sector habitacional
+454,11514,Fondo de innovación tecnológica Secretaría de Economía – CONACYT
+455,11516,"Fondo institucional de fomento regional para el desarrollo científico, tecnológico, y de innovación"
+456,11517,Fondo institucional del CONACYT (FOINS)
+457,11518,Fondo mixto CONACYT - Gobierno del Distrito Federal
+458,11519,Fondo mixto CONACYT - Gobierno del Estado de Chihuahua
+459,11520,Fondo mixto CONACYT - Gobierno del Estado de México
+460,11521,Fondo mixto CONACYT - Gobierno del Estado de Oaxaca
+461,11522,Fondo mixto CONACYT - Gobierno del Estado de Veracruz de Ignacio de la Llave
+462,11523,"Fondo mixto CONACYT - Gobierno Municipal de la Paz, Baja California Sur"
+463,11524,"Fondo mixto CONACYT - Gobierno Municipal de Puebla, Puebla"
+464,11525,Fondo mixto CONACYT-Gobierno del Estado Aguascalientes
+465,11526,Fondo mixto CONACYT-Gobierno del Estado de Campeche
+466,11527,Fondo mixto CONACYT-Gobierno del Estado de Chiapas
+467,11528,Fondo mixto CONACYT-Gobierno del Estado de Coahuila de Zaragoza
+468,11529,Fondo mixto CONACYT-Gobierno del Estado de Colima
+469,11530,Fondo mixto CONACYT-Gobierno del Estado de Durango
+470,11531,Fondo mixto CONACYT-Gobierno del Estado de Guerrero
+471,11532,Fondo mixto CONACYT-Gobierno del Estado de Hidalgo
+472,11533,Fondo mixto CONACYT-Gobierno del Estado de Michoacán
+473,11534,Fondo mixto CONACYT-Gobierno del Estado de Quintana Roo
+474,11535,Fondo mixto CONACYT-Gobierno del Estado de Sinaloa
+475,11536,Fondo mixto CONACYT-Gobierno del Estado de Sonora
+476,11537,Fondo mixto CONACYT-Gobierno del Estado de Tabasco
+477,11538,Fondo mixto CONACYT-Gobierno del Estado de Tamaulipas
+478,11539,Fondo mixto CONACYT-Gobierno del Estado de Yucatán
+479,11540,Fondo mixto CONACYT-Gobierno Municipal de Ciudad Juárez Chihuahua
+480,11541,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado Baja California
+481,11542,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Baja California Sur
+482,11543,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT-
+483,11544,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT-
+484,11545,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Morelos
+485,11546,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Nayarit
+486,11547,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Nuevo León
+487,11548,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT-
+488,11549,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT-
+489,11550,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de San Luis Potosí
+490,11551,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Tlaxcala
+491,11552,Fondo mixto de fomento a la investigación científica y tecnológica CONACYT- Gobierno del Estado de Zacatecas
+492,11553,Fondo para el fomento y apoyo a la investigación científica y tecnológica en bioseguridad y biotecnología
+493,11554,Fondo sectorial CONACYT – INEGI
+494,11555,Fondo sectorial CONACYT - Secretaría de Energía - Hidrocarburos
+495,11556,Fondo sectorial CONACYT - Secretaría de Energía - Sustentabilidad energética
+496,11557,Fondo sectorial CONACYT - SEGOB - CNS para la seguridad pública
+497,11558,Fondo sectorial de innovación Secretaría de Economía - CONACYT
+498,11559,Fondo sectorial de investigación ambiental
+499,11560,"Fondo sectorial de investigación en materias agrícola, pecuaria, acuacultura, agrobiotecnología y recursos fitogenéticos"
+500,11561,Fondo sectorial de investigación en salud y seguridad social
+501,11562,Fondo sectorial de investigación INIFED - CONACYT
+502,11563,Fondo sectorial de investigación para el desarrollo aeroportuario y la navegación aérea
+503,11564,Fondo sectorial de investigación para el desarrollo social
+504,11565,Fondo sectorial de investigación para la educación
+505,11575,Fondo Sectorial de Investigación para la Evaluación de la Educación CONACYT-
+506,11566,Fondo sectorial de investigación Secretaría de Relaciones Exteriores
+507,11576,"Fondo Sectorial de Investigación sobre Pobreza, Monitoreo y Evaluación CONACYT-CONEVAL"
+508,11567,Fondo sectorial de investigación y desarrollo en ciencias navales
+509,11568,Fondo sectorial de investigación y desarrollo INMUJERES-CONACYT
+510,11569,Fondo sectorial de investigación y desarrollo sobre el agua
+511,11570,"Fondo sectorial de investigación, desarrollo tecnológico e innovación del Ejército y Fuerza Aérea Mexicanos, CONACYT – SEDENA"
+512,11571,"Fondo sectorial de investigación, desarrollo tecnológico e innovación en"
+513,11572,Fondo sectorial para investigación y desarrollo tecnológico en energía
+514,11573,"Fondo sectorial para la investigación, el desarrollo y la innovación tecnológica en turismo"
+515,11574,"Fondo sectorial para la investigación, el desarrollo y la innovación tecnológica forestal"
+516,11164,Fondo de investigación científica y desarrollo tecnológico de COMIMSA
+517,11286,Fondo para los trabajadores por prima de antigüedad de EDUCAL
+518,11076,Fideicomiso de investigación el Colegio de la Frontera Norte
+519,11209,Fondo de investigación científica y desarrollo tecnológico de El Colegio de la Frontera Sur Fid. 784
+520,11188,"Fideicomiso de ciencia y tecnología del Colegio de Michoacán, A. C."
+521,53223,Fideicomiso fondo de ahorro del personal de mandos medios y superiores del Colegio de San Luis A.C. N° 030057-3
+522,53224,Fondo de investigación científica y desarrollo tecnológico de El Colegio de San
+523,10201,Fideicomiso fondo de ahorro obreros de ESSA
+524,10202,Fideicomiso plan de pensiones y jubilaciones ESSA
+525,06816,Fideicomiso 5012-6 FERRONALESJUB (para el pago de pensiones jubilatorias a los trabajadores de Ferrocarriles Nacionales de México)
+526,10103,Plan de pensiones de contribución definida para el personal de mando del
+527,10104,Plan de pensiones personal operativo
+528,10105,Prima de antigüedad
+529,15101,Fideicomiso traslativo de dominio Puerto los Cabos
+530,06566,Fondo de la Financiera Rural
+531,21165,"Fideicomiso para trabajadores de Nacional Hotelera Baja California, S. A."
+532,06572,Fondo de inversión de capital en Agronegocios (FICA Sureste 2)
+533,06573,Fondo de inversión de capital en Agronegocios (FICA)
+534,06574,Fondo de inversión de capital en Agronegocios 2 (FICA 2)
+535,06575,Fondo de inversión de capital en Agronegocios 3 (FICA 3)
+536,06576,Fondo de inversión de capital en Agronegocios Activa (FICA Activa)
+537,06577,Fondo de inversión de capital en Agronegocios Agropyme
+538,06578,Fondo de Inversión de Capital en Agronegocios Infraestructura
+539,11250,Fideicomiso de administración e Inversión para el manejo del fondo de ahorro de los trabajadores del Fondo de Cultura Económica
+540,11252,Fideicomiso para el otorgamiento y pago de primas de antigüedad de su personal
+541,11253,Fideicomiso SEP/DGETI/FCE
+542,06604,"Fideicomiso de pensiones, del Fondo de Garantía y Fomento para la Agricultura, Ganadería y Avicultura"
+543,21162,Fideicomiso Barrancas del Cobre
+544,21163,Fideicomiso de reserva para el pago de pensiones o jubilaciones y primas de antigüedad
+545,21164,Fideicomiso para los trabajadores del Hotel Exconvento Santa Catarina
+546,09460,Fideicomiso para el desarrollo del nuevo Aeropuerto Internacional de la Ciudad del México
+547,11263,Fondo de investigación científica y desarrollo tecnológico del Fondo de Información y Documentación para la Industria INFOTEC
+548,11379,Fondo de investigación científica y desarrollo tecnológico
+549,11281,Fondos de investigación científica y desarrollo tecnológico 1759-6
+550,07151,"Contrato de mandato para el pago de haberes de retiro, pensiones y compensaciones"
+551,07152,Fideicomiso de administración y operación del ISSFAM
+552,14221,Fideicomiso de administración e inversión para pensiones de los trabajadores
+553,14222,Fideicomiso de inversión y administración de primas de antigüedad de los trabajadores
+554,09221,Fondo de infraestructura y equipamiento del Instituto Federal de Telecomunicaciones
+555,11313,Fideicomiso fondo de inversión y estímulos al cine (FIDECINE)
+556,11314,Fideicomiso fondo para la producción cinematográfica de calidad (FOPROCINE)
+557,16112,Fondo de investigación científica y desarrollo tecnológico del Instituto Mexicano de Tecnología del Agua
+558,18674,Fideicomiso para apoyo a la investigación científica y desarrollo tecnológico
+559,18675,Fideicomiso para pensionados del IMP
+560,18676,Fideicomiso plan de pensiones para el personal activo del IMP
+561,18677,Fondo de ahorro
+562,00642,Fideicomiso de administración de teatros y salas de espectáculos IMSS
+563,00643,Fideicomiso de beneficios sociales (FIBESO)
+564,00644,Fideicomiso de investigación en salud
+565,00645,Fideicomiso irrevocable de administración e inversión Niña del Milenio
+566,00646,Fideicomiso para el desarrollo del deporte No. 4611-1
+567,00647,Fondo de fomento a la educación (FOFOE)
+568,00648,Fondo para ayudas extraordinarias con motivo del incendio de la Guardería ABC
+569,11152,Fideicomiso archivos Plutarco Elías Calles y Fernando Torreblanca
+570,11153,"Fideicomiso irrevocable de administración 'Museo Regional de Guadalupe', Zacatecas"
+571,11154,"Fideicomiso para el fomento y la conservación del Patrimonio Cultural, Antropológico, Arqueológico e Histórico de México"
+572,11155,"Fideicomiso privado irrevocable de administración 'Santo Domingo de Guzmán',"
+573,11291,Fideicomiso de investigación científica y desarrollo tecnológico No. 1750-2
+574,17111,Fondo de ahorro capitalizable para los trabajadores operativos del INACIPE
+575,18471,Fideicomiso para el apoyo a la investigación científica y desarrollo tecnológico del Instituto de Investigaciones Eléctricas
+576,18472,"Fondo de primas de antigüedad, beneficios al retiro y jubilaciones del Instituto de"
+577,08171,Fideicomiso de administración e inversión para el establecimiento y operación de
+578,08200,Fideicomiso de investigación para el desarrollo del programa de
+579,12330,Fideprotesis
+580,10212,México Emprende
+581,15076,Fondo de ahorro para los trabajadores de CORETT
+582,22200,"Contrato de fideicomiso con número 108600 con el Banco Nacional del Ejército, Fuerza Aérea y Armada, S.N.C. (BANJERCITO), para la administración e inversión de los recursos que integran el patrimonio del Fondo para el cumplimiento del programa de infraestructura inmobiliaria y para la atención ciudadana y mejoramiento de módulos del Instituto Federal Electoral, aplicados"
+583,22201,"Contrato de fideicomiso con número 108601 con el Banco Nacional del Ejército, Fuerza Aérea y Armada, S.N.C. (BANJERCITO), para la administración del Fondo por concepto de las aportaciones para el cumplimiento del programa del"
+584,11172,Fideicomiso fondo de investigación científica y desarrollo tecnológico del IPN
+585,53111,"Fondo de investigación científica y desarrollo tecnológico del Instituto Potosino de Investigación Científica y Tecnológica IPICYT, A.C."
+586,06781,Complemento del Préstamo Especial para el Ahorro (PEA) y préstamos de corto y mediano plazo para jubilados bajo el plan de beneficio definido
+587,06783,Fideicomiso de capital emprendedor
+588,06784,Fideicomiso de contragarantía para el financiamiento empresarial
+589,06785,Fideicomiso fondo de asistencia técnica en programas de financiamiento
+590,06786,Fideicomiso programa de venta de títulos en directo al público
+591,06788,Fondo de pensiones de contribución definida de Nacional Financiera
+592,06789,Fondo de pensiones y primas de Antigüedad de NAFIN
+593,06790,Fondo para la participación de riesgos 11480
+594,06791,Fondo para la participación de riesgos en fianzas
+595,06792,"Mandatos fusión y liquidación (FONEP, FIDEIN, PAI)"
+596,06793,06795
+597,02102,Fideicomiso a favor de los hijos del personal adscrito al Estado Mayor Presidencial
+598,18681,"Contrato especifico abierto para la construcción y suministro de remolcadores,"
+599,18672,Fid. 294.- Colonia Petrolera José Escandón
+600,18671,Fondo laboral PEMEX
+601,17007,"Fondo de auxilio económico a familiares de las víctimas de homicidio de mujeres en el Municipio de Juárez, Chihuahua"
+602,17008,Mandato de administración para recompensas de la Procuraduría General de la
+603,17009,Mandato de administración y pago para programas de procuración de justicia de la Procuraduría General de la Republica
+604,10310,Fideicomiso para la competitividad e innovación México-Unión Europea y/o Fideicomiso PROCEI
+605,10311,"Mandato para la administración de los recursos del programa de apoyo a la industria cinematográfica y audiovisual, Fondo"
+606,09005,Fideicomiso del fondo de cobertura social de telecomunicaciones
+607,09006,Fideicomiso E-México
+608,11144,Fideicomiso Museo de Arte Popular Mexicano
+609,11145,Fideicomiso para apoyar la construcción del Centro Nacional de las Artes
+610,11146,Mandato Antiguo Colegio de San Idelfonso
+611,11147,Mandato del fondo nacional para la cultura y las artes
+612,15005,Fideicomiso para el desarrollo de la región Sur-Sureste (Fidesur)
+613,15006,Fideicomiso para el desarrollo regional Noreste (Fidenor-Este)
+614,15007,Fondo de desarrollo regional sustentable de Estados y Municipios mineros
+615,15008,Fondo para el ordenamiento de la propiedad rural
+616,10001,Fideicomiso para promover el desarrollo de proveedores y contratistas nacionales de la industria energética
+617,10003,Fideicomiso del Programa Nacional Financiero al Microempresario
+618,11007,Bachillerato general en sus modalidades no escolarizada y mixta
+619,11010,Convenio específico para la operación y desarrollo del Programa SEPA-Ingles
+620,11011,Fideicomiso del Programa de escuelas de excelencia para abatir el rezago educativo
+621,11015,Fideicomiso para el Programa especial de financiamiento a la vivienda para el
+622,11017,Fideicomiso para la Comisión México-Estados Unidos F 22927-8
+623,11019,Fideicomiso 14780-8 Fondo Nacional para Escuelas de Calidad
+624,11020,Fondo de apoyo al Programa Intersectorial de Educación Saludable
+625,11021,Fondo de la amistad México-Japón
+626,11022,Fondo de retiro de los trabajadores de la SEP (FORTE)
+627,11023,Mandato para el Fondo de apoyo al proyecto en el Distrito Federal
+628,18010,Fondo de servicio universal eléctrico
+629,18011,Fondo para la transición energética y el aprovechamiento sustentable de la energía
+630,04009,Fideicomiso para el cumplimiento de obligaciones en materia de los derechos humanos
+631,04010,"Fideicomiso para la plataforma de infraestructura, mantenimiento y equipamiento de seguridad pública y de aeronaves"
+632,04011,Fideicomiso preventivo
+633,04012,Fondo de apoyo social para ex trabajadores migratorios mexicanos
+634,04013,Fondo de Desastres Naturales (FONDEN)
+635,04014,Fondo para la prevención de desastres naturales
+636,04015,Fondo para la protección de personas defensoras de derechos humanos y
+637,06005,9/11 de la recaudación por concepto de las cuotas establecidas en el artículo 2°A. Fracción II de la Ley del Impuesto Especial sobre Producción y Servicios
+638,06006,Centro de Estudios para la Preparación y Evaluación Socioeconómica de
+639,02101,Conservaduría de Palacio Nacional
+640,06007,El 0.136 por ciento de la RFP
+641,06008,"Fid. 1327.- Gobierno Federal, Programa de vivienda para magistrados y jueces del Poder Judicial Federal"
+642,06010,"Fideicomiso 2003 ""Fondo de Desastres Naturales"""
+643,06011,Fideicomiso fondo de estabilización de los ingresos presupuestarios
+644,06013,Fideicomiso para la implementación del Sistema de Justicia Penal en las entidades federativas
+645,06014,Fideicomiso para la Infraestructura en los Estados (FIES)
+646,06016,Fideicomiso que administrara el fondo para el fortalecimiento de sociedades y cooperativas de ahorro y préstamo y de apoyo a sus ahorradores
+647,06017,Fondo Aportaciones para Servicio de Salud (FASSA)
+648,06018,Fondo de Ahorro Capitalizable de los Trabajadores Al Servicio del Estado (FONAC)
+649,06019,Fondo de Aportaciones Múltiples (FAM)
+650,06020,Fondo de Aportaciones para Educación Tecnológica y de Adultos (FAETA)
+651,06021,Fondo de Aportaciones para el Fortalecimiento de las Entidades Federativas (FAFEF)
+652,06022,Fondo de Aportaciones para el Fortalecimiento de los Municipios y de las
+653,06023,Fondo de Aportaciones para la Infraestructura Social (FAIS)
+654,06025,Fondo de Aportaciones para Nómina Educativa y Gasto Operativo (FONE)
+655,06026,Fondo de apoyo en infraestructura y productividad
+656,06027,Fondo de apoyo para infraestructura y seguridad
+657,06029,Fondo de compensación
+658,06030,Fondo de compensación al régimen de pequeños contribuyentes y del régimen de los intermedios
+659,06031,Fondo de compensación de automóviles nuevos
+660,06032,Fondo de desincorporación de entidades
+661,06033,Fondo de Estabilización de los Ingresos de las Entidades Federativas (FEIEF)
+662,06034,Fondo de extracción de hidrocarburos
+663,06035,Fondo de fiscalización y recaudación
+664,06036,Fondo de fomento municipal
+665,06037,Fondo de infraestructura para países de Mesoamérica y el Caribe
+666,06039,Fondo de reconstrucción de Entidades Federativas
+667,06040,Fondo general de participaciones
+668,06041,Impuesto Especial sobre Producción y Servicios
+669,06042,Impuesto sobre la renta participable
+670,06043,La transferencia del Fondo Mexicano del Petróleo para la Estabilización y el Desarrollo
+671,06047,Mandato para la administración de los recursos del Programa de Cooperación Energética para Países de Centroamérica y el Caribe
+672,06049,Museo Dolores Olmedo Patiño
+673,06921,Fideicomiso para el Fondo Regional (FIFONREGIÓN)
+674,06922,Fideicomiso para la Evaluación de los Fondos de Aportaciones Federales (FIDEFAF)
+675,06327,Fideicomiso de Transición 2018
+676,07001,Fideicomiso de apoyo a deudos de militares fallecidos o a militares que hayan
+677,07002,Fideicomiso público de administración y pago de equipo militar
+678,16001,"Fideicomiso para apoyar los programas, proyectos y acciones ambientales de la megalópolis"
+679,16002,Fondo Mexicano para la conservación de la naturaleza
+680,16003,Fondo para el cambio climático
+681,16004,Fondo para la biodiversidad
+682,16005,Mandato para remediación ambiental
+683,05005,Fideicomiso para cubrir gastos por demandas en el extranjero
+684,05006,Mandato para el establecimiento del Fondo de Contingencia de las RME´S
+685,05103,Mandato para la Estrategia de Fortalecimiento para la Atención a Mexicanos en Estados Unidos
+686,21003,Fideicomiso Ángeles Verdes
+687,06024,Fondo de Aportaciones para la Seguridad Pública de los Estados y del Distrito Federal (FASP)
+688,06103,Fideicomiso para administrar la contraprestación del artículo 16 de la Ley Aduanera
+689,06105,Fideicomiso programa de mejoramiento de los medios de informática y control de
+690,64405,"Almacenadora Sur, S.A."
+691,06821,Fideicomiso de pensiones del sistema BANRURAL
+692,06822,Fideicomiso para administrar el fondo de pensiones de FOPPAZ
+693,06823,Fideicomiso para administrar el fondo de pensiones y gastos médicos de BANPESCA
+694,06824,Fideicomiso para administrar el fondo de pensiones y gastos médicos de BNCI
+695,06826,Fondo de pensiones de instituciones liquidadas
+696,06827,Fondo de pensiones fideicomiso liquidador de Instituciones y Organizaciones Auxiliares de Crédito
+697,06828,Fondo de pensiones Financiera Nacional Azucarera
+698,06829,Fondo de pensiones Servicios de Almacenamiento del Norte S.A.
+699,06825,Fondo de Restitución (FORE)
+700,03301,Administración de los recursos producto de la venta de publicaciones de la
+701,03302,Fondo Nacional para el Fortalecimiento y Modernización de la Impartición de
+702,03303,Pensiones complementarias para mandos medios y personal operativo de la
+703,03304,Pensiones complementarias para servidores públicos de mando superior de la Suprema Corte de Justicia de la Nación
+704,03305,Plan de prestaciones médicas
+705,03306,Remanentes presupuestarios del año 1998 y anteriores
+706,64401,Fideicomiso SEP-UNAM
+707,29011,Fondo de fomento para la investigación científica y el desarrollo tecnológico de la Universidad Pedagógica Nacional
+708,60100,Asociación Autónoma del Personal Académico de la Universidad Nacional
+709,60101,Confederación Patronal de la República Mexicana
+710,60102,Sindicato Único de Trabajadores del Instituto Mexicano de la Propiedad Industrial
+711,60104,Sindicato de Investigadores y Profesores de El Colegio de la Frontera Norte
+712,60105,Sindicato de Trabajadores Académicos de la Universidad Autónoma de Chapingo
+713,60109,Sindicato de Trabajadores de la Cámara de Diputados del H. Congreso de la Unión
+714,60110,Sindicato de Trabajadores de la Cámara de Diputados del Poder Legislativo
+715,60111,Sindicato de Trabajadores de la Cámara de Senadores
+716,60112,Sindicato Nacional de Trabajadores de la Comisión Nacional de Seguros y Fianzas
+717,60115,Sindicato de Trabajadores de la Universidad Autónoma de Chapingo
+718,60116,Sindicato de Trabajadores de la Universidad Nacional Autónoma de México
+719,60117,Sindicato de Trabajadores de Talleres Gráficos de México
+720,60118,"Sindicato de Trabajadores del Centro de Investigación y Docencia Económicas, A.C."
+721,60119,Sindicato Único de Trabajadores del Centro de Investigaciones y Estudios Superiores en Antropología Social.
+722,60121,Sindicato de Trabajadores del Consejo Nacional de Ciencia y Tecnología
+723,60122,Sindicato de Trabajadores del Instituto Mexicano de la Juventud
+724,60123,Sindicato de Trabajadores del Instituto Mexicano de Tecnología del Agua
+725,60124,Sindicato de Trabajadores del Instituto Nacional de Ciencias Penales
+726,60125,Sindicato de Trabajadores del Instituto Nacional para el Desarrollo de Capacidades del Sector Rural
+727,60127,Sindicato de Trabajadores del Patronato de Obras e Instalaciones del Instituto
+728,60128,Sindicato de Trabajadores del Poder Judicial de la Federación
+729,60129,Sindicato de Trabajadores del Servicio de Administración Tributaria y de Hacienda
+730,60130,Sindicato de Trabajadores del Tribunal Federal de Conciliación y Arbitraje
+731,60131,Sindicato de Trabajadores Democráticos de la Secretaría de Comunicaciones y Transportes
+732,60132,Sindicato de Trabajadores Ferrocarrileros de la República Mexicana
+733,60133,Sindicato de Trabajadores Petroleros de la República Mexicana
+734,60134,"Sindicato de Unidad Nacional de los Trabajadores de Acuacultura y Pesca de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación"
+735,60135,Sindicato de Vanguardia Nacional de los Trabajadores de la Secretaría de Comunicaciones y Transportes
+736,60137,"Sindicato Democrático de Trabajadores de Pesca y Acuacultura de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación"
+737,60138,Sindicato Gremial de Profesores - Investigadores de El Colegio de México
+738,60140,Sindicato Independiente de Académicos del Colegio de Postgraduados
+739,60142,Sindicato Independiente de Investigadores del Instituto Nacional de
+740,60144,Sindicato Independiente de Trabajadores de la Cámara de Senadores
+741,60147,Sindicato Independiente de Trabajadores de la Secretaría de Comunicaciones y Transportes
+742,60150,Sindicato Independiente de Trabajadores de El Colegio de Postgraduados
+743,60153,Sindicato Independiente Nacional de Trabajadores del Colegio de Bachilleres
+744,60154,Sindicato Nacional de Controladores de Tránsito Aéreo
+745,60158,Sindicato Nacional de Trabajadores de los Tribunales Agrarios
+746,60159,Sindicato Nacional de los Trabajadores del Consejo Nacional de Fomento Educativo
+747,60160,Sindicato Nacional de Trabajadores de Pronósticos para la Asistencia Pública
+748,60162,Sindicato Nacional de Trabajadores de DICONSA
+749,60163,Sindicato Nacional de   Trabajadores de Hacienda y del Servicio de Administración Tributaria
+750,60164,Sindicato Nacional de Trabajadores de la Casa de Moneda de México
+751,60166,Sindicato Nacional de Trabajadores de la Comisión Nacional Bancaria y de Valores
+752,60167,Sindicato Nacional de Trabajadores de la Comisión Nacional de Cultura Física y Deporte
+753,60168,Sindicato Nacional de Trabajadores de la Comisión Nacional para la Protección y Defensa de los Usuarios de Servicios Financieros (SINACONDUSEF)
+754,60169,Sindicato Nacional de Trabajadores del Instituto Nacional del Suelo Sustentable
+755,60170,Sindicato Nacional de Trabajadores de la Educación para Adultos
+756,60171,Sindicato Nacional de Trabajadores de la Educación
+757,60172,"Sindicato Nacional de Trabajadores de la Industria Aeroportuaria y de Servicios, Similares y Conexos de la República Mexicana"
+758,60173,Sindicato Nacional de Trabajadores de la Lotería Nacional
+759,60174,Sindicato Nacional de Trabajadores de la Procuraduría Agraria “Felipe Carrillo Puerto”
+760,60176,Sindicato Nacional de Trabajadores de la Procuraduría General de la República
+761,60178,"Sindicato Nacional de Trabajadores de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación"
+762,60179,Sindicato Nacional de Trabajadores de la Secretaría de Comunicaciones y Transportes
+763,60180,Sindicato Nacional de Trabajadores de la Secretaría de Desarrollo Social
+764,60181,Sindicato Nacional de Trabajadores de la Secretaría de Economía
+765,60182,Sindicato Nacional de Trabajadores de la Secretaría de Energía
+766,60183,Sindicato Nacional de Trabajadores de la Secretaría de Gobernación
+767,60186,Sindicato Nacional de Trabajadores de la Secretaría de Relaciones Exteriores
+768,60187,Sindicato Nacional de Trabajadores de la Secretaría de Salud
+769,60189,Sindicato Nacional de Trabajadores de la Secretaría de Turismo
+770,60190,Sindicato Nacional de Trabajadores de la Secretaría de Medio Ambiente y Recursos Naturales
+771,60191,Sindicato Nacional de Trabajadores de la Secretaría del Trabajo y Previsión Social
+772,60193,Sindicato Nacional de Trabajadores del Archivo General de la Nación
+773,60194,Sindicato Nacional de Trabajadores del Banco del Ahorro Nacional y Servicios Financieros
+774,60195,Sindicato Nacional de Trabajadores del Fideicomiso Fondo Nacional de
+775,60196,Sindicato Nacional de Trabajadores del Fondo Nacional de Fomento al Turismo
+776,60197,Sindicato Nacional de Trabajadores del Instituto Nacional de la Infraestructura Física Educativa
+777,60198,Sindicato Nacional de Trabajadores del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado
+778,60200,Sindicato Nacional de Trabajadores del Instituto Mexicano de la Radio
+779,60201,Sindicato Nacional de Trabajadores del Instituto Nacional de Estadística y Geografía
+780,60202,Sindicato Nacional de Trabajadores del Instituto Nacional de las Personas
+781,60203,Sindicato Nacional de Trabajadores del Seguro Social
+782,60204,Sindicato Nacional de Trabajadores del Servicio Postal Mexicano “Correos de México”
+783,60205,Sindicato Nacional de Trabajadores del Sistema Nacional para el Desarrollo Integral de la Familia
+784,60206,Sindicato Nacional   de Trabajadores del   Tribunal   Federal   de Justicia Administrativa
+785,60209,Sindicato Nacional de Unidad de los Trabajadores de la Secretaría de Comunicaciones y Transportes
+786,60211,"Sindicato Nacional Democrático de Trabajadores de la Secretaría de Desarrollo Agrario, Territorial y Urbano"
+787,60212,Sindicato Nacional Democrático de Trabajadores de los Tribunales Agrarios
+788,60213,Sindicato Nacional Independiente de los Trabajadores de la Secretaría de Economía
+789,60214,Sindicato Nacional Independiente de Trabajadores de la Procuraduría General
+790,60215,Sindicato Nacional Independiente de Trabajadores de la Secretaría de Desarrollo Social
+791,60216,Sindicato Nacional Independiente de Trabajadores de la Secretaría de Medio Ambiente y Recursos Naturales
+792,60218,Sindicato Nacional Único y Democrático de los Trabajadores del Banco Nacional de Comercio Exterior
+793,60219,Sindicato Revolucionario de Trabajadores de la Auditoría Superior de la
+794,60221,Sindicato Único de Personal Técnico y Administrativo del Centro de Investigaciones Biológicas del Noroeste
+795,60222,Sindicato Único de Trabajadores Académicos de la Universidad Autónoma
+796,60223,Sindicato Único de Trabajadores de Biológicos y Reactivos
+797,60224,Sindicato Único de Trabajadores de El Colegio de la Frontera Sur
+798,60225,Sindicato Nacional de Trabajadores de la Comisión Nacional de los Salarios Mínimos
+799,60226,Sindicato Único de Trabajadores de la Industria Nuclear
+800,60227,Sindicato Único de Trabajadores de la Productora Nacional de Biológicos Veterinarios
+801,60229,Sindicato Único de Trabajadores de la Universidad Autónoma Agraria “Antonio Narro”
+802,60230,Sindicato Único de Trabajadores de Notimex
+803,60231,Sindicato Único de Trabajadores del Banco de México
+804,60232,Sindicato Único de Trabajadores del Centro de Enseñanza Técnica Industrial
+805,60233,Sindicato Único de Trabajadores del Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional
+806,60234,Sindicato Único de Trabajadores de El Colegio de México
+807,60235,Sindicato Único de Trabajadores del Colegio Nacional de Educación Profesional Técnica
+808,60236,Sindicato Único de Trabajadores del Fondo de Cultura Económica
+809,60237,"Sindicato Único de Trabajadores del Hospital General ""Dr. Manuel Gea González"""
+810,60239,Sindicato Único de Trabajadores del Instituto Mexicano de Cinematografía
+811,60240,Sindicato Único de Trabajadores del Instituto Nacional de Ciencias Médicas y Nutrición “Salvador Zubirán”
+812,60241,Sindicato Único de Trabajadores del Instituto Nacional de Pediatría
+813,60242,Sindicato Único de Trabajadores del Instituto Nacional de Perinatología
+814,60243,Sindicato Único de Trabajadores Democráticos de la Secretaría de Medio Ambiente y Recursos Naturales
+815,60244,Sindicato Único de Trabajadores Docentes CONALEP
+816,60245,Sindicato Único de Trabajadores Electricistas de la República Mexicana (SUTERM)
+817,60246,Sindicato Único Nacional de Trabajadores de Nacional Financiera
+818,60248,Sindicato Único Nacional de Trabajadores del Banco Nacional de Obras y Servicios Públicos
+819,60249,Sindicato Único Nacional de Trabajadores del Instituto Nacional de Estadística
+820,60252,"Sindicato Unitario de Trabajadores del Instituto Nacional de Astrofísica, Óptica"
+821,60254,Sindicato Nacional de los Trabajadores de la Secretaría de Cultura
+822,60257,"Sindicato Nacional de Trabajadores de la Secretaría de Desarrollo Agrario, Territorial y Urbano"
+823,60258,Sindicato Nacional de Trabajadores del Centro Nacional de Control del Gas
+824,60259,Sindicato Nacional Independiente de Trabajadores de la Secretaría de
+825,60263,"Sindicato Independiente de Trabajadores Académicos de Oaxaca, SITAC-OAX"
+826,60266,"Sindicato de Industrial de Trabajadores Salineros, Marineros, Maquinistas, Cargadores, Similares y Conexos de la Baja California"
+827,60267,Asociación Sindical de Oficiales de Máquinas de la Marina Mercante Nacional
+828,60268,"Sindicato Nacional de Trabajadores de la Construcción, Terraceros, Conexos y Similares de México"
+829,60270,"Sindicato de Trabajadores en Establecimientos Comerciales, Condo-Hoteles, Restaurantes y Similares de la Costa Grande de Guerrero C.T.M."
+830,60271,Sindicato de Trabajadores de Baja Mantenimiento y Operación del Puerto de
+831,60273,"Sindicato de Trabajadores de la Construcción, Materialistas, Similares y"
+832,60274,Sindicato Nacional de Trabajadores de la Procuraduría Federal del Consumidor
+833,60275,"Sindicato de Trabajadores de la Industria de la Radiodifusión, Televisión, Telecomunicaciones Similares y Conexos de la República Mexicana"
+834,60277,"Orden de Capitanes y Pilotos Navales de la República Mexicana, Similares y Conexos"
+835,60278,Sindicato Nacional de Trabajadores del Instituto Mexicano del Petróleo
+836,60282,"Sindicato Nacional de Trabajadores y Empleados de Servicios en General, Financieros, Similares y Conexos de la República Mexicana"
+837,60283,"Sindicato Nacional de Trabajadores de la Industria de Fideicomisos, Casas de Cambio, Casas de Bolsa, Aseguradoras, Uniones de Crédito, Hipotecarias, Administradoras de Fondos de Retiro, Arrendadoras, Almacenadoras, Empresas de Factoraje, Afianzadoras, Auto financiadoras, Cajas de Ahorros, Bancos, Instituciones de Banca Múltiple, Instituciones Financieras, Sociedades Financieras, Empresas Prestadoras de Servicios Laborales del Sector Financiero, Organismos Descentralizados de la Administración Pública Federal"
+838,60284,"Sindicato Único de Trabajadores de AGROASEMEX, S. A."
+839,60285,Sindicato Unificado de Trabajadores del Centro de Investigación Científica y de Educación Superior de Ensenada
+840,60287,"Sindicato Único de Trabajadores Docentes del Colegio Nacional de Educación Profesional Técnica en el estado de Oaxaca, SUTDCEO"
+841,60288,Sindicato Independiente de Trabajadores de la Universidad Autónoma
+842,60289,"Sindicato Nacional de Trabajadores Revolucionarios de la Secretaría de Desarrollo Agrario, Territorial y Urbano"
+843,60290,Sindicato Nacional de Trabajadores del Instituto Nacional de Bellas Artes y
+844,60292,Sindicato Único Nacional de los Trabajadores de la Secretaría de
+845,60293,Sindicato Nacional Democrático de Trabajadores de SENEAM
+846,60294,Sindicato Patrimonio de Trabajadores y Empleados de la Industria
+847,60295,Sindicato Auténtico de los Trabajadores del Centro de Investigación en Alimentación y Desarrollo (CIAD)
+848,60297,"Unión Nacional de Trabajadores de la Industria Alimenticia, Refresquera, Turística, Hotelera, Gastronómica, Similares y Conexos"
+849,60298,"Sindicato de los Trabajadores de la Construcción, Mantenimiento y Conservación de Infraestructura Turística, Campos de Golf y Plantas de Tratamiento de Aguas Residuales, Similares y Conexos del Estado de Baja"
+850,60299,"Sindicato Nacional de Trabajadores de la Industria Láctea, Alimenticia,"
+851,60300,"Sindicato Mexicano de Trabajadores en Servicios Especializados, Emergentes, Asistenciales y Administrativos"
+852,60301,"Sindicato Independiente de Integración Nacional de Trabajadores de la Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación"
+853,60302,"Sindicato Nacional de Trabajadores, Académicos e Investigadores del Instituto Nacional de Bellas Artes y Literatura"
+854,60303,Sindicato Nacional Independiente de Trabajadores del Instituto Nacional de Bellas Artes y Literatura
+855,60304,Sindicato Nacional de Cultura
+856,60305,Sindicato Nacional de Grupos Artísticos del Instituto Nacional de Bellas Artes Y Literatura
+857,60307,Sindicato Único de Trabajadores del Instituto Nacional de Bellas Artes y
+858,60308,Sindicato Nacional Democrático de Trabajadores de la Secretaría de Cultura
+859,60309,Sindicato Independiente de Trabajadores de la Secretaría de Cultura
+860,60310,Sindicato Nacional de Profesores de Investigación Científica y Docencia del INAH
+861,60311,Sindicato Nacional de Arquitectos Conservadores del Patrimonio Cultural de la Secretaría de Cultura- Instituto Nacional de Antropología e Historia
+862,60312,Sindicato Unión de Trabajadores del Partido de la Revolución Democrática
+863,60313,Sindicato Revolucionario Nacional de Trabajadores de la Secretaría de Comunicaciones y Transportes
+864,60314,Sindicato Nacional de Trabajadores del Instituto Nacional de Bellas Artes y
+865,60315,Sindicato Democrático Nacional Autónomo de Trabajadores de la Secretaría de Desarrollo Social

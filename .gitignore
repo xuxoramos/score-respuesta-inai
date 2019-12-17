@@ -1,5 +1,7 @@
 data/*
 *.ipynb
+*.xls
+.bitacora.md
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
