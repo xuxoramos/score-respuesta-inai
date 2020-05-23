@@ -16,6 +16,7 @@ jupyter:
 ```python ExecuteTime={"end_time": "2019-08-25T17:52:59.317731Z", "start_time": "2019-08-25T17:52:59.311201Z"} tags=["to_remove"]
 import numpy as np
 import pandas as pd
+import os
 np.set_printoptions(threshold=20000)
 pd.options.display.max_columns = None
 
@@ -138,7 +139,7 @@ aux
 ```
 
 ```python
-def show_word_cloud(data, title):
+def show_word_cloud(data, sector, title):
     wordcloud = WordCloud(
             background_color='white',
             stopwords=aux,
@@ -155,16 +156,18 @@ def show_word_cloud(data, title):
         fig.suptitle(title, fontsize=20)
         fig.subplots_adjust(top=2.3)
     plt.imshow(wordcloud)
-    plt.savefig('img/' + title + '.png', bbox_inches='tight')
+    plt.savefig('img/' + sector + '/'+ title + '.png', bbox_inches='tight')
     plt.show()
 ```
 
 ```python
 for elemento in texto_solicitudes_filtered.sector.unique():
+    if elemento not in sector_remover:
+        os.mkdir('img/' + str(elemento))
     for ano in texto_solicitudes_filtered.year_solicitud.unique():
         if elemento not in sector_remover:
             df = texto_solicitudes_filtered[(texto_solicitudes_filtered.sector == elemento) & (texto_solicitudes_filtered.year_solicitud == ano)]
-            show_word_cloud(df['descripcion'], elemento + ' ' + str(ano))
+            show_word_cloud(df['descripcion'], elemento, elemento + ' ' + str(ano))
 ```
 
 ```python
