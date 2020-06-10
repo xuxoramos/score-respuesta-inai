@@ -39,7 +39,7 @@
 3. Esto es una posición no remunerada, pero que requiere el mismo nivel de compromiso y calidad de trabajo que una que si lo tiene.
 4. Toda propiedad intelectual generada por este proyecto será abierta, libre y gratuita, lo cual se hará mediante el repositorio de Github.
 
-## Organización
+## Organización y distribución del equipo
 1. Líder de proyecto: Juan Casanueva
 2. Científico de Datos: Diego Villa
 3. Científico de Datos: Rafa Ortega
