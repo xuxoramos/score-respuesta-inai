@@ -33,3 +33,16 @@
 2. Firma de liberación de estancia de investigación al término del proyecto
 3. Esto es una posición no remunerada, pero que requiere el mismo nivel de compromiso y calidad de trabajo que una que si lo tiene.
 4. Toda propiedad intelectual generada por este proyecto será abierta, libre y gratuita, lo cual se hará mediante el repositorio de Github.
+
+Organización
+1. Líder de proyecto: Juan Casanueva
+2. Científico de Datos: Diego Villa
+3. Científico de Datos: Rafa Ortega
+4. Análisis de demanda por dependencia (con LDA). La adquisición será por cuenta de Juan Manuel Casanueva. Solo se tiene hasta 2019. INAI suspendió plazos durante todo 1er semestre 2020.
+6. Análisis de respuestas de las dependencias durante coyunturas de corrupción
+7. Calidad de respuesta real (no con la base de datos, sino con el adjunto en PDF)
+8. Desarrollo de producto (UI y backend) que asigne la probabilidad de respuesta positiva considerando todo lo anterior.
+9. Responsabilidad de Diego: desarrollo de pipelines de análisis y entrega de datos. Desarrollo de LDA para detección de Tópicos por sector o dependencia.
+10. Responsabilidad de Rafael: desarrollo de análisis y productos editoriales.
+
+
