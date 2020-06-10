@@ -6,6 +6,11 @@
 3. ...
 4. ...
 
+## Entregables
+1. Producto de datos: introducir pregunta, evaluar probabilidad de respuesta
+2. Caracterización de la demanda: tópicos con LDA
+3. Caracterización de las respuestas: calidad real de las respuestas - las respuestas tienen un registro y un PDF. El registro puede decir CONTESTADO, pero el PDF puede decir CLASIFICADO.
+
 ## Macro actividades
 1. Refactor de la infraestructura tecnológica
 2. Reclutamiento de personas
