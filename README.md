@@ -42,7 +42,7 @@
 ## Organización
 1. Líder de proyecto: Juan Casanueva
 2. Científico de Datos: Diego Villa
-3. Científico de Datos: Rafa Ortega
+3. Científico de Datos: Angel Rafael Ortega
 4. Análisis de demanda por dependencia (con LDA). La adquisición será por cuenta de Juan Manuel Casanueva. Solo se tiene hasta 2019. INAI suspendió plazos durante todo 1er semestre 2020.
 6. Análisis de respuestas de las dependencias durante coyunturas de corrupción
 7. Calidad de respuesta real (no con la base de datos, sino con el adjunto en PDF)
