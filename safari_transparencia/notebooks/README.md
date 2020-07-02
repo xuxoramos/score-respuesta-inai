@@ -23,3 +23,20 @@ Ejecuta las mismas tareas que el notebook step1_crear_parquet_guardarS3.ipynb so
 + Agregar columna:
   - **texto_respuesta_adjunto.** Contiene el texto extraído de los documentos PDF.
 + Actualizar archivo inai.parquet
+
+
+### step3
+**notebook: step3_clean.ipynb**
+
++ Limpeza de información del archivo inai.parquet
++ Tareas desempeñadas:
+  - Estandarización de nulos.
+  - Validación del tipo de las columnas.
+  - Modificación de strings a lowercase.
+  - Eliminamos acentos, dieresis y eñes de strings.
+  - Eliminamos espacios al inicio y al final de strings.
+  - Eliminamos espacios dobles (o mas) de strings.
+  - Eliminamos columnas con observaciones con puros valores nulos.
+  - Eliminamos observaciones con valores nulos en todas las columnas.
+  - Eliminamos observaciones repetidas.
++ Generar output en formato parquet (inai.parquet) y guarlarlo en la S3 en la carpeta clean.
