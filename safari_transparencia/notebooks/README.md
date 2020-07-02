@@ -15,3 +15,11 @@ Nota: Decidimos crear estas dos columnas en esta etapa ya que pasar por los URLs
 **notebook: step1_crear_parquet_guardarS3_parallelization.ipynb**
 
 Ejecuta las mismas tareas que el notebook step1_crear_parquet_guardarS3.ipynb solo que paraleliza las tareas para mejorar los tiempos de procesamiento.
+
+### step2
+**notebook: step2_textract_pdf.ipynb**
+
++ Extraer texto de los archivos pdf descargados previamente en el step1.
++ Agregar columna:
+  - **texto_respuesta_adjunto.** Contiene el texto extraído de los documentos PDF.
++ Actualizar archivo inai.parquet
