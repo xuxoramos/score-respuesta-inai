@@ -1,8 +1,10 @@
 import os
+import numpy as np
 import boto3
 import botocore
 import requests, zipfile, io
 import textract
+import re
 
 
 def Folio13(folio):
@@ -167,3 +169,157 @@ def TextractPDF(folio, ext):
             return None
     except:
         return None
+
+
+
+def StringLowercase(df):
+    """
+    Función cambiar todos los strings de un dataframe a lowercase
+    (columnas y observaciones)
+
+    Args:
+        df: dataframe al que se desea hacer la modificación
+    Return:
+        df: dataframe modificado
+    """
+
+    ### Columnas
+
+    DataFrameColumns = df.columns
+
+    for col in DataFrameColumns:
+        df.rename(columns={col:col.lower()}, inplace=True)
+
+    ### Observaciones
+
+    filtro = df.dtypes == np.object
+    objects = df.dtypes[filtro]
+    StringColumns = list(objects.index)
+    # Quitamos las columnas que por su naturaleza no deben modificarse
+    StringColumns.remove('archivorespuesta')
+    StringColumns.remove('tipo_archivo_respuesta')
+
+    for col in StringColumns:
+        df[col] = df[col].str.lower()
+
+    return df
+
+
+
+def StringAcentos(df):
+    """
+    Función para eliminar acentos, dieresis y eñes de los strings de un
+    dataframe (columnas y observaciones)
+
+    Args:
+        df: dataframe al que se desea hacer la modificación
+    Return:
+        df: dataframe modificado
+    """
+
+    ### Columnas
+
+    df.columns = df.columns.str.replace('á', 'a')
+    df.columns = df.columns.str.replace('é', 'e')
+    df.columns = df.columns.str.replace('í', 'i')
+    df.columns = df.columns.str.replace('ó', 'o')
+    df.columns = df.columns.str.replace('ú', 'u')
+    df.columns = df.columns.str.replace('ü', 'u')
+    df.columns = df.columns.str.replace('ñ', 'n')
+
+    ### Observaciones
+
+    filtro = df.dtypes == np.object
+    objects = df.dtypes[filtro]
+    StringColumns = list(objects.index)
+    # Quitamos las columnas que por su naturaleza no deben modificarse
+    StringColumns.remove('archivorespuesta')
+    StringColumns.remove('tipo_archivo_respuesta')
+
+    for col in StringColumns:
+        df[col] = df[col].str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
+
+    return df
+
+
+
+def StringStrip(df):
+    """
+    Función para eliminar espacios al inicio y al final de los strings de un
+    dataframe (columnas y observaciones)
+
+    Args:
+        df: dataframe al que se desea hacer la modificación
+    Return:
+        df: dataframe modificado
+    """
+
+    ### Columnas
+
+    df.columns = [col.strip() for col in df.columns]
+
+    ### Observaciones
+
+    filtro = df.dtypes == np.object
+    objects = df.dtypes[filtro]
+    StringColumns = list(objects.index)
+
+    for col in StringColumns:
+        df[col] = df[col].apply(lambda x: x.strip() if isinstance(x, str) else x)
+
+    return df
+
+
+
+def StringEspacios(df):
+    """
+    Función para eliminar espacios dobles (o mas) de los strings de un
+    dataframe (columnas y observaciones)
+
+    Args:
+        df: dataframe al que se desea hacer la modificación
+    Return:
+        df: dataframe modificado
+    """
+
+    ### Columnas
+
+    df.columns = [re.sub(' +', ' ', col) for col in df.columns]
+
+    ### Observaciones
+
+    filtro = df.dtypes == np.object
+    objects = df.dtypes[filtro]
+    StringColumns = list(objects.index)
+
+    for col in StringColumns:
+        df[col] = df[col].apply(lambda x: re.sub(' +', ' ', x) if isinstance(x, str) else x)
+
+    return df
+
+
+
+def EliminarNulos(df):
+    """
+    Función para eliminar nulos de un dataframe:
+    1. Columnas. Elimina columnas con valores nulos en todas las observaciones
+    2. Observaciones. Elimina observaciones con valores nulos en todas las
+    columnas
+
+    Args:
+        df: dataframe al que se desea hacer la modificación
+    Return:
+        df: dataframe modificado
+    """
+
+    df = df.replace(r'^\s*$', np.nan, regex=True)
+
+    ### Columnas
+
+    df = df.dropna(how='all', axis=1)
+
+    ### Observaciones
+
+    df = df.dropna(how='all')
+
+    return df
