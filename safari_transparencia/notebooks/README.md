@@ -40,3 +40,11 @@ Ejecuta las mismas tareas que el notebook step1_crear_parquet_guardarS3.ipynb so
   - Eliminamos observaciones con valores nulos en todas las columnas.
   - Eliminamos observaciones repetidas.
 + Generar output en formato parquet (inai.parquet) y guarlarlo en la S3 en la carpeta clean.
+
+
+## step4
+**notebook: step4_fe.ipynb**
+
++ Transformación de columna descripcionsolicitud. Se eliminaron "stopwords" del diccionario compartido por SocialTIC.
++ Se agregó columna respuestareal. Esta columna considera las reglas de negocio definidas por el equipo. (issue 25)
++ Generar output en formato parquet (inai.parquet) y guardarlo en la S3 en la carpeta mlpreproc.
