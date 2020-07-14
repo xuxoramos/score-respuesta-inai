@@ -48,3 +48,16 @@ Ejecuta las mismas tareas que el notebook step1_crear_parquet_guardarS3.ipynb so
 + Transformación de columna descripcionsolicitud. Se eliminaron "stopwords" del diccionario compartido por SocialTIC.
 + Se agregó columna respuestareal. Esta columna considera las reglas de negocio definidas por el equipo. (issue 25)
 + Generar output en formato parquet (inai.parquet) y guardarlo en la S3 en la carpeta mlpreproc.
+
+**notebook: step4_fe_2.ipynb**
+
++ Agregar columnas:
+  - **calidad_respuesta**
+  - **calidad_respuesta_real**
+
+La calidad de las respuestas se agrupan en las categorias:
+1. satisfactoria
+2. no respondida
+3. en proceso
+
++ Se actualiza el archivo inai.parquet de la carpeta mlpreproc en la S3.
