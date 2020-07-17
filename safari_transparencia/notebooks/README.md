@@ -42,7 +42,7 @@ Ejecuta las mismas tareas que el notebook step1_crear_parquet_guardarS3.ipynb so
 + Generar output en formato parquet (inai.parquet) y guarlarlo en la S3 en la carpeta clean.
 
 
-## step4
+### step4
 **notebook: step4_fe.ipynb**
 
 + Transformación de columna descripcionsolicitud. Se eliminaron "stopwords" del diccionario compartido por SocialTIC.
@@ -51,6 +51,7 @@ Ejecuta las mismas tareas que el notebook step1_crear_parquet_guardarS3.ipynb so
 
 **notebook: step4_fe_2.ipynb**
 
++ Se filtró solo por los tipos de solicitud "informacion publica"
 + Agregar columnas:
   - **calidad_respuesta**
   - **calidad_respuesta_real**
