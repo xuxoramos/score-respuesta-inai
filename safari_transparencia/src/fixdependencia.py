@@ -1434,7 +1434,7 @@ def FixDependencia(df_dependencia):
     # NAFIN
     df_dependencia.loc[df_dependencia["dependencia_clean"].str.contains('NACIONAL FINANCIERA', case=False, na=None), "dependencia_clean"] = 'banca de desarrollo'
     df_dependencia.loc[df_dependencia["dependencia_clean"].str.contains('NAFIN', case=False, na=None), "dependencia_clean"] = 'banca de desarrollo'
-    df_dependencia.loc[df_dependencia["dependencia_clean"]== 'COMPLEMENTO DEL PRÉSTAMO ESPECIAL PARA EL AHORRO (PEA) Y PRESTAMOS DE CORTO Y MEDIANO PLAZO PARA JUBILADOS BAJO EL PLAN DE BENEFICIO DEFINIDO'] = 'banca de desarrollo'
+    df_dependencia.loc[df_dependencia["dependencia_clean"].str.contains('Y PRESTAMOS DE CORTO Y MEDIANO PLAZO PARA JUBILADOS BAJO EL PLAN DE BENEFICIO DEFINIDO', case=False, na=None), "dependencia_clean"] = 'banca de desarrollo'
     # NAFIN - FIDEICOMISO PROGRAMA DE VENTA DE TÍTULOS EN DIRECTO AL PÚBLICO
     df_dependencia.loc[df_dependencia["dependencia_clean"].str.contains('FIDEICOMISO PROGRAMA DE VENTA DE TÍTULOS EN DIRECTO AL PÚBLICO', case=False, na=None), "dependencia_clean"] = 'banca de desarrollo'
     # NAFIN - FIDEICOMISO FONDO DE ASISTENCIA TÉCNICA EN PROGRAMAS DE FINANCIAMIENTO
@@ -1463,7 +1463,10 @@ def FixDependencia(df_dependencia):
     # FONDO DE SUPERVISIÓN AUXILIAR DE SOCIEDADES COOPERATIVAS DE AHORRO Y PRÉSTAMO Y DE PROTECCIÓN A SUS AHORRADORES. F/10217
     df_dependencia.loc[df_dependencia["dependencia_clean"].str.contains('FONDO DE SUPERVISIÓN AUXILIAR DE SOCIEDADES COOPERATIVAS DE AHORRO Y PRÉSTAMO Y DE PROTECCIÓN A SUS AHORRADORES. F/10217', case=False, na=None), "dependencia_clean"] = 'banca de desarrollo'
     # FONDO DE PROTECCIÓN DE SOCIEDADES FINANCIERAS POPULARES Y DE PROTECCIÓN A SUS AHORRADORES (F/10216)
-    df_dependencia.loc[df_dependencia["dependencia_clean"]== 'FONDO DE PROTECCIÓN DE SOCIEDADES FINANCIERAS POPULARES Y DE PROTECCIÓN A SUS AHORRADORES (F/10216)'] = 'banca de desarrollo'
+    # ******************** ENSUCIA ******************
+    df_dependencia.loc[df_dependencia["dependencia_clean"].str.contains('FONDO DE PROTECCIÓN DE SOCIEDADES FINANCIERAS POPULARES Y DE PROTECCIÓN A SUS AHORRADORES', case=False, na=None), "dependencia_clean"] = 'banca de desarrollo'
+    #df_dependencia.loc[df_dependencia["dependencia_clean"]== 'FONDO DE PROTECCIÓN DE SOCIEDADES FINANCIERAS POPULARES Y DE PROTECCIÓN A SUS AHORRADORES (F/10216)'] = 'banca de desarrollo'
+    # ****************** ENSUCIA **************************
     #df_dependencia.loc[df_dependencia["dependencia_clean"].str.contains('FONDO DE PROTECCIÓN DE SOCIEDADES FINANCIERAS POPULARES Y DE PROTECCIÓN A SUS AHORRADORES (F/10216)', case=False, na=None), "dependencia_clean"] = 'banca de desarrollo'
     # FONDO PARA LA PARTICIPACIÓN DE RIESGOS 11480
     df_dependencia.loc[df_dependencia["dependencia_clean"].str.contains('FONDO PARA LA PARTICIPACIÓN DE RIESGOS 11480', case=False, na=None), "dependencia_clean"] = 'banca de desarrollo'
