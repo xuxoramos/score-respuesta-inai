@@ -62,3 +62,30 @@ La calidad de las respuestas se agrupan en las categorias:
 3. en proceso
 
 + Se actualiza el archivo inai.parquet de la carpeta mlpreproc en la S3.
+
+**notebook: step4_fe_3.ipynb**
+
++ Eliminamos casos con un número menor a 16 caracteres de la columna descripcionsolicitud
++ Eliminamos casos en los que calidad_respuesta_real = 'en proceso'
+
+**notebook: step4_fe_3_sample_year_dependencia.ipynb**
+
+
+### step5
+**notebook: step5_model_LDA_0.ipynb**
+
+**notebook: step5_model_LDA_1.ipynb**
+
+**notebook: step5_model_LDA_2.ipynb**
+
+**notebook: step5_model_LDA_3.ipynb**
+
+**notebook: step5_model_LDA_4.ipynb**
+
+**notebook: step5_model_LDA_resultados.ipynb**
+
+**notebook: step5_model_GBC_0.ipynb**
+
+**notebook: step5_model_Random_Forest_0.ipynb**
+
+**notebook: step5_model_SVM_0.ipynb**
