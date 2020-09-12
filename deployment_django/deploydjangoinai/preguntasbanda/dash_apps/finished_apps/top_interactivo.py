@@ -8,16 +8,17 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go 
 from django_plotly_dash import DjangoDash
+import os
 
+print("el path es:",os.getcwd())
 
-
-lista_g = pd.read_csv('lista_g.csv')
-respaldo = pd.read_csv('respaldo.csv')
+lista_g = pd.read_csv('/home/rafaelortega/Documentos/INAI_consultas/inai_rafaelortegar/deployment_django/deploydjangoinai/preguntasbanda/dash_apps/finished_apps/lista_g.csv')
+respaldo = pd.read_csv('/home/rafaelortega/Documentos/INAI_consultas/inai_rafaelortegar/deployment_django/deploydjangoinai/preguntasbanda/dash_apps/finished_apps/respaldo.csv')
 df = lista_g.copy()
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-app = dash.DjangoDash('top_interactivo', external_stylesheets=external_stylesheets)
+app = DjangoDash('top_interactivo', external_stylesheets=external_stylesheets)
 
 available_indicators = lista_g['dependencia_clean']
 
@@ -208,19 +209,17 @@ def update_graph(dep,
                 base=data["calidad_real_no_respondida"]+data["calidad_real_en_proceso"],
                 marker=dict(color='green',opacity=0.5),
             )
-
-
+    
+    
     data1 = [trace1,trace2,trace3,trace4,trace5,trace6]
-
+    
     layout=go.Layout(
         title="Comparacion de calidad de respuesta  y calidad de respuesta real por año por dependencia",
         yaxis_title="Conteo"
         #barmode='group'
     )
-
-    g = go.FigureWidget(data=data1,layout=layout)
     
-
+    g = go.FigureWidget(data=data1,layout=layout)    
     
     return g
     
