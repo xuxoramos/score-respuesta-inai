@@ -213,11 +213,18 @@ def update_graph(dep,
     
     data1 = [trace1,trace2,trace3,trace4,trace5,trace6]
     
+    #margin=go.Margin(
+    #l=250
+    ##r=100
+    #)
+    
     layout=go.Layout(
         title="Comparacion de calidad de respuesta  y calidad de respuesta real por año por dependencia",
-        yaxis_title="Conteo"
+        yaxis_title="Conteo"#, margin=margin
         #barmode='group'
     )
+    
+    #layout.xaxis(automargin=True)
     
     g = go.FigureWidget(data=data1,layout=layout)    
     

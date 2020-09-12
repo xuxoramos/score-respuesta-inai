@@ -43,16 +43,22 @@ INSTALLED_APPS = [
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'preguntasbanda.apps.PreguntasbandaConfig',
     'channels',
-    'channels_redis'
+    'channels_redis',
+    'dpd_static_support',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django_plotly_dash.middleware.BaseMiddleware',
+    'django_plotly_dash.middleware.ExternalRedirectionMiddleware',
+
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
@@ -73,6 +79,8 @@ TEMPLATES = [
         },
     },
 ]
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 WSGI_APPLICATION = 'deploydjangoinai.wsgi.application'
 

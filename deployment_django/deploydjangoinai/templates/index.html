@@ -239,6 +239,11 @@ los textos de la respuesta, se encontró que en algunos casos hay una clasificac
 <!-- Insertar gráfica interactiva de comparación de calidad de respuesta por año. -->
 <p> <b>Poner aqui una gráfica</b> </p>
 
+<div class="{% plotly_class name='top_interactivo' %} card">
+
+  {% plotly_app name="top_interactivo" ratio=0.4 %}
+  
+</div>
 
 <h3>Diferencia entre calidad de respuesta y calidad de respuesta real a lo largo del tiempo por dependencia</h3>
 
@@ -246,13 +251,9 @@ los textos de la respuesta, se encontró que en algunos casos hay una clasificac
 <p> <b>Poner aqui una gráfica</b> </p>
 
 
-<div class="{% plotly_class name='top_interactivo' %} card">
-
-{% plotly_app name="top_interactivo" ratio=0.65 %}
-
-</div>
 
 
+  
 
 <h2>El Modelo:</h2>
 
