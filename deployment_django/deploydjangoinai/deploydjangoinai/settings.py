@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     #'preguntasbanda',
     'django_plotly_dash.apps.DjangoPlotlyDashConfig',
     'preguntasbanda.apps.PreguntasbandaConfig',
+    'diferencias_top_app.apps.DiferenciasTopAppConfig',
     'channels',
     'channels_redis',
     'dpd_static_support',
@@ -76,7 +77,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-        },
+        }, 
     },
 ]
 
@@ -152,7 +153,7 @@ PLOTLY_COMPONENTS = [
     'dash_core_components',
     'dash_html_components',
     'dash_renderer',
-    
+
     'dpd_components'
 ]
 
