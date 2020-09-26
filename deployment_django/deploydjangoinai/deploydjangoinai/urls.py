@@ -16,11 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 #from django.urls import url
-from preguntasbanda import views
+from preguntasbanda import views as viewspreguntasbanda
+from diferencias_top_app import views as viewsdiftopapp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('', viewspreguntasbanda.index, name='index'),
+    path('',viewspreguntasbanda.form_name_view, name='index'),
     path('django_plotly_dash/', include('django_plotly_dash.urls')),
-    path('', include('preguntasbanda.urls'))
+    path('', include('preguntasbanda.urls')),
+    path('', include('diferencias_top_app.urls'))
+
 ]

@@ -17,7 +17,7 @@
 <body>
 
   <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-default navbar-fixed-top">
 
       <a class="navbar-brand" href="https://socialtic.org/"> SocialTIC </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
             <a class="nav-link" href="#">Proyecto <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Predicción <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#iniciando_con_modelo">Predicción <span class="sr-only">(current)</span></a>
       </div>
       </li>
       </ul>
@@ -242,7 +242,7 @@ los textos de la respuesta, se encontró que en algunos casos hay una clasificac
 <div class="{% plotly_class name='top_interactivo' %} card">
 
   {% plotly_app name="top_interactivo" ratio=0.4 %}
-  
+
 </div>
 
 <h3>Diferencia entre calidad de respuesta y calidad de respuesta real a lo largo del tiempo por dependencia</h3>
@@ -250,12 +250,16 @@ los textos de la respuesta, se encontró que en algunos casos hay una clasificac
 <!-- Insertar gráfica interactiva de comparación de calidad de respuesta por año. -->
 <p> <b>Poner aqui una gráfica</b> </p>
 
+<div class="{% plotly_class name='top_interactivo_diferencia' %} card">
+
+  {% plotly_app name="top_interactivo_diferencia" ratio=0.4 %}
+
+</div>
 
 
 
-  
 
-<h2>El Modelo:</h2>
+<h2 id="iniciando_con_modelo">El Modelo:</h2>
 
 <!--
 <embed src="comparacion_de_calidad_por_dependencia.html" height="500" width="100%">
@@ -273,12 +277,12 @@ los textos de la respuesta, se encontró que en algunos casos hay una clasificac
 
 </form>
 
--->
 
-<div class="">
+
+<div class="" >
   <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
 </div>
-
+<p>a</p>
 <div>
   <form action="/action_page.php">
     <label for="fname">Correo</label>
@@ -299,10 +303,44 @@ los textos de la respuesta, se encontró que en algunos casos hay una clasificac
   <butto  background-color= #0B4AE6 width= 100%  color= white  type="submit" class="btn btn-primary">Submit</button>
 </div>
 
+<div class="container">
+  <form method="post">
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type="submit" name="btn btn-primary" value="Ejecutar">
+  </form>
+</div>
 
+{% include 'form_page.html' %}
 <br>
 <br>
+-->
 
+<div class="container" width = '50%'>
+  <form method="post" >
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type="submit" name="btn btn-primary" value="Ejecutar">
+  </form>
+</div>
+
+{% if hay_respuesta %}
+  <div class="container" width = '50%'>
+    <h2>Resultados de la predicción:</h2>
+    <p>La respuesta que podría recibir del INAI a su solicitud es: {{resultado_prediccion}}</p>
+    <br>
+    <br>
+    <p>Esto es con un score de {{score}}</p>
+    <h2>Interpretabilidad</h2>
+    <p>Las razones por las cuales se obtiene este resultado son las siguientes:</p>
+    {{figure_lime}}
+    {{lista_lime}}
+  </div>
+{% else %}
+  <div class="container" width = '50%'>
+  </div>
+
+{% endif %}
 
 </body>
 
