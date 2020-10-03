@@ -1,6 +1,4 @@
-<html>
-    <meta http-equiv="content-type" content="text/html; charset=UTF8">
-    <head><script>var lime =
+var lime =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -24807,7 +24805,10 @@
 	     * //   return __p;
 	     * // }
 	     *
-
+			 * // Use custom template delimiters.
+	     * _.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
+	     * var compiled = _.template('hello {{ user }}!');
+	     * compiled({ 'user': 'mustache' });
 	     * // => 'hello mustache!'
 	     *
 	     * // Use the `source` property to inline compiled templates for meaningful
@@ -37086,26 +37087,3 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map
- </script></head><body>
-    <div class="lime top_div" id="top_divT65BAMBQ9JK32ZX"></div>
-    
-    <script>
-    var top_div = d3.select('#top_divT65BAMBQ9JK32ZX').classed('lime top_div', true);
-    
-        var pp_div = top_div.append('div')
-                            .classed('lime predict_proba', true);
-        var pp_svg = pp_div.append('svg').style('width', '100%');
-        var pp = new lime.PredictProba(pp_svg, ["False", "True"], [0.6714130468316379, 0.32858695316836206]);
-        
-    
-    var exp_div;
-        var exp = new lime.Explanation(["False", "True"]);
-    
-            exp_div = top_div.append('div').classed('lime explanation', true);
-            exp.show([["messolicitud", -0.0009966654832634049], ["diasolicitud", -0.0001938076671800058], ["semanasolicitud", -0.00010514746074943307], ["anosolicitud", 1.3783705579488214e-05], ["bajo", 0.0]], 1, exp_div);
-            
-    var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["messolicitud", "10.00", -0.0009966654832634049], ["diasolicitud", "4.00", -0.0001938076671800058], ["semanasolicitud", "40.00", -0.00010514746074943307], ["anosolicitud", "2020.00", 1.3783705579488214e-05], ["32", 0.0, 0.0]], 1, raw_div);
-        
-    </script>
-    </body></html>
