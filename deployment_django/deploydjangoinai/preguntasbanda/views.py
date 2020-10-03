@@ -17,6 +17,12 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 from lime import lime_tabular
 from lime import explanation
+
+import os
+import string
+import json
+from sklearn.utils import check_random_state
+
 from . import fixdependencia
 
 nlp = spacy.load('es_core_news_sm')
@@ -59,6 +65,29 @@ response = s3client.get_object(Bucket='inai-summerofdata', Key='modeling/GBC/1_t
 body = response['Body'].read()
 X_train = pickle.loads(body)
 
+#mover a partir de aqui
+def get_column_names_from_ColumnTransformer(column_transformer):
+    col_name = []
+    for transformer_in_columns in column_transformer.transformers_[:-1]:#the last transformer is ColumnTransformer's 'remainder'
+        raw_col_name = transformer_in_columns[2]
+        if isinstance(transformer_in_columns[1],Pipeline):
+            transformer = transformer_in_columns[1].steps[-1][1]
+        else:
+            transformer = transformer_in_columns[1]
+        try:
+            names = transformer.get_feature_names()
+        except AttributeError: # if no 'get_feature_names' function, use raw column name
+            names = raw_col_name
+        if isinstance(names,np.ndarray): # eg.
+            col_name += names.tolist()
+        elif isinstance(names,list):
+            col_name += names
+        elif isinstance(names,str):
+            col_name.append(names)
+    return col_name
+
+
+        # mover hasta aqui al inicio
 print("Modelos y variables cargados correctamente")
 
 
@@ -251,16 +280,23 @@ def index(request):
 
         score = best_gbc.predict_proba(features)
         print(score)
+        print(score[0])
+        score_solo = score[0]
+        score_postivo = score_solo[0]
+        print("score_positivo:")
+        print(score_postivo)
         print('iniciando preprocesamiento para lime...')
+
         tfidf_names = get_column_names_from_ColumnTransformer(best_gbc['preprocess'])
 
-
         class_names = np.array([False, True])
-        df_names = list(df.columns)
+
 
         print('entrando al for')
         features_names = []
         features_names = tfidf_names
+
+        df_names = list(df.columns)
         for i in df_names:
             if i != 'descripcionsolicitud_lemma':
                 features_names.append(i)
@@ -271,15 +307,18 @@ def index(request):
                                                 feature_names=features_names, #nombre de las variables, en el orden que se envian
                                                 class_names=class_names, #el nombre de las etiquetas de clasificación
                                                 kernel_width=1) #el tamaño de la ventana para generar datos (mientras más pequeño más cercano a los valores reales)
-        print('terminó de explicar el modelo')
+
+
+        print('terminó de cargar el modelo')
+        # aqui es donde hace la explicación del modelo
         sp = explainer_model.explain_instance(best_gbc['preprocess'].transform(features), best_gbc['clf'].predict_proba, num_features=5, distance_metric='cosine')
-        print('sp')
-        sp.save_to_file("templates/lime_model.html")
-        figure_lime = sp.as_pyplot_figure()
-
+        print(sp)
+        #sp.save_to_file("templates/lime_model.html")
+        #figure_lime = sp.as_pyplot_figure()
+        print("el path de django views es:",os.getcwd())
         lista_lime = sp.as_list()
-        print('lista_lime')
-
+        print(lista_lime)
+        save_to_file_mio(sp,sp,'templates/lime_model.html', show_predicted_value=True)
         #sp.show_in_notebook(show_table=True, show_all=True)
         #sp.as_pyplot_figure();
 
@@ -1028,3 +1067,142 @@ def get_column_names_from_ColumnTransformer(column_transformer):
         elif isinstance(names,str):
             col_name.append(names)
     return col_name
+
+
+def as_pyplot_figure_mio(explicacion, label=1, **kwargs):
+    """Returns the explanation as a pyplot figure.
+    Will throw an error if you don't have matplotlib installed
+    Args:
+        label: desired label. If you ask for a label for which an
+            explanation wasn't computed, will throw an exception.
+            Will be ignored for regression explanations.
+        kwargs: keyword arguments, passed to domain_mapper
+    Returns:
+        pyplot figure (barchart).
+    """
+    import matplotlib.pyplot as plt
+    exp = explicacion.as_list(label=label, **kwargs)
+    fig = plt.figure()
+    vals = [x[1] for x in exp]
+    names = [x[0] for x in exp]
+    vals.reverse()
+    names.reverse()
+    colors = ['green' if x > 0 else 'red' for x in vals]
+    pos = np.arange(len(exp)) + .5
+    plt.barh(pos, vals, align='center', color=colors)
+    plt.yticks(pos, names)
+    if modo == "classification":
+        title = 'Explicacion local para la clase %s' % explicacion.class_names[label]
+    else:
+        title = 'explicacion local'
+    plt.title(title)
+    return fig
+
+def as_html_mio(explicacion,sp,labels=None,predict_proba=True,show_predicted_value=True,modo="classification",**kwargs):
+    def jsonize(x):
+        return json.dumps(x, ensure_ascii=False)
+
+    if labels is None and modo == "classification":
+        labels = sp.available_labels()
+
+    this_dir, _ = os.path.split(os.getcwd())
+    bundle = open(os.path.join(this_dir, 'bundle.js'),encoding="utf8").read()
+
+    out = u'''<html>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <head><script>%s </script></head><body>''' % bundle
+    random_id = id_generator(size=15, random_state=check_random_state(sp.random_state))
+    out += u'''
+    <div class="lime top_div" id="top_div%s"></div>
+    ''' % random_id
+
+    predict_proba_js = ''
+    if modo == "classification" and predict_proba:
+        predict_proba_js = u'''
+        var pp_div = top_div.append('div')
+                            .classed('lime predict_proba', true);
+        var pp_svg = pp_div.append('svg').style('width', '100%%');
+        var pp = new lime.PredictProba(pp_svg, %s, %s);
+        ''' % (jsonize([str(x) for x in sp.class_names]),
+                jsonize(list(sp.predict_proba.astype(float))))
+
+    predict_value_js = ''
+    if modo == "regression" and show_predicted_value:
+        # reference explicacion.predicted_value
+        # (svg, predicted_value, min_value, max_value)
+        predict_value_js = u'''
+                var pp_div = top_div.append('div')
+                                    .classed('lime predicted_value', true);
+                var pp_svg = pp_div.append('svg').style('width', '100%%');
+                var pp = new lime.PredictedValue(pp_svg, %s, %s, %s);
+                ''' % (jsonize(float(sp.predicted_value)),
+                        jsonize(float(sp.min_value)),
+                        jsonize(float(sp.max_value)))
+
+    exp_js = '''var exp_div;
+        var exp = new lime.Explanation(%s);
+    ''' % (jsonize([str(x) for x in sp.class_names]))
+
+    if modo == "classification":
+        for label in labels:
+            exp = jsonize(sp.as_list(label))
+            exp_js += u'''
+            exp_div = top_div.append('div').classed('lime explanation', true);
+            exp.show(%s, %d, exp_div);
+            ''' % (exp, label)
+    else:
+        exp = jsonize(sp.as_list())
+        exp_js += u'''
+        exp_div = top_div.append('div').classed('lime explanation', true);
+        exp.show(%s, %s, exp_div);
+        ''' % (exp, sp.dummy_label)
+
+    raw_js = '''var raw_div = top_div.append('div');'''
+
+    if modo == "classification":
+        html_data = sp.local_exp[labels[0]]
+    else:
+        html_data = sp.local_exp[explicacion.dummy_label]
+
+    raw_js += sp.domain_mapper.visualize_instance_html(
+            html_data,
+            labels[0] if modo == "classification" else sp.dummy_label,
+            'raw_div',
+            'exp',
+            **kwargs)
+    out += u'''
+    <script>
+    var top_div = d3.select('#top_div%s').classed('lime top_div', true);
+    %s
+    %s
+    %s
+    %s
+    </script>
+    ''' % (random_id, predict_proba_js, predict_value_js, exp_js, raw_js)
+    out += u'</body></html>'
+
+    return out
+
+def id_generator(size=15, random_state=None):
+    """Helper function to generate random div ids. This is useful for embedding
+    HTML into ipython notebooks."""
+    chars = list(string.ascii_uppercase + string.digits)
+    return ''.join(random_state.choice(chars, size, replace=True))
+
+def save_to_file_mio(explicacion,sp,
+                     file_path,
+                     labels=None,
+                     predict_proba=True,
+                     show_predicted_value=True,
+                     **kwargs):
+    """Saves html explanation to file. .
+    Params:
+        file_path: file to save explanations to
+    See as_html() for additional parameters.
+    """
+    file_ = open(file_path, 'w', encoding='utf8')
+    file_.write(as_html_mio(sp,sp,labels=labels,
+                                 predict_proba=predict_proba,
+                                 show_predicted_value=show_predicted_value,
+                                 modo = "classification",
+                                 **kwargs))
