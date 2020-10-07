@@ -513,6 +513,8 @@ def index(request):
     resultado_prediccion = ""
     score=""
     sp=""
+    score_positivo = ""
+    score_negativo = ""
     figure_lime=""
     lista_lime = ""
     hay_respuesta=False
@@ -750,8 +752,7 @@ def index(request):
 
         print(resultado_prediccion)
         print('empieza a cargar pagina')
-    return render(request,'index.html', {'form':form, 'hay_respuesta':hay_respuesta, 'resultado_prediccion':resultado_prediccion, 'score':score, 'sp':sp,
-     'figure_lime':figure_lime, 'lista_lime':lista_lime, 'score_positivo':score_positivo, 'score_negativo':score_negativo})
+    return render(request,'index.html', {'form':form, 'hay_respuesta':hay_respuesta, 'resultado_prediccion':resultado_prediccion, 'score':score, 'sp':sp,'figure_lime':figure_lime, 'lista_lime':lista_lime, 'score_positivo':score_positivo, 'score_negativo':score_negativo})
     #return render(request, 'index.html')
 
 
