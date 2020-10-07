@@ -58,12 +58,29 @@ grid_search = pickle.loads(body)
 best_gbc = grid_search.best_estimator_
 #print(best_gbc)
 
+print("Cargando palabras de socialTic")
+# quitamos cloud de palabras revisadas con socialTIC
+session = boto3.session.Session()
+s3client = session.client('s3')
+response = s3client.get_object(Bucket='inai-summerofdata', Key='raw/stopwords.pkl')
+body = response['Body'].read()
+banned = pickle.loads(body)
+
 print("Cargando el modelo de interpretabilidad")
 session = boto3.session.Session()
 s3client = session.client('s3')
 response = s3client.get_object(Bucket='inai-summerofdata', Key='modeling/GBC/1_temporalidad/1_iteracion/features.pkl')
 body = response['Body'].read()
 X_train = pickle.loads(body)
+
+#### CambioLime
+
+columnas_lime = ['anosolicitud', 'messolicitud', 'semanasolicitud',
+                'diasolicitud', 'descripcionsolicitud_lemma', 'solicitud_lemma_longitud',
+                'dependencia']
+
+
+print('iniciando preprocesamiento para lime...')
 
 #mover a partir de aqui
 def get_column_names_from_ColumnTransformer(column_transformer):
@@ -85,6 +102,406 @@ def get_column_names_from_ColumnTransformer(column_transformer):
         elif isinstance(names,str):
             col_name.append(names)
     return col_name
+
+
+tfidf_names = get_column_names_from_ColumnTransformer(best_gbc['preprocess'])
+
+class_names = np.array([False, True])
+
+
+print('entrando al for')
+features_names = []
+features_names = tfidf_names
+
+features_names = ['abrir',
+ 'accionar',
+ 'acreditar',
+ 'acta',
+ 'actividad',
+ 'actual',
+ 'adjudicacion',
+ 'administracion',
+ 'adquirir',
+ 'adquisicion',
+ 'adscribir',
+ 'agostar',
+ 'aguar',
+ 'alto',
+ 'ambiental',
+ 'amparar',
+ 'anexo',
+ 'anual',
+ 'aplicar',
+ 'apoyar',
+ 'aprobar',
+ 'areas',
+ 'articular',
+ 'articulos',
+ 'asignar',
+ 'asimismo',
+ 'atender',
+ 'atento',
+ 'auditorio',
+ 'autoridad',
+ 'autorizacion',
+ 'autorizar',
+ 'bajo',
+ 'basico',
+ 'bien',
+ 'california',
+ 'capitular',
+ 'casar',
+ 'caso',
+ 'causar',
+ 'celebrar',
+ 'centrar',
+ 'certificar',
+ 'citar',
+ 'ciudad',
+ 'ciudadano',
+ 'civil',
+ 'cofepris',
+ 'colegiar',
+ 'comision',
+ 'comision federal',
+ 'comite',
+ 'completar',
+ 'completo',
+ 'comprender',
+ 'concesion',
+ 'confianza',
+ 'conformar',
+ 'consejo',
+ 'considerar',
+ 'constitucion',
+ 'constitucion politica',
+ 'construccion',
+ 'consultar',
+ 'consumir',
+ 'contar',
+ 'contener',
+ 'contratacion',
+ 'control',
+ 'convenio',
+ 'convocatorio',
+ 'coordinacion',
+ 'corresponder',
+ 'correspondiente',
+ 'costo',
+ 'credito',
+ 'criterio',
+ 'cuadrar',
+ 'cuadrar basico',
+ 'cumplimiento',
+ 'cumplir',
+ 'decir',
+ 'delegacion',
+ 'delito',
+ 'denominacion',
+ 'denominar',
+ 'denunciar',
+ 'departamento',
+ 'derivar',
+ 'desagregar',
+ 'desarrollar',
+ 'desglosar',
+ 'destinar',
+ 'detallar',
+ 'determinar',
+ 'diario',
+ 'dicha',
+ 'dicho',
+ 'direccion',
+ 'director',
+ 'distrito',
+ 'documentacion',
+ 'documentar',
+ 'educacion',
+ 'emitir',
+ 'empresa',
+ 'energia',
+ 'entregar',
+ 'equipar',
+ 'escribir',
+ 'escuela',
+ 'especialidad',
+ 'especificar',
+ 'establecer',
+ 'estatal',
+ 'estudio',
+ 'etcétera',
+ 'evaluacion',
+ 'evidenciar',
+ 'existir',
+ 'expedir',
+ 'facturar',
+ 'febrero',
+ 'federacion',
+ 'federal',
+ 'financiero',
+ 'firmar',
+ 'fiscal',
+ 'fondo',
+ 'formar',
+ 'formato',
+ 'fraccion',
+ 'funcionar',
+ 'funcionario',
+ 'fundamentar',
+ 'fundamentar articular',
+ 'gastar',
+ 'generar',
+ 'gobernar',
+ 'gracia',
+ 'grupo',
+ 'gubernamental',
+ 'haber',
+ 'hoja',
+ 'honorario',
+ 'hospital',
+ 'humano',
+ 'impactar',
+ 'importar',
+ 'imss',
+ 'incluir',
+ 'indicar',
+ 'industrial',
+ 'informar',
+ 'ingresar',
+ 'iniciar',
+ 'institucion',
+ 'institucional',
+ 'instituto',
+ 'instituto mexicano',
+ 'integral',
+ 'integrar',
+ 'investigacion',
+ 'invitacion',
+ 'issste',
+ 'jalisco',
+ 'jefe',
+ 'juicio',
+ 'junio',
+ 'laboral',
+ 'laborar',
+ 'legal',
+ 'licenciar',
+ 'licitacion',
+ 'listar',
+ 'llevar',
+ 'marcar',
+ 'marzo',
+ 'material',
+ 'mayar',
+ 'medicamento',
+ 'medicar',
+ 'medio',
+ 'medir',
+ 'mencionar',
+ 'mensual',
+ 'mesar',
+ 'mexicano',
+ 'montar',
+ 'monto',
+ 'mujer',
+ 'municipio',
+ 'nava',
+ 'nivel',
+ 'noviembre',
+ 'objetar',
+ 'obligar',
+ 'obrar',
+ 'obtener',
+ 'octubre',
+ 'ocupar',
+ 'oficial',
+ 'oficiar',
+ 'oficina',
+ 'oficio',
+ 'operacion',
+ 'operación',
+ 'organismo',
+ 'otorgar',
+ 'paciente',
+ 'participar',
+ 'particular',
+ 'partir',
+ 'pemex',
+ 'penal',
+ 'periodo',
+ 'periodo comprender',
+ 'permiso',
+ 'permitir',
+ 'pieza',
+ 'plataforma',
+ 'plaza',
+ 'poblar',
+ 'politica',
+ 'politica unir',
+ 'porcentaje',
+ 'preciar',
+ 'presentacion',
+ 'prestacion',
+ 'prestación',
+ 'prestar',
+ 'presupuestal',
+ 'presupuestar',
+ 'privar',
+ 'procedimiento',
+ 'procesar',
+ 'produccion',
+ 'producto',
+ 'profesional',
+ 'propiedad',
+ 'proporcionar',
+ 'proteccion',
+ 'proveedor',
+ 'proyecto',
+ 'publicar',
+ 'publicidad',
+ 'punto',
+ 'querer',
+ 'razon',
+ 'realizar',
+ 'recetar',
+ 'recibir',
+ 'referenciar',
+ 'referir',
+ 'regional',
+ 'registro',
+ 'reglamentar',
+ 'relacion',
+ 'relacionar',
+ 'requerir',
+ 'requisito',
+ 'resolucion',
+ 'respectivo',
+ 'responsabilidad',
+ 'responsable',
+ 'resultar',
+ 'riesgo',
+ 'salud',
+ 'sanitario',
+ 'santo',
+ 'secretario',
+ 'sector',
+ 'seguridad',
+ 'seguro',
+ 'septiembre',
+ 'servidor',
+ 'servidor publicar',
+ 'sistema',
+ 'social',
+ 'soldar',
+ 'solicitante',
+ 'superior',
+ 'tecnica',
+ 'tener',
+ 'terminos',
+ 'tipo',
+ 'tomar',
+ 'trabajador',
+ 'tramitar',
+ 'transportar',
+ 'tribunal',
+ 'ubicar',
+ 'unir',
+ 'universidad',
+ 'usuario',
+ 'utilizar',
+ 'vazquez',
+ 'veracruz',
+ 'vigente',
+ 'zona',
+ 'anosolicitud',
+ 'messolicitud',
+ 'semanasolicitud',
+ 'diasolicitud',
+ 'solicitud_lemma_longitud',
+ 'dependencia_clean_administracion portuaria integral',
+ 'dependencia_clean_administracion publica federal',
+ 'dependencia_clean_aeropuertos y servicios auxiliares (asa)',
+ 'dependencia_clean_archivo general de la nación',
+ 'dependencia_clean_auditoría superior de la federación',
+ 'dependencia_clean_banca de desarrollo',
+ 'dependencia_clean_camara de dipuados',
+ 'dependencia_clean_capufe',
+ 'dependencia_clean_cfe',
+ 'dependencia_clean_cnbv',
+ 'dependencia_clean_cofepris',
+ 'dependencia_clean_conacyt',
+ 'dependencia_clean_empresas de participacion estatal',
+ 'dependencia_clean_hospitales',
+ 'dependencia_clean_inah',
+ 'dependencia_clean_inai',
+ 'dependencia_clean_ine',
+ 'dependencia_clean_instituciones de educacion superior autonomas',
+ 'dependencia_clean_instituto del fondo nacional de la vivienda para los trabajadores',
+ 'dependencia_clean_instituto federal de telecomunicaciones (ift)',
+ 'dependencia_clean_instituto mexicano de la propiedad industrial',
+ 'dependencia_clean_instituto mexicano del seguro social (imss)',
+ 'dependencia_clean_instituto nacional de migración',
+ 'dependencia_clean_ipn',
+ 'dependencia_clean_lotenal',
+ 'dependencia_clean_organismo autonomo',
+ 'dependencia_clean_organismo descentralizado',
+ 'dependencia_clean_partidos politicos',
+ 'dependencia_clean_pemex',
+ 'dependencia_clean_pgr',
+ 'dependencia_clean_poder judicial de la federacion',
+ 'dependencia_clean_policia federal',
+ 'dependencia_clean_presidencia de la republica',
+ 'dependencia_clean_procuraduría federal del consumidor',
+ 'dependencia_clean_profeco',
+ 'dependencia_clean_registro agrario nacional',
+ 'dependencia_clean_sader',
+ 'dependencia_clean_sae',
+ 'dependencia_clean_sagarpa',
+ 'dependencia_clean_sat',
+ 'dependencia_clean_scjn',
+ 'dependencia_clean_sct',
+ 'dependencia_clean_se',
+ 'dependencia_clean_secretaria de bienestar',
+ 'dependencia_clean_secretariado ejecutivo del sistema nacional de seguridad pública',
+ 'dependencia_clean_secretaría de cultura',
+ 'dependencia_clean_sectur',
+ 'dependencia_clean_sedatu',
+ 'dependencia_clean_sedena',
+ 'dependencia_clean_sedesol',
+ 'dependencia_clean_segob',
+ 'dependencia_clean_semar',
+ 'dependencia_clean_semarnat',
+ 'dependencia_clean_senado de la república',
+ 'dependencia_clean_sener',
+ 'dependencia_clean_sep',
+ 'dependencia_clean_sfp',
+ 'dependencia_clean_shcp',
+ 'dependencia_clean_sindicatos',
+ 'dependencia_clean_sre',
+ 'dependencia_clean_ssa',
+ 'dependencia_clean_sspc',
+ 'dependencia_clean_stps',
+ 'dependencia_clean_tribunales administrativos',
+ 'dependencia_clean_unam']
+
+# df_names = list(df.columns)
+# for i in df_names:
+#     if i != 'descripcionsolicitud_lemma':
+#         features_names.append(i)
+print('ya salio del for, empezando explicación del modelo')
+explainer_model = lime_tabular.LimeTabularExplainer(
+                                                training_data=best_gbc['preprocess'].transform(X_train), #el set de entrenamiento con el que se entreno
+                                                mode="classification",
+                                                feature_names=features_names, #nombre de las variables, en el orden que se envian
+                                                class_names=class_names, #el nombre de las etiquetas de clasificación
+                                                kernel_width=1) #el tamaño de la ventana para generar datos (mientras más pequeño más cercano a los valores reales)
+
+
+print('terminó de cargar el modelo')
+
+
+## Termina CAmbio Lime
+
 
 
         # mover hasta aqui al inicio
@@ -151,12 +568,12 @@ def index(request):
 
         df['descripcionsolicitud_lemma'] = df['descripcionsolicitud'].map(LematizarTexto)
 
-        # quitamos cloud de palabras revisadas con socialTIC
-        session = boto3.session.Session()
-        s3client = session.client('s3')
-        response = s3client.get_object(Bucket='inai-summerofdata', Key='raw/stopwords.pkl')
-        body = response['Body'].read()
-        banned = pickle.loads(body)
+        # # quitamos cloud de palabras revisadas con socialTIC
+        # session = boto3.session.Session()
+        # s3client = session.client('s3')
+        # response = s3client.get_object(Bucket='inai-summerofdata', Key='raw/stopwords.pkl')
+        # body = response['Body'].read()
+        # banned = pickle.loads(body)
 
         f = lambda x: ' '.join([item for item in x.split() if item not in banned])
 
@@ -282,9 +699,13 @@ def index(request):
         print(score)
         print(score[0])
         score_solo = score[0]
-        score_postivo = score_solo[0]
+        score_positivo = score_solo[0]
         print("score_positivo:")
-        print(score_postivo)
+        print(score_positivo)
+        score_negativo = score_solo[1]
+        print("score_negativo:")
+        print(score_negativo)
+
         print('iniciando preprocesamiento para lime...')
 
         tfidf_names = get_column_names_from_ColumnTransformer(best_gbc['preprocess'])
@@ -292,24 +713,24 @@ def index(request):
         class_names = np.array([False, True])
 
 
-        print('entrando al for')
-        features_names = []
-        features_names = tfidf_names
-
-        df_names = list(df.columns)
-        for i in df_names:
-            if i != 'descripcionsolicitud_lemma':
-                features_names.append(i)
-        print('ya salio del for, empezando explicación del modelo')
-        explainer_model = lime_tabular.LimeTabularExplainer(
-                                                training_data=best_gbc['preprocess'].transform(X_train), #el set de entrenamiento con el que se entreno
-                                                mode="classification",
-                                                feature_names=features_names, #nombre de las variables, en el orden que se envian
-                                                class_names=class_names, #el nombre de las etiquetas de clasificación
-                                                kernel_width=1) #el tamaño de la ventana para generar datos (mientras más pequeño más cercano a los valores reales)
-
-
-        print('terminó de cargar el modelo')
+        # print('entrando al for')
+        # features_names = []
+        # features_names = tfidf_names
+        #
+        # df_names = list(df.columns)
+        # for i in df_names:
+        #     if i != 'descripcionsolicitud_lemma':
+        #         features_names.append(i)
+        # print('ya salio del for, empezando explicación del modelo')
+        # explainer_model = lime_tabular.LimeTabularExplainer(
+        #                                         training_data=best_gbc['preprocess'].transform(X_train), #el set de entrenamiento con el que se entreno
+        #                                         mode="classification",
+        #                                         feature_names=features_names, #nombre de las variables, en el orden que se envian
+        #                                         class_names=class_names, #el nombre de las etiquetas de clasificación
+        #                                         kernel_width=1) #el tamaño de la ventana para generar datos (mientras más pequeño más cercano a los valores reales)
+        #
+        #
+        # print('terminó de cargar el modelo')
         # aqui es donde hace la explicación del modelo
         sp = explainer_model.explain_instance(best_gbc['preprocess'].transform(features), best_gbc['clf'].predict_proba, num_features=5, distance_metric='cosine')
         print(sp)
@@ -329,7 +750,8 @@ def index(request):
 
         print(resultado_prediccion)
         print('empieza a cargar pagina')
-    return render(request,'index.html', {'form':form, 'hay_respuesta':hay_respuesta, 'resultado_prediccion':resultado_prediccion, 'score':score, 'sp':sp, 'figure_lime':figure_lime, 'lista_lime':lista_lime})
+    return render(request,'index.html', {'form':form, 'hay_respuesta':hay_respuesta, 'resultado_prediccion':resultado_prediccion, 'score':score, 'sp':sp,
+     'figure_lime':figure_lime, 'lista_lime':lista_lime, 'score_positivo':score_positivo, 'score_negativo':score_negativo})
     #return render(request, 'index.html')
 
 
