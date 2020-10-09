@@ -13,8 +13,6 @@ OPCIONES_DEP=mynewlist
 
 class FormName(forms.Form):
     dependencia= forms.CharField(label='¿Para que dependencia es la solicitud?', widget=forms.Select(choices=OPCIONES_DEP))
-    nombre = forms.CharField()
-    email = forms.EmailField()
     texto_de_la_solicitud = forms.CharField(widget=forms.Textarea)
     botcatcher = forms.CharField(required=False,
                                 widget=forms.HiddenInput,
