@@ -329,12 +329,14 @@ los textos de la respuesta, se encontró que en algunos casos hay una clasificac
     <h2>Resultados de la predicción:</h2>
     <p>La respuesta que podría recibir del INAI a su solicitud es: {{resultado_prediccion}}</p>
     <br>
+    <p>Esto es con un score positivo de {{score_positivo}}</p>
+    <p>y con un score negativo de {{score_negativo}}</p>
     <br>
-    <p>Esto es con un score de {{score}}</p>
+    <br>
     <h2>Interpretabilidad</h2>
     <p>Las razones por las cuales se obtiene este resultado son las siguientes:</p>
-    {{figure_lime}}
-    {{lista_lime}}
+    <br>
+    <br>
     {% include 'lime_model.html' %}
   </div>
 {% else %}

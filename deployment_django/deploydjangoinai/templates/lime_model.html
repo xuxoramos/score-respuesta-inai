@@ -37087,25 +37087,25 @@
 /******/ ]);
 //# sourceMappingURL=bundle.js.map
  </script></head><body>
-    <div class="lime top_div" id="top_divT65BAMBQ9JK32ZX"></div>
+    <div class="lime top_div" id="top_divHG681OR5KFUAEY3"></div>
     
     <script>
-    var top_div = d3.select('#top_divT65BAMBQ9JK32ZX').classed('lime top_div', true);
+    var top_div = d3.select('#top_divHG681OR5KFUAEY3').classed('lime top_div', true);
     
         var pp_div = top_div.append('div')
                             .classed('lime predict_proba', true);
         var pp_svg = pp_div.append('svg').style('width', '100%');
-        var pp = new lime.PredictProba(pp_svg, ["False", "True"], [0.6714130468316379, 0.32858695316836206]);
+        var pp = new lime.PredictProba(pp_svg, ["False", "True"], [0.7558744265162003, 0.24412557348379973]);
         
     
     var exp_div;
         var exp = new lime.Explanation(["False", "True"]);
     
             exp_div = top_div.append('div').classed('lime explanation', true);
-            exp.show([["messolicitud", -0.0009966654832634049], ["diasolicitud", -0.0001938076671800058], ["semanasolicitud", -0.00010514746074943307], ["anosolicitud", 1.3783705579488214e-05], ["bajo", 0.0]], 1, exp_div);
+            exp.show([["ciudad", -0.2206133665766802], ["dependencia_clean_instituto mexicano del seguro social (imss)", -0.1953195969105473], ["medicamento", -0.10256036191083939], ["formar", 0.0], ["zona", 0.0]], 1, exp_div);
             
     var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["messolicitud", "10.00", -0.0009966654832634049], ["diasolicitud", "4.00", -0.0001938076671800058], ["semanasolicitud", "40.00", -0.00010514746074943307], ["anosolicitud", "2020.00", 1.3783705579488214e-05], ["32", 0.0, 0.0]], 1, raw_div);
+            exp.show_raw_tabular([["ciudad", "0.71", -0.2206133665766802], ["dependencia_clean_instituto mexicano del seguro social (imss)", "1.00", -0.1953195969105473], ["medicamento", "0.71", -0.10256036191083939], ["129", 0.0, 0.0], ["299", 0.0, 0.0]], 1, raw_div);
         
     </script>
     </body></html>
