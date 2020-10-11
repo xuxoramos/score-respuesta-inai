@@ -526,13 +526,9 @@ def index(request):
 
     if form.is_valid():
         print("VALIDATION SUCCESS!")
-        nombre = form.cleaned_data['nombre']
-        email = form.cleaned_data['email']
         texto_de_la_solicitud = form.cleaned_data['texto_de_la_solicitud']
         depend = form.cleaned_data['dependencia']
         dependencia = limpiando_dependencia(depend)
-        print("NAME: "+form.cleaned_data['nombre'])
-        print("EMAIL: "+form.cleaned_data['email'])
         print("Texto: "+form.cleaned_data['texto_de_la_solicitud'])
         print("dependencia: "+form.cleaned_data['dependencia'])
         print("dependencia_SUBMITTED: "+dependencia)
