@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+{% load static %}
+
+{% load plotly_dash %}
+
+
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title></title>
+
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary navbar-default navbar-fixed-top">
+
+      <a class="navbar-brand" href="https://socialtic.org/"> SocialTIC </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Proyecto <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#iniciando_con_modelo">Predicción <span class="sr-only">(current)</span></a>
+      </div>
+      </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- fin de NAV -->
+
+  <!-- Diap 1-->
+  <h1> Examinando y prediciendo las respuestas del INAI: Un safari por la transparencia. </h1>
+  <br>
+  <p>Cuando los ciudadanos hacen solicitudes de información al INAI, en muchos casos se tienen:</p>
+
+  <div>
+    <ul>
+      <li>Respuestas no satisfactorias (rechazos).</li>
+      <li>No hay retroalimentación clara de la razón por la que se obtuvo un rechazo.</li>
+      <li>Largos tiempos de espera para finalmente obtener respuestas no satisfactorias.</li>
+      <li>Reincidencia en malas practicas a la hora de hacer solicitudes.</li>
+    </ul>
+  </div>
+  <br>
+  <p>Por ello, este proyecto busca encontrar respuesta a dos interrogantes:</p>
+  <ul>
+    <li>¿Qué tan probable es que el INAI responda satisfactoriamente a las solicitudes de información de la ciudadanía?</li>
+    <li>¿Qué preguntan los ciudadanos al INAI?</li>
+  </ul>
+  <br>
+  <p>Adicionalmente, ofrecemos una herramienta que busca ayudar a las personas que solicitan información
+    a través del INAI,
+    para que puedan elaborar y estructurar de manera correcta dichas solicitudes, para con esto incrementar
+    la cantidad de respuestas satisfactorias y disminuir los rechazos. Básicamente, se busca acortar la
+  curva de aprendizaje de los "transparentólogos" para que puedan realizar de una mejor manera sus
+solicitudes. </p>
+
+<br>
+  <h2>Sobre la base de datos:</h2>
+  <p>Se tiene una base de datos que incluye aproximadamente <b>1,200,000</b> registros
+  de solicitudes de información realizados al INAI en el período del 2012 al 2019.</p>
+  <p>Esta base de datos contenía alrededor de 1500 dependencias, donde se encontraron ciertas dependencias
+  duplicadas o mal escritas. Además, hay ciertas dependencias que tenían menos de <b>5,000</b> solicitudes,
+las cuales fueron agrupadas en una dependencia un nivel arriba, para poder tener un poco más de claridad en la visualización y reducir
+la dimensionalidad que se ingresaría al modelo. Con esto, la cantidad de dependencias a analizar
+fue reducida a 65.  </p>
+
+<br>
+
+<!--
+
+  <h2>¿Qué tan probable es que el INAI responda satisfactoriamente a las solicitudes de la ciudadanía?</h2>
+
+-->
+
+<h2>Como primer punto, se analizaron las solicitudes realizadas al INAI</h2>
+
+<h3>Contando las solicitudes...</h3>
+
+<p>En la siguiente gráfica, se muestra un conteo mensual del número de solicitudes de información,
+donde podemos observar una tendencia creciente en el número de solicitudes realizadas al INAI, así como
+ciertos picos interesantes en algunos años (principalmente, inicios de 2017 y finales de 2018).</p>
+
+<!-- Insertar gráfica de serie de tiempo donde se muestra el conteo de
+solicitudes por mes de forma dinámica
+<p> <b>Poner aqui una gráfica</b> </p>
+<embed src="timeline_solicitudes.html" height="500" width="100%">
+-->
+{% include 'timeline_solicitudes.html' %}
+
+<p>Para poder apreciar de mejor manera las dependencias que están teniendo una mayor demanda de
+  solicitudes,
+se realizó la siguiente gráfica, donde puede observarse la cantidad de solicitudes realizadas
+por mes
+para cada una de las dependencias. </p>
+
+<!-- Insertar gráfica de serie de tiempo donde se muestra el conteo de
+solicitudes por mes POR DEPENDENCIA de forma dinámica
+<p> <b>Poner aqui una gráfica</b> </p>
+<embed src="timeline_solicitudes_por_dep.html" height="500" width="100%">
+  -->
+{% include 'timeline_solicitudes_por_dep.html' %}
+
+<h3>¿A quienes se les solicita más información?</h3>
+
+<p>Se realizó un TOP 10 de las dependencias que recibían una mayor cantidad de solicitudes durante
+  todo este período, el cual
+se puede apreciar en la siguiente gráfica. </p>
+
+<!-- Insertar gráfica de TOP 10 de solicitudes realizadas a las dependencias en total
+<p> <b>Poner aqui una gráfica</b> </p>
+-->
+<img src="{% static "/graficas/top10dependenciastotal.png" %}" alt="My image">
+
+<h3>¿Estas proporciones se mantienen a lo largo del tiempo?</h3>
+
+<p>En la siguiente gráfica, se puede ver de forma dinámica el top de dependencias que recibieron más
+  solicitudes por año en este período.</p>
+
+<!-- Insertar gráfica dinámica de dependencia por año, sin distinguir entre calidades
+incluyendo tabla  para cada año seleccionado por el usuario (tipo dashboard)-->
+<p> <b>Poner aqui una gráfica</b> </p>
+
+<img src="{% static "/graficas/proporciones_dep_ano.png" %}" alt="My image">
+
+<p>Por lo general, a lo largo de los años suelen ser las mismas dependencias las que reciben más
+solicitudes. Por ejemplo, el Instituto Mexicano del Seguro Social (IMSS) se puede observar en todas. </p>
+
+<p>El año de 2017 parece ser un parteaguas, pues en ese año la cantidad de solicitudes mínima para
+aparecer en este ranking, ingrementó a <b>5,200</b> solicitudes en ese alo. Además, la SEMARNAT
+resultó ser una dependencia en la que hubo mucho interés para ese año en particular. </p>
+
+<h3>¿Cómo se distribuye el número de palabras en estas solicitudes?</h3>
+
+<!-- Insertar gráfica de la distribución de la longitud del texto de las solicitudes
+<p> <b>Poner aqui una gráfica</b> </p>
+-->
+<img src="{% static "/graficas/distribucion_num_palabras.png" %}" alt="My image">
+
+<p>Se encontraron algunas solicitudes con un tamaño de texto de 0, así como ciertas solicitudes
+con un tamaño de más de 3,000 caractéres. En la gráfica de abajo, se quitaron los valores atípicos
+solamente on el objetivo de poder apreciar de una mejor forma la distribución, donde se observa que la
+mayoría de las solicitudes están en un tamaño de texto entre 150 y 250 caractéres. </p>
+
+<h2>Sobre el texto de las respuestas</h2>
+
+<p>El INAI clasifica las respuestas que brinda a los ciudadanos en 19 categorías. Para fines de este
+estudio, éstas etiquetas fueron agrupadas en 3 principales categorías que tratan de mostrar el tipo de
+respuesta que recibió el solicitante: <b>satisfactoria, no respondida y en proceso.</b>  </p>
+
+<p>La cantidad de respuestas en cada una de las categorías, se muestra en la siguiente gráfica.</p>
+
+<!-- Insertar gráfica de las  distribución de la categoría calidad de respuesta. -->
+<p> <b>Poner aqui una gráfica</b> </p>
+
+<img src="{% static "/graficas/dist_calidades_reportadas.png" %}" alt="My image", width = '50%'><img src="{% static "/graficas/tabla_dist_calidades_reportadas.png" %}" alt="My image",width = '20%'>
+
+<h3>Sobre los archivos descargables de cada categoría</h3>
+
+<p>Por otro lado, los archivos que se entregan como la respuesta que cada dependencia brinda a los ciudadanos son
+   cargados al sitio de infomex, los cuales fueron descargados y pasaron por un proceso de extracción de texto
+ para observar si el contenido en los archivos realmente corresponde
+a la clasificación que se puso por parte del INAI a la respuesta. Ante esta tarea, nos encontramos
+con que algunas respuestas no contenían un link. En la siguiente gráfica se pueden apreciar
+ las cantidades correspondientes. </p>
+
+<!-- Insertar gráfica del total de respuestas con y sin liga de descarga. -->
+<p> <b>Poner aqui una gráfica</b> </p>
+<img src="{% static "/graficas/url_vs_nourl.png" %}" alt="My image", width = '50%'><img src="{% static "/graficas/url_nourl_tabla.png" %}" alt="My image",width = '20%'>
+
+<p>En cuanto a la cantidad de respuestas que tienen o no tienen url, la siguiente gráfica muestra
+cómo están las proporciones por tipo de respuesta.</p>
+
+<!-- Insertar gráfica la distribución por calidad de respuesta con link y sin link de descarga.
+
+-->
+<p> <b>Poner aqui una gráfica</b> </p>
+<img src="{% static "/graficas/url_vs_nourl_categ.png" %}" alt="My image", width = '50%'><img src="{% static "/graficas/url_nourl_tabla_categ.png" %}" alt="My image",width = '20%'>
+
+
+<h3>¿El INAI utiliza un formato estándar para la entrega de sus respuestas?</h3>
+
+<p>No. A pesar de que la mayoría de los archivos están en formato PDF, también se encontraron
+algunos archivos en otros formatos. A continuación se muestran las cantidades de archivo
+por cada formato. </p>
+
+<!-- Insertar gráfica la distribución por tipo de archivo. -->
+<p> <b>Poner aqui una gráfica</b> </p>
+<img src="{% static "/graficas/tipo_arcivo_link.png" %}" alt="My image", width = '50%'><img src="{% static "/graficas/tipo_arcivo_link_tabla.png" %}" alt="My image", width = '20%'>
+
+<p>Al momento de realizar este análisis, se encontró que existen algunos links caídos,
+donde no se pudo extraer el documento. La siguiente gráfica muestra los links caídos por año.  </p>
+
+<!-- Insertar gráfica de links caídos por año. -->
+<p> <b>Poner aqui una gráfica</b> </p>
+<img src="{% static "/graficas/links_caidos_por_ano.jpeg" %}" alt="My image", width = '50%'><br>
+<img src="{% static "/graficas/link_caido_tabla.png" %}" alt="My image", width = '50%'>
+<p>Esto nos deja la interrogante de si estos links caídos pertenecen a la misma dependencia,
+por lo que a continuación se mostrará la gráfica que busca responder esta pregunta. </p>
+
+<!-- Insertar gráfica de links caídos por año por dependencia. -->
+<p> <b>Poner aqui una gráfica</b> </p>
+
+
+<p>Dentro de los textos de las respuestas, se encontraron ciertos casos donde el INAI
+mencionaba que habían respondido satisfactoriamente, pero al momento de analizar
+los textos de la respuesta, se encontró que en algunos casos hay una clasificación errónea. </p>
+<p>Como siguiente punto, buscaremos responder una de las preguntas de este proyecto:</p>
+
+<h2>¿Qué tan probable es que el INAI responda satisfactoriamente a las solicitudes de la ciudadanía?</h2>
+
+<h3>Comparando el tipo de respuesta reportado contra el tipo de respuesta real por año</h3>
+
+<!-- Insertar gráfica interactiva de comparación de calidad de respuesta por año.
+<p> <b>Poner aqui una gráfica</b> </p>
+-->
+{% include 'comparacion_por_año.html' %}
+
+
+<h3>Top de calidades de respuesta por dependencia a total</h3>
+
+<!-- Insertar gráfica interactiva de comparación de calidad de respuesta por año. -->
+<p> <b>Poner aqui una gráfica</b> </p>
+{% include 'comparacion_de_calidad_total_por_dependencia.html' %}
+
+<h3>Gráfica interactiva por dependencia por año con top</h3>
+
+<!-- Insertar gráfica interactiva de comparación de calidad de respuesta por año. -->
+<p> <b>Poner aqui una gráfica</b> </p>
+
+<div class="{% plotly_class name='top_interactivo' %} card">
+
+  {% plotly_app name="top_interactivo" ratio=0.4 %}
+
+</div>
+
+<h3>Diferencia entre calidad de respuesta y calidad de respuesta real a lo largo del tiempo por dependencia</h3>
+
+<!-- Insertar gráfica interactiva de comparación de calidad de respuesta por año. -->
+<p> <b>Poner aqui una gráfica</b> </p>
+
+<div class="{% plotly_class name='top_interactivo_diferencia' %} card">
+
+  {% plotly_app name="top_interactivo_diferencia" ratio=0.4 %}
+
+</div>
+
+
+
+
+<h2 id="iniciando_con_modelo">El Modelo:</h2>
+
+<!--
+<embed src="comparacion_de_calidad_por_dependencia.html" height="500" width="100%">
+
+
+  <h2>¿Qué tan probable es que el INAI responda satisfactoriamente a las solicitudes de la ciudadanía?</h2>
+
+
+
+<form, , width= '100%'>
+  <label for="fname">Dependencia:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Solicitud:</label><br>
+  <input type="textarea" id="lname" name="lname", width= '100%', height="200px">
+
+</form>
+
+
+
+<div class="" >
+  <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
+</div>
+<p>a</p>
+<div>
+  <form action="/action_page.php">
+    <label for="fname">Correo</label>
+    <input  type="text" id="fname" name="firstname" placeholder="Correo..">
+
+    <label for="lname">Solicitud</label>
+    <input type="text" id="lname" name="lastname" placeholder="Solicitud..">
+
+    <label for="country">Dependencia</label>
+    <select id="country" name="country">
+      <option value="australia">IMSS</option>
+      <option value="canada">ISSSTE</option>
+      <option value="usa">CFE</option>
+    </select>
+
+
+  </form>
+  <butto  background-color= #0B4AE6 width= 100%  color= white  type="submit" class="btn btn-primary">Submit</button>
+</div>
+
+<div class="container">
+  <form method="post">
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type="submit" name="btn btn-primary" value="Ejecutar">
+  </form>
+</div>
+
+{% include 'form_page.html' %}
+<br>
+<br>
+-->
+
+<div class="container" width = '50%'>
+  <form method="post" >
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type="submit" name="btn btn-primary" value="Ejecutar">
+  </form>
+</div>
+
+{% if hay_respuesta %}
+  <div class="container" width = '50%'>
+    <h2>Resultados de la predicción:</h2>
+    <p>La respuesta que podría recibir del INAI a su solicitud es: {{resultado_prediccion}}</p>
+    <br>
+    <p>Esto es con un score positivo de {{score_positivo}}</p>
+    <p>y con un score negativo de {{score_negativo}}</p>
+    <br>
+    <br>
+    <h2>Interpretabilidad</h2>
+    <p>Las razones por las cuales se obtiene este resultado son las siguientes:</p>
+    <br>
+    <br>
+    {% include 'lime_model.html' %}
+  </div>
+{% else %}
+  <div class="container" width = '50%'>
+  </div>
+
+{% endif %}
+
+</body>
+
+</html>

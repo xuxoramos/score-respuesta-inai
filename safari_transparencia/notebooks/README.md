@@ -40,3 +40,52 @@ Ejecuta las mismas tareas que el notebook step1_crear_parquet_guardarS3.ipynb so
   - Eliminamos observaciones con valores nulos en todas las columnas.
   - Eliminamos observaciones repetidas.
 + Generar output en formato parquet (inai.parquet) y guarlarlo en la S3 en la carpeta clean.
+
+
+### step4
+**notebook: step4_fe.ipynb**
+
++ Transformación de columna descripcionsolicitud. Se eliminaron "stopwords" del diccionario compartido por SocialTIC.
++ Se agregó columna respuestareal. Esta columna considera las reglas de negocio definidas por el equipo. (issue 25)
++ Generar output en formato parquet (inai.parquet) y guardarlo en la S3 en la carpeta mlpreproc.
+
+**notebook: step4_fe_2.ipynb**
+
++ Se filtró solo por los tipos de solicitud "informacion publica"
++ Agregar columnas:
+  - **calidad_respuesta**
+  - **calidad_respuesta_real**
+
+La calidad de las respuestas se agrupan en las categorias:
+1. satisfactoria
+2. no respondida
+3. en proceso
+
++ Se actualiza el archivo inai.parquet de la carpeta mlpreproc en la S3.
+
+**notebook: step4_fe_3.ipynb**
+
++ Eliminamos casos con un número menor a 16 caracteres de la columna descripcionsolicitud
++ Eliminamos casos en los que calidad_respuesta_real = 'en proceso'
+
+**notebook: step4_fe_3_sample_year_dependencia.ipynb**
+
+
+### step5
+**notebook: step5_model_LDA_0.ipynb**
+
+**notebook: step5_model_LDA_1.ipynb**
+
+**notebook: step5_model_LDA_2.ipynb**
+
+**notebook: step5_model_LDA_3.ipynb**
+
+**notebook: step5_model_LDA_4.ipynb**
+
+**notebook: step5_model_LDA_resultados.ipynb**
+
+**notebook: step5_model_GBC_0.ipynb**
+
+**notebook: step5_model_Random_Forest_0.ipynb**
+
+**notebook: step5_model_SVM_0.ipynb**
