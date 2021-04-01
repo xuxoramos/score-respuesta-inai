@@ -4,9 +4,15 @@ import pickle
 import os
 from . import fixdependencia
 
-print("el path del forms es:",os.getcwd())
+print("el path del forms de preguntasbanda es:",os.getcwd())
 
-with open('/home/rafaelortega/Documentos/INAI_consultas/inai_rafaelortegar/deployment_django/deploydjangoinai/static/listado_dep.pkl', 'rb') as f:
+print(os.getcwd()+'/preguntasbanda/static/listado_dep.pkl')
+
+path_este_archivo = os.getcwd()+'/static/listado_dep.pkl'
+
+print(path_este_archivo)
+
+with open(path_este_archivo, 'rb') as f:
     mynewlist = pickle.load(f)
 
 OPCIONES_DEP=mynewlist

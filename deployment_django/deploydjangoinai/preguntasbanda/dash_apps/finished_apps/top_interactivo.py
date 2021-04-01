@@ -12,8 +12,8 @@ import os
 
 print("el path es:",os.getcwd())
 
-lista_g = pd.read_csv('/home/rafaelortega/Documentos/INAI_consultas/inai_rafaelortegar/deployment_django/deploydjangoinai/preguntasbanda/dash_apps/finished_apps/lista_g.csv')
-respaldo = pd.read_csv('/home/rafaelortega/Documentos/INAI_consultas/inai_rafaelortegar/deployment_django/deploydjangoinai/preguntasbanda/dash_apps/finished_apps/respaldo.csv')
+lista_g = pd.read_csv('/home/ubuntu/score-respuesta-inai/deployment_django/deploydjangoinai/preguntasbanda/dash_apps/finished_apps/lista_g.csv')
+respaldo = pd.read_csv('/home/ubuntu/score-respuesta-inai/deployment_django/deploydjangoinai/preguntasbanda/dash_apps/finished_apps/respaldo.csv')
 df = lista_g.copy()
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']

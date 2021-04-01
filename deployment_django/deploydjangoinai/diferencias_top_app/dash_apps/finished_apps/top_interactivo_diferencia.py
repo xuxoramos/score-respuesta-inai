@@ -12,9 +12,9 @@ import os
 
 
 print("el path es:",os.getcwd())
-diferencias_top = pd.read_csv('/home/rafaelortega/Documentos/INAI_consultas/inai_rafaelortegar/deployment_django/deploydjangoinai/diferencias_top_app/dash_apps/finished_apps/diferencias_top.csv')
+diferencias_top = pd.read_csv('/home/ubuntu/score-respuesta-inai/deployment_django/deploydjangoinai/diferencias_top_app/dash_apps/finished_apps/diferencias_top.csv')
 diferencias_top = diferencias_top.sort_values('diferencia', ascending = False)
-respaldo = pd.read_csv('/home/rafaelortega/Documentos/INAI_consultas/inai_rafaelortegar/deployment_django/deploydjangoinai/diferencias_top_app/dash_apps/finished_apps/diferencias_top.csv')
+respaldo = pd.read_csv('/home/ubuntu/score-respuesta-inai/deployment_django/deploydjangoinai/diferencias_top_app/dash_apps/finished_apps/diferencias_top.csv')
 df = diferencias_top.copy()
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
