@@ -37,7 +37,7 @@ dask==2.18.1
 decorator==4.4.2
 defusedxml==0.6.0
 distributed==2.18.0
-Django==3.1
+Django==3.1.8
 django-plotly-dash==1.4.2
 django-redis==4.12.1
 docutils==0.15.2
